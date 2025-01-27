@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://cyber.fsi.stanford.edu/">
+  <channel>
+    <title>Syria</title>
+    <link>https://cyber.fsi.stanford.edu/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>New Report: "Scaling Trust on the Web"</title>
+  <link>https://cyber.fsi.stanford.edu/news/new-report-scaling-trust-web</link>
+  <description/>
+  <pubDate>Wed, 21 Jun 2023 17:26:25 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">34851 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Unheard Voice: Evaluating five years of pro-Western covert influence operations</title>
+  <link>https://cyber.fsi.stanford.edu/publication/unheard-voice-evaluating-five-years-pro-western-covert-influence-operations-takedown</link>
+  <description/>
+  <pubDate>Wed, 24 Aug 2022 04:24:16 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">22446 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Unheard Voice</title>
+  <link>https://cyber.fsi.stanford.edu/news/sio-aug-22-takedowns</link>
+  <description/>
+  <pubDate>Tue, 23 Aug 2022 02:05:20 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">22009 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>In Bed with Embeds: How a Network Tied to IRA Operations Created Fake “Man on the Street” Content Embedded in News Articles</title>
+  <link>https://cyber.fsi.stanford.edu/publication/bed-embeds</link>
+  <description/>
+  <pubDate>Mon, 28 Feb 2022 23:29:47 +0000</pubDate>
+    <dc:creator>Tara C Wright</dc:creator>
+    <guid isPermaLink="false">22323 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Fronts &amp; Friends: An Investigation into Two Twitter Networks Linked to Russian Actors</title>
+  <link>https://cyber.fsi.stanford.edu/publication/fronts-friends-investigation-two-twitter-networks-linked-russian-actors-takedown</link>
+  <description/>
+  <pubDate>Thu, 06 May 2021 05:21:08 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">29179 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Stoking Conflicts by Keystroke: An Operation Run by IRA-Linked Individuals Targeting Libya, Sudan, and Syria</title>
+  <link>https://cyber.fsi.stanford.edu/content/ira-takedown-20201215</link>
+  <description/>
+  <pubDate>Mon, 14 Dec 2020 17:22:48 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">22047 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+
+  </channel>
+</rss>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://cyber.fsi.stanford.edu/">
+  <channel>
+    <title>International Development</title>
+    <link>https://cyber.fsi.stanford.edu/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>How Strong Are International Standards in Practice? Evidence from Cryptocurrency Transactions</title>
+  <link>https://cyber.fsi.stanford.edu/events/How%20Strong%20Are%20International%20Standards%20in%20Practice%3F%20Evidence%20from%20Cryptocurrency%20Transactions</link>
+  <description/>
+  <pubDate>Wed, 16 Nov 2022 20:07:54 +0000</pubDate>
+    <dc:creator>Tara C Wright</dc:creator>
+    <guid isPermaLink="false">33761 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Engagement Outweighs Exposure to Partisan and Unreliable News within Google Search</title>
+  <link>https://cyber.fsi.stanford.edu/events/engagement-outweighs-exposure-partisan-and-unreliable-news-within-google-search</link>
+  <description/>
+  <pubDate>Wed, 16 Nov 2022 20:06:51 +0000</pubDate>
+    <dc:creator>Tara C Wright</dc:creator>
+    <guid isPermaLink="false">33760 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Create a Market for Safe, Secure Software</title>
+  <link>https://cyber.fsi.stanford.edu/events/create-market-safe-secure-software</link>
+  <description/>
+  <pubDate>Mon, 14 Nov 2022 17:28:25 +0000</pubDate>
+    <dc:creator>Tara C Wright</dc:creator>
+    <guid isPermaLink="false">33757 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>European Developments in Internet Regulation</title>
+  <link>https://cyber.fsi.stanford.edu/events/european-developments-internet-regulation-0</link>
+  <description/>
+  <pubDate>Thu, 03 Nov 2022 14:16:52 +0000</pubDate>
+    <dc:creator>Tara C Wright</dc:creator>
+    <guid isPermaLink="false">33749 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>European Developments in Internet Regulation</title>
+  <link>https://cyber.fsi.stanford.edu/events/european-developments-in-internet-regulation</link>
+  <description/>
+  <pubDate>Fri, 14 Oct 2022 13:06:50 +0000</pubDate>
+    <dc:creator>Tara C Wright</dc:creator>
+    <guid isPermaLink="false">33723 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>The Evolving Role of AI In Political News Consumption: The Effects of Algorithmic vs. Community Label on Perceived Accuracy of Hyper-partisan Misinformation</title>
+  <link>https://cyber.fsi.stanford.edu/events/evolving-role-ai-political-news-consumption-effects-algorithmic-vs-community-label</link>
+  <description/>
+  <pubDate>Fri, 14 Oct 2022 13:04:53 +0000</pubDate>
+    <dc:creator>Tara C Wright</dc:creator>
+    <guid isPermaLink="false">33722 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Internet Control as A Winning Strategy: How the Duality of Information Consolidates Autocratic Rule in the Digital Age</title>
+  <link>https://cyber.fsi.stanford.edu/events/internet-control-how-duality-information-consolidates-autocratic-rule</link>
+  <description/>
+  <pubDate>Fri, 14 Oct 2022 13:01:51 +0000</pubDate>
+    <dc:creator>Tara C Wright</dc:creator>
+    <guid isPermaLink="false">33721 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>The Power of Platforms: Shaping Media and Society</title>
+  <link>https://cyber.fsi.stanford.edu/events/power-of-platforms-shaping-media-and-society</link>
+  <description/>
+  <pubDate>Fri, 14 Oct 2022 12:59:31 +0000</pubDate>
+    <dc:creator>Tara C Wright</dc:creator>
+    <guid isPermaLink="false">33720 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Meme Wars</title>
+  <link>https://cyber.fsi.stanford.edu/events/meme-wars</link>
+  <description/>
+  <pubDate>Tue, 11 Oct 2022 16:21:27 +0000</pubDate>
+    <dc:creator>Tara C Wright</dc:creator>
+    <guid isPermaLink="false">33713 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Echo Chambers, Rabbit Holes, and Algorithmic Bias: How YouTube Recommends Content to Real Users</title>
+  <link>https://cyber.fsi.stanford.edu/events/echo-chambers-rabbit-holes-and-algorithmic-bias</link>
+  <description/>
+  <pubDate>Wed, 28 Sep 2022 15:25:42 +0000</pubDate>
+    <dc:creator>Tara C Wright</dc:creator>
+    <guid isPermaLink="false">33694 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+
+  </channel>
+</rss>

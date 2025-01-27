@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://cyber.fsi.stanford.edu/">
+  <channel>
+    <title>Libya</title>
+    <link>https://cyber.fsi.stanford.edu/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>In Bed with Embeds: How a Network Tied to IRA Operations Created Fake “Man on the Street” Content Embedded in News Articles</title>
+  <link>https://cyber.fsi.stanford.edu/publication/bed-embeds</link>
+  <description/>
+  <pubDate>Mon, 28 Feb 2022 23:29:47 +0000</pubDate>
+    <dc:creator>Tara C Wright</dc:creator>
+    <guid isPermaLink="false">22323 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Stoking Conflicts by Keystroke: An Operation Run by IRA-Linked Individuals Targeting Libya, Sudan, and Syria</title>
+  <link>https://cyber.fsi.stanford.edu/content/ira-takedown-20201215</link>
+  <description/>
+  <pubDate>Mon, 14 Dec 2020 17:22:48 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">22047 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Slanted Narratives, Social Media, and Foreign Influence in Libya</title>
+  <link>https://cyber.fsi.stanford.edu/publication/slanted-narratives-social-media-and-foreign-influence-libya</link>
+  <description/>
+  <pubDate>Tue, 17 Nov 2020 03:05:23 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">29107 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Blurring the lines of media authenticity: Prigozhin-linked group funding Libyan broadcast media</title>
+  <link>https://cyber.fsi.stanford.edu/news/libya-prigozhin</link>
+  <description/>
+  <pubDate>Thu, 20 Feb 2020 19:25:34 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">20644 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Evidence of Russia-Linked Influence Operations in Africa</title>
+  <link>https://cyber.fsi.stanford.edu/publication/evidence-russia-linked-influence-operations-africa</link>
+  <description/>
+  <pubDate>Wed, 30 Oct 2019 06:28:13 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">28755 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Evidence of Russia-Linked Influence Operations in Africa</title>
+  <link>https://cyber.fsi.stanford.edu/news/prigozhin-africa</link>
+  <description/>
+  <pubDate>Tue, 29 Oct 2019 18:29:41 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">20537 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Libya: Presidential and Parliamentary Elections Scene Setter</title>
+  <link>https://cyber.fsi.stanford.edu/news/libya-scene-setter</link>
+  <description/>
+  <pubDate>Tue, 01 Oct 2019 19:29:28 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">20507 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+
+  </channel>
+</rss>

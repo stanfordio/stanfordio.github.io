@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://cyber.fsi.stanford.edu/">
+  <channel>
+    <title>South Asia</title>
+    <link>https://cyber.fsi.stanford.edu/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>An Investigation into a Female-Focused Online Campaign in Iran and Afghanistan targeting Afghans</title>
+  <link>https://cyber.fsi.stanford.edu/publication/investigation-female-focused-online-campaign-iran-and-afghanistan-targeting-afghans</link>
+  <description/>
+  <pubDate>Tue, 17 Nov 2020 03:28:32 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">29109 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Virality Project (China): Pandemics &amp; Propaganda</title>
+  <link>https://cyber.fsi.stanford.edu/news/chinese-state-media-shapes-coronavirus-convo</link>
+  <description/>
+  <pubDate>Thu, 19 Mar 2020 16:32:10 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">20685 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Larry Diamond</title>
+  <link>https://cyber.fsi.stanford.edu/people/larry_diamond</link>
+  <description/>
+  <pubDate>Wed, 15 Jan 2003 08:00:00 +0000</pubDate>
+    <dc:creator>fsid9admin</dc:creator>
+    <guid isPermaLink="false">1797 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://cyber.fsi.stanford.edu/">
+  <channel>
+    <title>Health</title>
+    <link>https://cyber.fsi.stanford.edu/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>Prenatal Exposure to Environmental Tobacco Smoke and Early Development of Children in Rural Guizhou Province, China</title>
+  <link>https://cyber.fsi.stanford.edu/publication/prenatal-exposure-environmental-tobacco-smoke-and-early-development-children-rural</link>
+  <description/>
+  <pubDate>Wed, 16 Jan 2019 19:05:44 +0000</pubDate>
+    <dc:creator>Heather Rahimi</dc:creator>
+    <guid isPermaLink="false">28554 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+
+  </channel>
+</rss>

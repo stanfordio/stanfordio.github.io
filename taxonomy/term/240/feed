@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://cyber.fsi.stanford.edu/">
+  <channel>
+    <title>China</title>
+    <link>https://cyber.fsi.stanford.edu/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>Jennifer Pan to Become FSI’s Newest Senior Fellow</title>
+  <link>https://cyber.fsi.stanford.edu/news/jennifer-pan-become-fsi%E2%80%99s-newest-senior-fellow</link>
+  <description/>
+  <pubDate>Tue, 30 Aug 2022 19:48:46 +0000</pubDate>
+    <dc:creator>Melissa Morgan</dc:creator>
+    <guid isPermaLink="false">22021 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>One Topic, Two Networks: Evaluating Two Chinese Influence Operations on Twitter Related to Xinjiang</title>
+  <link>https://cyber.fsi.stanford.edu/publication/one-topic-two-networks</link>
+  <description/>
+  <pubDate>Tue, 01 Mar 2022 21:31:38 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">22330 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Tongtong Zhang</title>
+  <link>https://cyber.fsi.stanford.edu/people/tongtong</link>
+  <description/>
+  <pubDate>Wed, 06 Oct 2021 21:52:56 +0000</pubDate>
+    <dc:creator>Kristen Lee</dc:creator>
+    <guid isPermaLink="false">4925 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Pandemics &amp; propaganda: how Chinese state media creates and propagates CCP coronavirus narratives</title>
+  <link>https://cyber.fsi.stanford.edu/publication/pandemics-propaganda</link>
+  <description/>
+  <pubDate>Wed, 18 Nov 2020 17:41:01 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">29115 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Telling China’s Story: The Chinese Communist Party’s Campaign to Shape Global Narratives</title>
+  <link>https://cyber.fsi.stanford.edu/events/telling-china%E2%80%99s-story-chinese-communist-party%E2%80%99s-campaign-shape-global-narratives</link>
+  <description/>
+  <pubDate>Wed, 22 Jul 2020 17:51:10 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">13906 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Telling China’s Story: The Chinese Communist Party’s Campaign to Shape Global Narratives</title>
+  <link>https://cyber.fsi.stanford.edu/publication/telling-chinas-story</link>
+  <description/>
+  <pubDate>Fri, 17 Jul 2020 22:32:07 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">28965 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Sockpuppets Spin COVID Yarns: An Analysis of PRC-Attributed June 2020 Twitter takedown</title>
+  <link>https://cyber.fsi.stanford.edu/publication/june-2020-prc-takedown</link>
+  <description/>
+  <pubDate>Thu, 11 Jun 2020 20:20:09 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">28937 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Seizing the Moment: America's Alliances and the Technology Race</title>
+  <link>https://cyber.fsi.stanford.edu/events/seizing-moment-americas-alliances-and-technology-race</link>
+  <description/>
+  <pubDate>Fri, 15 May 2020 19:46:07 +0000</pubDate>
+    <dc:creator>fsid9admin</dc:creator>
+    <guid isPermaLink="false">13879 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Virality Project (China): Coronavirus Conspiracy Claims</title>
+  <link>https://cyber.fsi.stanford.edu/news/china-covid19-origin-narrative</link>
+  <description/>
+  <pubDate>Tue, 31 Mar 2020 19:06:24 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">20708 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Virality Project (China): Pandemics &amp; Propaganda</title>
+  <link>https://cyber.fsi.stanford.edu/news/chinese-state-media-shapes-coronavirus-convo</link>
+  <description/>
+  <pubDate>Thu, 19 Mar 2020 16:32:10 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">20685 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+
+  </channel>
+</rss>

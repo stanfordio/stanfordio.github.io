@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://cyber.fsi.stanford.edu/">
+  <channel>
+    <title>Policy Analysis</title>
+    <link>https://cyber.fsi.stanford.edu/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>Riana Pfefferkorn</title>
+  <link>https://cyber.fsi.stanford.edu/people/riana-pfefferkorn</link>
+  <description/>
+  <pubDate>Fri, 04 Dec 2020 04:12:36 +0000</pubDate>
+    <dc:creator>Tara C Wright</dc:creator>
+    <guid isPermaLink="false">4813 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Eloise Duvillier</title>
+  <link>https://cyber.fsi.stanford.edu/people/eloise-duvillier</link>
+  <description/>
+  <pubDate>Tue, 13 Nov 2018 23:31:34 +0000</pubDate>
+    <dc:creator>Kristin Chandler</dc:creator>
+    <guid isPermaLink="false">4533 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Facebook and Congress Must Create Regulations Together</title>
+  <link>https://cyber.fsi.stanford.edu/news/facebook-and-congress-must-create-regulations-together</link>
+  <description/>
+  <pubDate>Tue, 17 Apr 2018 21:52:39 +0000</pubDate>
+    <dc:creator>fsid9admin</dc:creator>
+    <guid isPermaLink="false">19953 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>The Consequences of Technological Developments for Politics and Government</title>
+  <link>https://cyber.fsi.stanford.edu/events/consequences-technological-developments-politics-and-government</link>
+  <description/>
+  <pubDate>Tue, 17 Apr 2018 21:25:37 +0000</pubDate>
+    <dc:creator>fsid9admin</dc:creator>
+    <guid isPermaLink="false">13196 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Shelby Grossman</title>
+  <link>https://cyber.fsi.stanford.edu/people/shelby-grossman</link>
+  <description/>
+  <pubDate>Thu, 21 Jul 2016 21:48:43 +0000</pubDate>
+    <dc:creator>fsid9admin</dc:creator>
+    <guid isPermaLink="false">4078 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Yong Suk Lee</title>
+  <link>http://aparc.fsi.stanford.edu/people/yong-suk-lee</link>
+  <description/>
+  <pubDate>Fri, 22 Aug 2014 20:13:31 +0000</pubDate>
+    <dc:creator>Noa Ronkin</dc:creator>
+    <guid isPermaLink="false">3774 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Francis Fukuyama</title>
+  <link>https://cyber.fsi.stanford.edu/people/fukuyama</link>
+  <description/>
+  <pubDate>Thu, 15 Jul 2010 21:09:19 +0000</pubDate>
+    <dc:creator>fsid9admin</dc:creator>
+    <guid isPermaLink="false">2845 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Larry Diamond</title>
+  <link>https://cyber.fsi.stanford.edu/people/larry_diamond</link>
+  <description/>
+  <pubDate>Wed, 15 Jan 2003 08:00:00 +0000</pubDate>
+    <dc:creator>fsid9admin</dc:creator>
+    <guid isPermaLink="false">1797 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+
+  </channel>
+</rss>

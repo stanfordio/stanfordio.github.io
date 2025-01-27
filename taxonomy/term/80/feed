@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://cyber.fsi.stanford.edu/">
+  <channel>
+    <title>Elections</title>
+    <link>https://cyber.fsi.stanford.edu/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>The Law of Democracy, Legal Structure of the Political Process</title>
+  <link>https://cyber.fsi.stanford.edu/publication/law-democracy-legal-structure-political-process</link>
+  <description/>
+  <pubDate>Wed, 07 Sep 2022 18:30:44 +0000</pubDate>
+    <dc:creator>Nora Smith</dc:creator>
+    <guid isPermaLink="false">22474 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Trust &amp; Safety Research Conference</title>
+  <link>https://cyber.fsi.stanford.edu/events/trust-and-safety-research-conference</link>
+  <description/>
+  <pubDate>Wed, 03 Aug 2022 22:17:41 +0000</pubDate>
+    <dc:creator>Tara C Wright</dc:creator>
+    <guid isPermaLink="false">6843 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Barack Obama Addresses the Intersection of Online Disinformation, Regulation and Democracy at Stanford Event</title>
+  <link>https://cyber.fsi.stanford.edu/news/barack-obama-addresses-intersection-online-disinformation-regulation-and-democracy-stanford</link>
+  <description/>
+  <pubDate>Mon, 02 May 2022 21:15:55 +0000</pubDate>
+    <dc:creator>Melissa Morgan</dc:creator>
+    <guid isPermaLink="false">21867 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Guardians of Democracy: An oral history of the 2020 election</title>
+  <link>https://cyber.fsi.stanford.edu/events/guardians-democracy-oral-history-2020-election</link>
+  <description/>
+  <pubDate>Wed, 13 Oct 2021 17:08:17 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">14262 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Tongtong Zhang</title>
+  <link>https://cyber.fsi.stanford.edu/people/tongtong</link>
+  <description/>
+  <pubDate>Wed, 06 Oct 2021 21:52:56 +0000</pubDate>
+    <dc:creator>Kristen Lee</dc:creator>
+    <guid isPermaLink="false">4925 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>The Long Fuse: Misinformation and the 2020 Election</title>
+  <link>https://cyber.fsi.stanford.edu/publication/long-fuse-misinformation-and-2020-election</link>
+  <description/>
+  <pubDate>Fri, 02 Jul 2021 20:25:13 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">29181 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Bolivarian Factions: Facebook takes down inauthentic assets </title>
+  <link>https://cyber.fsi.stanford.edu/publication/bolivarian-factions-facebook-takes-down-inauthentic-assets</link>
+  <description/>
+  <pubDate>Thu, 03 Sep 2020 16:09:29 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">29054 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Qui sont les trolls Facebook du président guinéen ? Campagne électorale moderne ou actions inauthentiques concertées, une frontière floue</title>
+  <link>https://cyber.fsi.stanford.edu/news/qui-sont-les-trolls-facebook-du-pr%C3%A9sident-guin%C3%A9en</link>
+  <description/>
+  <pubDate>Mon, 31 Aug 2020 11:32:46 +0000</pubDate>
+    <dc:creator>fsid9admin</dc:creator>
+    <guid isPermaLink="false">20974 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Polish Presidential Election 2020: Two Months Out</title>
+  <link>https://cyber.fsi.stanford.edu/news/polish-elections-2-months-out</link>
+  <description/>
+  <pubDate>Mon, 09 Mar 2020 23:44:35 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">20668 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Poland: Presidential Election 2020 Scene-Setter</title>
+  <link>https://cyber.fsi.stanford.edu/news/poland-scene-setter</link>
+  <description/>
+  <pubDate>Tue, 28 Jan 2020 00:02:23 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">20627 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+
+  </channel>
+</rss>

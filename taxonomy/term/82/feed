@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://cyber.fsi.stanford.edu/">
+  <channel>
+    <title>Environment</title>
+    <link>https://cyber.fsi.stanford.edu/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>Strengthening Taiwan's  Critical Digital Lifeline</title>
+  <link>https://cyber.fsi.stanford.edu/news/strengthening-taiwans-critical-digital-lifeline</link>
+  <description/>
+  <pubDate>Fri, 02 Aug 2024 18:05:01 +0000</pubDate>
+    <dc:creator>Tara C Wright</dc:creator>
+    <guid isPermaLink="false">36595 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Agenda for the Trust &amp; Safety Research Conference is now Live!</title>
+  <link>https://cyber.fsi.stanford.edu/news/agenda-trust-safety-research-conference-now-live</link>
+  <description/>
+  <pubDate>Tue, 30 Jul 2024 20:43:31 +0000</pubDate>
+    <dc:creator>Tara C Wright</dc:creator>
+    <guid isPermaLink="false">36583 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Registration Open for the 2024 Trust &amp; Safety Research Conference</title>
+  <link>https://cyber.fsi.stanford.edu/news/registration-open-2024-trust-safety-research-conference</link>
+  <description/>
+  <pubDate>Fri, 07 Jun 2024 19:41:05 +0000</pubDate>
+    <dc:creator>Tara C Wright</dc:creator>
+    <guid isPermaLink="false">36389 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Weighing AI’s Impact on the Global Order and Security</title>
+  <link>https://cyber.fsi.stanford.edu/news/weighing-ais-impact-global-order-and-security</link>
+  <description/>
+  <pubDate>Fri, 31 May 2024 07:45:32 +0000</pubDate>
+    <dc:creator>Melissa Morgan</dc:creator>
+    <guid isPermaLink="false">36361 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>How Strong Are International Standards in Practice? Evidence from Cryptocurrency Transactions</title>
+  <link>https://cyber.fsi.stanford.edu/events/How%20Strong%20Are%20International%20Standards%20in%20Practice%3F%20Evidence%20from%20Cryptocurrency%20Transactions</link>
+  <description/>
+  <pubDate>Wed, 16 Nov 2022 20:07:54 +0000</pubDate>
+    <dc:creator>Tara C Wright</dc:creator>
+    <guid isPermaLink="false">33761 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Engagement Outweighs Exposure to Partisan and Unreliable News within Google Search</title>
+  <link>https://cyber.fsi.stanford.edu/events/engagement-outweighs-exposure-partisan-and-unreliable-news-within-google-search</link>
+  <description/>
+  <pubDate>Wed, 16 Nov 2022 20:06:51 +0000</pubDate>
+    <dc:creator>Tara C Wright</dc:creator>
+    <guid isPermaLink="false">33760 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Create a Market for Safe, Secure Software</title>
+  <link>https://cyber.fsi.stanford.edu/events/create-market-safe-secure-software</link>
+  <description/>
+  <pubDate>Mon, 14 Nov 2022 17:28:25 +0000</pubDate>
+    <dc:creator>Tara C Wright</dc:creator>
+    <guid isPermaLink="false">33757 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>European Developments in Internet Regulation</title>
+  <link>https://cyber.fsi.stanford.edu/events/european-developments-internet-regulation-0</link>
+  <description/>
+  <pubDate>Thu, 03 Nov 2022 14:16:52 +0000</pubDate>
+    <dc:creator>Tara C Wright</dc:creator>
+    <guid isPermaLink="false">33749 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>European Developments in Internet Regulation</title>
+  <link>https://cyber.fsi.stanford.edu/events/european-developments-in-internet-regulation</link>
+  <description/>
+  <pubDate>Fri, 14 Oct 2022 13:06:50 +0000</pubDate>
+    <dc:creator>Tara C Wright</dc:creator>
+    <guid isPermaLink="false">33723 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>The Evolving Role of AI In Political News Consumption: The Effects of Algorithmic vs. Community Label on Perceived Accuracy of Hyper-partisan Misinformation</title>
+  <link>https://cyber.fsi.stanford.edu/events/evolving-role-ai-political-news-consumption-effects-algorithmic-vs-community-label</link>
+  <description/>
+  <pubDate>Fri, 14 Oct 2022 13:04:53 +0000</pubDate>
+    <dc:creator>Tara C Wright</dc:creator>
+    <guid isPermaLink="false">33722 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+
+  </channel>
+</rss>

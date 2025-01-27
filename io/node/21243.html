@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+<head>
+  <meta charset="utf-8" />
+<link rel="shortlink" href="https://cyber.fsi.stanford.edu/io/node/21243" />
+<link rel="canonical" href="https://cyber.fsi.stanford.edu/io/news/february-2021-twitter-takedowns" />
+<meta property="og:type" content="news" />
+<meta property="og:url" content="https://cyber.fsi.stanford.edu/io/news/february-2021-twitter-takedowns" />
+<meta property="og:title" content="Analysis of February 2021 Twitter Takedowns" />
+<meta property="og:image" content="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/1200x630/public/hero/twitter_takedown_february_2021.png?itok=mQOQ_7C9" />
+<meta property="og:image:url" content="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/1200x630/public/hero/twitter_takedown_february_2021.png?itok=mQOQ_7C9" />
+<meta property="og:image:secure_url" content="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/1200x630/public/hero/twitter_takedown_february_2021.png?itok=mQOQ_7C9" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Analysis of February 2021 Twitter Takedowns" />
+<meta name="twitter:description" content="In this post and in the attached reports we investigate a Twitter network attributed to actors in Armenia, Iran, and Russia." />
+<meta name="twitter:creator" content="@FSIStanford" />
+<meta name="twitter:image" content="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/1200x630/public/hero/twitter_takedown_february_2021.png?itok=mQOQ_7C9" />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/themes/custom/stanford_fsi/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="en" href="https://cyber.fsi.stanford.edu/io/news/february-2021-twitter-takedowns" />
+<link rel="apple-touch-icon" href="/themes/custom/stanford_fsi/apple-touch-icon.png" sizes="180x180" />
+<link rel="icon" href="/themes/custom/stanford_fsi/favicon-32x32.png" type="image/png" sizes="32x32" />
+<link rel="icon" href="/themes/custom/stanford_fsi/favicon-16x16.png" type="image/png" sizes="16x16" />
+
+    <title>Analysis of February 2021 Twitter Takedowns | FSI</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_r5tCShwysLqDwgb6c8eJfUVgwMzR0tk8MpGRvuA2PyI.css?delta=0&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxNyFsOwyAMRNENoXg5_YwMOOCGYGRDH7tvlKhNf0ZnblgpcheduUaq3RcJK_zZ2ds6beDRyFnHuojGeX8c4NgrLsaQingsLogSRB0Ny4R3fLmGikmxZfvmq0yjtuELW6boLKNSz2zwk3swPQ2OnTaJo5BLIqnQHIzg5K4bdtINdf0AowlTTA" />
+<link rel="stylesheet" media="all" href="//use.fontawesome.com/releases/v5.15.4/css/all.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_t4NLaHgNMYjDpnVUx0TC0ND4Ps914U85VZWqdnKZYGM.css?delta=2&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxNyFsOwyAMRNENoXg5_YwMOOCGYGRDH7tvlKhNf0ZnblgpcheduUaq3RcJK_zZ2ds6beDRyFnHuojGeX8c4NgrLsaQingsLogSRB0Ny4R3fLmGikmxZfvmq0yjtuELW6boLKNSz2zwk3swPQ2OnTaJo5BLIqnQHIzg5K4bdtINdf0AowlTTA" />
+<link rel="stylesheet" media="print" href="/sites/default/files/css/css_ipHMTqOd8MXWqrdkR7q2zw0hNkDpwEl3Km7uwx8BlwY.css?delta=3&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxNyFsOwyAMRNENoXg5_YwMOOCGYGRDH7tvlKhNf0ZnblgpcheduUaq3RcJK_zZ2ds6beDRyFnHuojGeX8c4NgrLsaQingsLogSRB0Ny4R3fLmGikmxZfvmq0yjtuELW6boLKNSz2zwk3swPQ2OnTaJo5BLIqnQHIzg5K4bdtINdf0AowlTTA" />
+<link rel="stylesheet" media="all" href="/themes/custom/stanford_fsi/fonts/fonts-drupal.css?sqgpes" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_bcFdiuS3gduCe2D3ssVjb8Y-swJeW0X65YmoDTOZuq0.css?delta=5&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxNyFsOwyAMRNENoXg5_YwMOOCGYGRDH7tvlKhNf0ZnblgpcheduUaq3RcJK_zZ2ds6beDRyFnHuojGeX8c4NgrLsaQingsLogSRB0Ny4R3fLmGikmxZfvmq0yjtuELW6boLKNSz2zwk3swPQ2OnTaJo5BLIqnQHIzg5K4bdtINdf0AowlTTA" />
+<link rel="stylesheet" media="all" href="/themes/custom/stanford_fsi/no-aggregation/no-aggregation.css?sqgpes" />
+
+      <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"io\/","currentPath":"node\/21243","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"","blocklist_classes":"","include_environment":false,"environment_id":"","environment_token":""},"tagIds":["GTM-5PWBZTH"]},"gtag":{"tagId":"G-S82RDPFHSE","consentMode":false,"otherIds":["G-XNZW311XMN",""],"events":[],"additionalConfigInfo":[]},"ajaxPageState":{"libraries":"eJxdjtFuwyAMRX-IhM_ZY-QEF7wARrZpu78f7aR29OXq-FzZ8nFiIGPZqAastmc-Tv-PXWSOGbdD0f_hoC8wlALyag2ijyM-5xW-4T7L4hoIRIGW1AfpDfL6Nmuvre-ZNGFwmkDQEql_kVODemEJ2w5Kh3_mW16UPHRLLLqMIzY3MfMOeXYJIaAsxnG8OFcFa18KUJ21ntQqXD9kE7Kx_6OG5fEVuivhTf0z18KhZ_wFwPiOmQ","theme":"stanford_fsi","theme_token":null},"ajaxTrustedUrl":{"\/io\/search\/google":true},"stanford_basic":{"nav_dropdown_enabled":false},"sharethis":{"publisher":"dr-d1ddf05c-9188-6ea9-62e5-3d0928aed407","version":"5x","doNotCopy":true,"hashAddressBar":false,"doNotHash":true},"googlePSE":{"language":"en","displayWatermark":false},"user":{"uid":0,"permissionsHash":"16f9c77489b88ad14c88c5ea4772986419600c068c4f05b78d0914545a48cc0e"}}</script>
+<script src="/core/assets/vendor/modernizr/modernizr.min.js?v=3.11.7"></script>
+<script src="/sites/default/files/js/js_gHKIUnKFJH5AVa-Frjm64i7Y6OXPfu4rEdEqpw0ByzE.js?scope=header&amp;delta=1&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxdjksOg0AMQy8EneN0iQyETMp8UBKqHr-oiErDJnq2pdjmKEvVeRhhMoXf7ewyF5PAqY5IHdfKiQYHB_bcSvBdP_DCp7MIJY9i4U_tb-weq1qfxLxNbFNxar1ImEl7r3xUtVGmsvcZUq4hk1E48aAnnDRD11vHKlvB-ws1DGU2"></script>
+<script src="/modules/contrib/google_tag/js/gtm.js?sqgpes"></script>
+<script src="/modules/contrib/google_tag/js/gtag.js?sqgpes"></script>
+<script src="/sites/default/files/js/js_uVtraW--ht-FY2xwXMRi2vx8JhZAfbd34kzTZ8lamq8.js?scope=header&amp;delta=4&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxdjksOg0AMQy8EneN0iQyETMp8UBKqHr-oiErDJnq2pdjmKEvVeRhhMoXf7ewyF5PAqY5IHdfKiQYHB_bcSvBdP_DCp7MIJY9i4U_tb-weq1qfxLxNbFNxar1ImEl7r3xUtVGmsvcZUq4hk1E48aAnnDRD11vHKlvB-ws1DGU2"></script>
+
+        </head>
+<body class="page-news-february-2021-twitter-takedowns section-news path-node page-node-type-news subdomain domain--cyber page-body">
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5PWBZTH"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+
+<nav id="skipnav" class="skipnav">
+  <div class="container">
+    <ul>
+              <li><a href="#main-content" class="visually-hidden focusable skip-link">Skip to main content</a></li>
+              <li><a href="#main-nav" class="visually-hidden focusable skip-link">Skip to main navigation</a></li>
+          </ul>
+  </div>
+</nav>
+  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+
+
+
+
+
+<div  class="layout-container">
+  <header  class="header">
+                  <div  class="header-top header-top--cyber region region-top-header-left bg-red z-[10]">
+    <div class="container">
+              <div  id="block-header-top" class="block block-content ced1bdcf-a613-4da6-ae1e-cd14a7af31d2">
+  
+    
+      
+
+            <div class="block-content basic body text-with-summary label-hidden text-long"><p><span><a href="http://www.stanford.edu/">Stanford University</a></span></p></div>
+      
+  </div>
+
+          </div>
+  </div>
+
+    
+                      <div  class="header-main header-main--cyber region region-header relative z-[11] bg-white">
+    <div class="container relative flex z-1">
+      <div class="
+        flex flex-col w-full
+        1024:flex-row 1024:items-center
+      ">
+                  <div  id="block-fsi-domain-logo" class="block fsi-domain-logo">
+  
+    
+      <div class="subdomain-logo__left py-5">
+      
+              <a href="/io" title="Home" rel="home" class="hidden 1024:block">
+          <img src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/2022-09/internet-observatory-web_-_tara_c_wright.jpg" alt="IO Logo"/>
+        </a>
+      
+              <a href="/io" title="Home" rel="home" class="1024:hidden">
+          <img src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/2022-09/internet-observatory-web_-_tara_c_wright.jpg" alt="IO Logo"/>
+        </a>
+          </div>
+</div>
+<div  id="block-fsi-subdomain-logo" class="block fsi-subdomain-logo">
+  
+    
+        <div class="subdomain-logo__right">
+      <p>A program of the&nbsp;<a href="https://cyber.fsi.stanford.edu/">Cyber Policy Center</a>, a joint initiative of the&nbsp;<a href="http://fsi.stanford.edu/">Freeman Spogli Institute for International Studies</a> and <a href="https://law.stanford.edu/">Stanford Law School</a>.</p>
+
+    </div>
+  </div>
+
+              </div>
+    </div>
+  </div>
+
+          
+            
+<button class="toggle-expand" arial-live="polite">
+  <span class="toggle-expand__open">
+    
+
+
+<svg  class="toggle-expand__icon"
+
+  
+  
+  >
+      <use xlink:href="/themes/custom/stanford_fsi/dist/icons.svg#menu"></use>
+</svg>
+    <span
+      class="toggle-expand__text"
+      aria-label="Open menu"
+    >Menu</span>
+  </span>
+  <span class="toggle-expand__close">
+    <span
+      class="toggle-expand__text"
+      aria-label="Close menu"
+    >Close</span>
+  </span>
+</button>
+    <div  class="header-navigation region region-navigation bg-red nav-collapsible">
+    <div class="container relative">
+              
+<div class="search-block-form google-cse search-form-block block block-search container-inline" data-drupal-selector="search-block-form" id="block-stanford-fsi-search-header" role="search">
+  
+      <span class="visually-hidden">Search</span>
+    
+      <form action="/io/search/google" method="get" id="search-block-form" accept-charset="UTF-8">
+  
+    
+<div class="js-form-item form-item form-item-edit-keys">
+              <input title="Enter the terms you wish to search for." placeholder="Search Internet Observatory" data-drupal-selector="edit-keys" type="search" id="edit-keys" name="keys" value="" size="40" maxlength="128" class="form-search form-item__textfield" />
+        </div>
+<div id="edit-actions-search-block-form" data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper"><input data-drupal-selector="edit-submit" type="submit" id="edit-submit" value="Search" class="button js-form-submit form-submit form-item__textfield" />
+</div>
+
+</form>
+
+  </div>
+<div  id="block-fsi-main-menu" class="block fsi-main-menu main-menu-1803982">
+  
+    
+      
+<nav id="main-nav" class="main-nav bg-red">
+  
+
+
+    
+                          
+    
+<ul  class="main-menu hidden">
+            
+<li  class="main-menu__item">
+                <a href="/io" class="main-menu__link" data-drupal-link-system-path="&lt;front&gt;">Home</a>
+          </li>
+          
+<li  class="main-menu__item main-menu__item--with-sub">
+                <a href="/io/sio-research" class="main-menu__link main-menu__link--with-sub" data-drupal-link-system-path="node/34845">Research</a>
+              <button class="expand-sub">
+        <span class="expand-sub--opened">close menu</span>
+        <span class="expand-sub--closed">open menu</span>
+      </button>
+          
+                                    
+    
+<ul  class="main-menu main-menu--sub main-menu--sub-1 hidden">
+            
+<li  class="main-menu__item main-menu__item--sub main-menu__item--sub-1">
+                <a href="/io/publications" class="main-menu__link main-menu__link--sub main-menu__link--sub-1" data-drupal-link-system-path="node/30781">Publications</a>
+          </li>
+      </ul>
+  
+      </li>
+          
+<li  class="main-menu__item main-menu__item--with-sub">
+                <a href="/io/trust-safety" class="main-menu__link main-menu__link--with-sub" data-drupal-link-system-path="node/30233">Trust and Safety</a>
+              <button class="expand-sub">
+        <span class="expand-sub--opened">close menu</span>
+        <span class="expand-sub--closed">open menu</span>
+      </button>
+          
+                                    
+    
+<ul  class="main-menu main-menu--sub main-menu--sub-1 hidden">
+            
+<li  class="main-menu__item main-menu__item--sub main-menu__item--sub-1">
+                <a href="https://tsjournal.org" target="_blank" class="main-menu__link main-menu__link--sub main-menu__link--sub-1">Journal of Online Trust and Safety</a>
+          </li>
+          
+<li  class="main-menu__item main-menu__item--sub main-menu__item--sub-1">
+                <a href="https://conferences.law.stanford.edu/tsrc/" target="_blank" class="main-menu__link main-menu__link--sub main-menu__link--sub-1">Trust &amp; Safety Research Conference </a>
+          </li>
+          
+<li  class="main-menu__item main-menu__item--sub main-menu__item--sub-1">
+                <a href="https://stanfordio.github.io/TeachingTrustSafety/" target="_blank" class="main-menu__link main-menu__link--sub main-menu__link--sub-1">Trust &amp; Safety Teaching Consortium</a>
+          </li>
+      </ul>
+  
+      </li>
+          
+<li  class="main-menu__item">
+                <a href="/io/teaching" class="main-menu__link" data-drupal-link-system-path="node/30593">Teaching</a>
+          </li>
+          
+<li  class="main-menu__item main-menu__item--with-sub">
+                <a href="/io/about" class="main-menu__link main-menu__link--with-sub" data-drupal-link-system-path="node/29991">About</a>
+              <button class="expand-sub">
+        <span class="expand-sub--opened">close menu</span>
+        <span class="expand-sub--closed">open menu</span>
+      </button>
+          
+                                    
+    
+<ul  class="main-menu main-menu--sub main-menu--sub-1 hidden">
+            
+<li  class="main-menu__item main-menu__item--sub main-menu__item--sub-1">
+                <a href="/io/content/opportunities" class="main-menu__link main-menu__link--sub main-menu__link--sub-1" data-drupal-link-system-path="node/30044">Opportunities</a>
+          </li>
+      </ul>
+  
+      </li>
+      </ul>
+  
+</nav>
+
+  </div>
+
+          </div>
+  </div>
+
+    
+          <div  id="block-views-block-alert-block-alert" class="block views-element-container views-block alert-block-alert">
+  
+    
+      <div><div class="view alert block-alert js-view-dom-id-ad794e6fc3390fea83ad64f52e1d42c4b03b1f06c553cc3f45efd07b719e2951">
+  
+  
+  
+
+  
+  
+  
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+  </div>
+
+
+    
+        </header>
+      
+    
+    
+    
+    <div  class="main">
+    <a id="main-content" tabindex="-1"></a>        
+      <main role="main"  class="main-content">
+        
+
+  <div class="region region--content grid-full layout--pass--content-medium ie11-autorow" id="content">
+    <div data-drupal-messages-fallback class="hidden"></div>
+<div  id="block-stanford-fsi-content" class="block system-main-block">
+  
+    
+      
+<article about="/io/news/february-2021-twitter-takedowns" class="node node--type-news node--view-mode-full">
+  <div class="node__content">
+    
+
+<h1
+   about="/io/news/february-2021-twitter-takedowns" class="h visually-hidden h1 node node--type-news node--view-mode-full"
+><div class="node news title string label-hidden">Analysis of February 2021 Twitter Takedowns</div>
+</h1>
+
+          
+
+<div  class="header-news pt-5 pb-10 768:pt-[70px] 768:pb-7.5">
+  <div  class="header-news__container container container--smaller border-t-1 border-t-gray-e3 border-b-5 border-b-red py-5 768:pt-7 768:pb-8" >
+          
+  <nav  class="breadcrumb mb-[11px]" role='navigation' aria-labelledby='system-breadcrumb'>
+    <h2  class="visually-hidden" id='system-breadcrumb'>Breadcrumb</h2>
+    <ol  class="breadcrumb__list mb-[11px]">
+                                          <li  class="breadcrumb__item font-bold">
+                  <a  class="breadcrumb__link" href="http://cyber.fsi.stanford.edu/io/news">All Internet Observatory News</a>
+              </li>
+                                          <li  class="breadcrumb__item text-red">
+                  Blogs
+              </li>
+                            <li  class="breadcrumb__item">
+                  <time datetime="2021-02-23T12:00:00Z">February 23, 2021</time>
+
+              </li>
+        </ol>
+  </nav>
+    
+                      <div  class="header-news__excerpt mb-7 link--in-article" >
+              <h1 class="mb-3.5">
+          <div class="node news title string label-hidden">Analysis of February 2021 Twitter Takedowns</div>
+
+                  </h1>
+                              In this post and in the attached reports we investigate a Twitter network attributed to actors in Armenia, Iran, and Russia.
+                        </div>
+    <div  class="header-news__annotation flex flex-wrap items-center" >
+              
+<div  class="bar-author-date bar-author-date--has-authors flex flex-wrap 480m:justify-center 480m:w-full">
+      
+
+
+
+<div  class="authors-list flex flex-wrap">
+  <ul  class="authors-list__list flex flex-wrap 480m:justify-center mb-2.5">
+          
+      
+      <li  class="authors-list__item inline-flex">
+                              Stanford Internet Observatory      </li>
+      </ul>
+  </div>
+  
+  </div>
+                  <div  class="header-news__social flex flex-wrap 480:ml-auto 480m:justify-center 480m:w-full" >
+                          <div class="sharethis-wrapper">
+      <span st_url="https://cyber.fsi.stanford.edu/io/news/february-2021-twitter-takedowns" st_title="Analysis of February 2021 Twitter Takedowns" class="st_facebook_custom" displayText="facebook"></span>
+
+      <span st_url="https://cyber.fsi.stanford.edu/io/news/february-2021-twitter-takedowns" st_title="Analysis of February 2021 Twitter Takedowns" class="st_twitter_custom" displayText="twitter"></span>
+
+      <span st_url="https://cyber.fsi.stanford.edu/io/news/february-2021-twitter-takedowns" st_title="Analysis of February 2021 Twitter Takedowns" class="st_linkedin_custom" displayText="linkedin"></span>
+
+      <span st_url="https://cyber.fsi.stanford.edu/io/news/february-2021-twitter-takedowns" st_title="Analysis of February 2021 Twitter Takedowns" class="st_email_custom" displayText="email"></span>
+
+  </div>
+
+              </div>
+    </div>
+  </div>
+</div>
+    
+    
+    
+            <div class="node news field-hero-image entity-reference label-hidden">
+
+
+<div  class="image-caption max-w-[935px] container-side-styles">
+      
+<figure
+   class="figure"
+  >
+      
+
+  
+<picture
+   loading="eager" class="image"
+>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/895x498/public/hero/twitter_takedown_february_2021.png?h=71858db2&amp;itok=MU3CIBRU 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/895x498_x2/public/hero/twitter_takedown_february_2021.png?h=71858db2&amp;itok=k7jBUx7k 2x" media="all and (min-width: 768px)" type="image/png" width="895" height="498"/>
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/727x409/public/hero/twitter_takedown_february_2021.png?h=71858db2&amp;itok=6CJiviqD 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/727x409_x2/public/hero/twitter_takedown_february_2021.png?h=71858db2&amp;itok=Nxb3h8uk 2x" media="all and (max-width: 767px)" type="image/png" width="727" height="409"/>
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/440x245/public/hero/twitter_takedown_february_2021.png?h=71858db2&amp;itok=xo2YLA9h 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/440x245_x2/public/hero/twitter_takedown_february_2021.png?h=71858db2&amp;itok=vs5nkIRE 2x" media="all and (max-width: 480px)" type="image/png" width="440" height="245"/>
+        <!--[if IE 9]></video><![endif]-->
+      
+<img
+   class="image"
+      src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/895x498/public/hero/twitter_takedown_february_2021.png?h=71858db2&amp;itok=MU3CIBRU"
+      alt="twitter takedown headliner"
+    />
+</picture>
+
+
+      
+          <strong></strong>
+      </figure>
+
+  </div>
+</div>
+      
+    
+      <div class="node news field-paragraphs entity-reference-revisions label-hidden">
+              <div class="paragraph-item ptype-full-html">
+
+<div class="full-html">
+  <div  class="pgph_text container container--small text-20 leading-7.5 py-4 1024:py-5 full-html" >
+  
+
+            <div class="paragraph full-html field-formatted-text text-long label-hidden"><p dir="ltr"><a class="btn" href="https://purl.stanford.edu/ym664kv8876" target="_blank">Download Armenia/Azerbaijan report</a> <a class="btn" href="https://purl.stanford.edu/dk638pj7129" target="_blank">Download Iran report</a></p>
+
+<p><a class="btn" href="https://purl.stanford.edu/jv674ss6714" target="_blank">Download Russia report</a></p>
+</div>
+      
+</div>
+</div>
+</div>
+              <div class="paragraph-item ptype-full-html">
+
+<div class="full-html">
+    <div  class="pgph_text pgph_text--big-character container container--small text-20 leading-7.5 py-4 1024:py-5 full-html" >
+  
+
+            <div class="paragraph full-html field-formatted-text text-long label-hidden"><p dir="ltr">On February 12, 2021 Twitter shared with the Stanford Internet Observatory accounts and tweets associated with four distinct takedowns. These datasets were <a href="https://blog.twitter.com/en_us/topics/company/2021/disclosing-networks-of-state-linked-information-operations-.html">made public today</a>. They include:</p>
+
+<ul>
+	<li dir="ltr">
+		<p dir="ltr" role="presentation">An anti-Azerbaijan/pro-Armenia network that had ties to the government of Armenia: 35 accounts and 72,960 tweets.</p>
+	</li>
+	<li dir="ltr">
+		<p dir="ltr" role="presentation">Iran: 238 accounts and 560,571 tweets that originated in Iran. Twitter announced the removal of 130 of these accounts on September 30, 2020, and has removed 238 in total as part of a larger investigation.</p>
+	</li>
+	<li dir="ltr">
+		<p dir="ltr" role="presentation">Russia Network 1: 69 accounts and 26,762 tweets that Twitter says are “reliably tied to Russian state actors”.</p>
+	</li>
+	<li dir="ltr">
+		<p dir="ltr" role="presentation">Russia Network 2: 31 accounts and 68,914 tweets that Twitter links to a mix of Russian state actors, and actors that may be affiliated with individuals linked to the Internet Research Agency.</p>
+	</li>
+</ul>
+
+<p dir="ltr">In this post we summarize our analysis of these operations. We have also written three in-depth whitepapers, one on the anti-Azerbaijan operation, one on the Iran operation, and one on both of the Russia operations, linked at the top of the page.</p>
+
+<h2 dir="ltr"><span style="color:#800000;"><strong>The Anti-Azerbaijan and Pro-Armenia Operation</strong></span></h2>
+
+<p dir="ltr">This network, which advanced narratives critical of Azerbaijan and favorable toward Armenia,&nbsp;included 72,960 tweets dating back to 2014. Accounts quoted Azerbaijani state messaging with intermittent pro-Armenian messaging in an attempt to masquerade as Azerbaijani accounts.&nbsp;</p>
+
+<p dir="ltr">The most noteworthy tactic in this network was the creation of accounts pretending to be Azerbaijani government officials. One of these accounts was created in 2014, and changed its handle in 2020 to impersonate the Minister of Foreign Affairs. This is not the first time this tactic has been used. In October 2020 Twitter announced the suspension of a network of accounts linked to the government of Saudi Arabia that <a href="https://cyber.fsi.stanford.edu/publication/royal-sockpuppets-and-handle-switching-how-saudi-arabia-linked-twitter-network-stoked">created accounts</a> pretending to be an interim Qatari government in exile. One of these accounts, @QtrGov, was created in 2016 and had over 90,000 followers, and there is strong evidence that it did not use this handle prior to 2020. By combining an old creation date and handle switching, information operations can create the impression of account legitimacy. It is possible that @QtrGov used spammy follow-back behavior to grow its following, then wiped its tweets and changed its handle.&nbsp;</p>
+
+<p dir="ltr">On the one hand, there are reasons to not be too worried about this tactic. In both operations, Twitter users called out the accounts as fake. And for the operation described in this report, the fake government accounts got at most a few hundred followers. At the same time, this tactic has potential to mislead people. Several of the government officials impersonated in this network lacked their own official Twitter accounts, creating a search vacuum. In an example described in the report, a Google Knowledge Panel for one of these government officials linked to the fake Twitter account.</p>
+
+<p dir="ltr">  
+<div class="image-caption image-caption--filter  ">
+      
+<figure class="figure">
+      <img loading="lazy" src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/960xauto/public/02-real-fake-bayramov.png?itok=oYcUHHwE" width="960" height="557" alt="screen shots of twitter accounts" typeof="foaf:Image">
+
+
+
+                    Left: a warning tweet from the spokesperson from the Ministry of Foreign Affairs about the fake account. Right: the profile of the real Jeyhun Baramov Twitter account, which uses the same photos and biography as the imposter.
+              </figure>
+  </div>
+</p>
+
+<h3 dir="ltr"><strong><span style="color:#800000;">Key Takeaways:</span></strong></h3>
+
+<ul>
+	<li dir="ltr">
+		<p dir="ltr" role="presentation">This network created&nbsp;several sockpuppet accounts impersonating Azerbaijani government officials to push contentious messaging empathetic to the Armenian perspective in the Nagorno-Karabakh conflict. In one case, the impersonation dated back to 2016.</p>
+	</li>
+	<li dir="ltr">
+		<p dir="ltr" role="presentation">Accounts in this network increased activity around several flash points in the ongoing conflict between Armenia and Azerbaijan over the Nagorno-Karabakh region. The accounts used a mix of Azerbaijani propaganda and Armenian propaganda, posting under Azerbaijani account names, to mock Azerbaijani figures or highlight negative actions by the Azerbaijani government.&nbsp;</p>
+	</li>
+	<li dir="ltr">
+		<p dir="ltr" role="presentation">Accounts used common Azerbaijani hashtags such as #JusticeforKhojaly and #StopArmenianAggression, but coupled them with Armenian hashtags like #Artzakh (the Armenian name for the disputed republic).&nbsp;</p>
+	</li>
+	<li dir="ltr">
+		<p dir="ltr" role="presentation">Accounts posing as news sites primarily shared Azerbaijani news articles through RSS feeds, but periodically tweeted original content using different Twitter clients. These original tweets were largely pro-Armenian.</p>
+	</li>
+	<li dir="ltr">
+		<p dir="ltr" role="presentation">We also observed a specific, low-engagement astroturfing campaign in 2019 that targeted the anniversary of the Khojaly Tragedy.</p>
+	</li>
+</ul>
+
+<h2 dir="ltr"><strong><span style="color:#800000;">The Iran Operation</span></strong></h2>
+
+<p dir="ltr">On September 30, 2020, based on a tip from the FBI, Twitter announced the&nbsp;removal of 130 accounts originating in Iran that were “attempting to disrupt&nbsp;the public conversation during the first 2020 US Presidential Debate.” On&nbsp;February 23, 2020, Twitter announced that “after the final investigation was&nbsp;complete” they suspended a total of 238 accounts operating from Iran for&nbsp;“violations of various platform manipulation policies.” Twitter shared the full&nbsp;238 accounts with the Stanford Internet Observatory on February 12, 2020. The&nbsp;now-suspended&nbsp;accounts produced 560,571 tweets, with the earliest activity&nbsp;dating back to 2009. The majority of accounts, however, were created between&nbsp;May and October 2020 and were shortly thereafter removed by Twitter.</p>
+
+<p dir="ltr">Tweets in the takedown were primarily in English, Spanish, Indonesian and Farsi. A smaller amount of content was in Arabic and French. The bulk of the accounts fell into an English-language cluster; they claimed to be Americans and shared divisive content related to the 2020 election and American politics.&nbsp;Most of the purported Americans claimed to be members of the #Resistance&nbsp;against Donald Trump. A few claimed to be Trump supporters. These accounts did&nbsp;not have a significant impact on broader discourse during the September 29,&nbsp;2020 presidential debate, but a few of the #Resistance accounts managed to get&nbsp;traction on earlier tweets.</p>
+
+<p dir="ltr">  
+<div class="image-caption image-caption--filter  ">
+      
+<figure class="figure">
+      <img loading="lazy" src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/500xauto/public/iran-meme.png?itok=Vbfukz92" width="500" height="659" alt="screenshot of a twitter post" typeof="foaf:Image">
+
+
+
+                    An example tweet from an account in the takedown that claim to be part of the #Resistance, sharing anti-Trump memes.
+              </figure>
+  </div>
+</p>
+
+<h3 dir="ltr"><strong><span style="color:#800000;">Key Takeaways:</span></strong>​</h3>
+
+<ul>
+	<li dir="ltr">
+		<p dir="ltr" role="presentation">The majority of accounts in the takedown purported to be Americans and assumed clearly partisan identities. Most of these accounts claimed to be members of the anti-Trump #Resistance and tweeted divisive content about the president. A few of these accounts had tweets cited in various online outlets, primarily when linking to content from other sources. A smaller number of accounts, with less overall engagement and lower levels of sophistication, claimed to be Trump supporters. The median engagement with tweets from both #Resist and pro-Trump groups was 0 engagements, even during the first 2020 US Presidential debate.</p>
+	</li>
+	<li dir="ltr">
+		<p dir="ltr" role="presentation">Many of the purported American accounts commented on mainstream media posts; accounts often tweeted content related to the Middle East or US foreign policy on unrelated CNN posts, likely as a way to gain visibility for their causes.</p>
+	</li>
+	<li dir="ltr">
+		<p dir="ltr" role="presentation">Accounts that tweeted in both Indonesian and English plagiarized from various news articles and other Twitter accounts, and used mass hashtag amplification to publicize hashtags related to Palestinian advocacy. This activity clustered around key events such as Nakba and Quds Day (May 2020), and the UAE-Israel normalization (August 2020). Some of these accounts also expressed support for the Islamic Republic of Iran explicitly.</p>
+	</li>
+	<li dir="ltr">
+		<p dir="ltr" role="presentation">Spanish-language content was driven by a single account: @Hispantv. This was the official Twitter handle for HispanTV, a Spanish-language arm of Iranian state media that was launched in 2012. HispanTV tweeted over 300,000 times. We encourage media scholars to further analyze its content and removal from Twitter.</p>
+	</li>
+</ul>
+
+<h2 dir="ltr"><span style="color:#800000;"><strong>The Two Russia&nbsp;Operations</strong></span></h2>
+
+<p dir="ltr">Twitter suspended two distinct Russia networks.&nbsp;The first network, which we will call Network 1, "can be reliably tied to Russian state actors," according to Twitter. It consisted of two types of accounts: accounts that claimed to be located in Syria and accounts that spread anti-NATO messaging. Many of these accounts were sockpuppets, claiming to be individuals that did not exist, or fake media fronts. Accounts tweeted in English, Russian, and Arabic; many were nominally multilingual. A handful of the fake accounts in this set have already been noted in a September 2020 <a href="https://public-assets.graphika.com/reports/graphika_report_gru_minions.pdf">Graphika report</a> into a <a href="https://about.fb.com/news/2020/09/removing-coordinated-inauthentic-behavior-russia/">Facebook takedown</a> of accounts attributed to the Russian military.</p>
+
+<p dir="ltr">The second network, which we will call Network 2, consisted of 31 accounts created between July 2009 and October 2020. While we are using the term "Network 2" to differentiate the data set, it appears to consist of scattered collections of accounts tied to previously-unearthed operations on other social media platforms, including Facebook. Twitter says this network "show signs of being affiliated with the Internet Research Agency (IRA) and Russian government-linked actors." Subjects included international affairs of interest to the Russian government, and a cluster with a specific focus on Turkey and disputing the Armenian genocide. The accounts appear to have been linked to the operations primarily via technical indicators rather than amplification or conversation between them. Two profiles, belonging to an American activist and a Russian academic, were definitively real people; we do not have sufficient visibility into the technical indicators that led to their inclusion in the network and thus do not include them in our discussion. Several of the accounts in Network 2 were tied to quasi-think tank media properties -- a favored legitimization tactic leveraged by multiple information operations actors within the Russian intelligence services and additionally by mercenary social media operators linked to Yevgeny Prigozhin (such as the IRA). We discuss those accounts, and how this tactic has been repeatedly leveraged by multiple entities within the Russian intelligence services and adjacent actors, in this report.</p>
+
+<p dir="ltr">  
+<div class="image-caption image-caption--filter  ">
+      
+<figure class="figure">
+      <img loading="lazy" src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/960xauto/public/syria-free-news.jpg?itok=dwL_IyI2" width="960" height="546" alt="facebook screenshot" typeof="foaf:Image">
+
+
+
+                    An archived version of @Syria_FreeNews from October 29, 2019.
+              </figure>
+  </div>
+</p>
+
+<h3 dir="ltr"><span style="color:#800000;"><strong>Key takeaways:</strong></span></h3>
+
+<ul>
+	<li dir="ltr">
+		<p dir="ltr" role="presentation">The two Russian networks reinforce earlier findings about the centrality of fake media outlets and quasi-think tank properties to Russian disinformation campaigns. This is a favored legitimization tactic leveraged by multiple information operations actors within the Russian intelligence services.&nbsp;</p>
+	</li>
+	<li dir="ltr">
+		<p dir="ltr" role="presentation">Network 1: As Twitter, Facebook, and Medium continue to chip away at the presence of Russian government-linked fake accounts pushing Russia-aligned narratives about Syria and NATO, we find that the activity persists on Telegram and LiveJournal.</p>
+	</li>
+</ul>
+</div>
+      
+</div>
+</div>
+</div>
+              <div class="paragraph-item ptype-read-more">
+
+<div class="read-more">
+  
+<div  class="read-more pt-10 pb-2.5 768:pt-12.5 768:pb-5 1024:pt-[90px] 1024:pb-[70px] bg-[#ffffff]" >
+  <div class="container">
+          
+
+<h3
+   class="h h--gleam text-center h3"
+>Read More</h3>
+    
+    <div  class="read-more__items read-more__items--3-items 768:flex 768:justify-center" >
+                                    
+
+<div  about="/io/news/twitter-takedown-october-2020" class="news-teaser news-teaser--card px-7.5 pb-4.5 relative bg-white" >
+      <div  class="news-teaser__img news-teaser__img--card -mx-7.5 mb-5" >
+        
+            <div class="node news field-teaser-image entity-reference label-hidden">
+  
+              
+
+  
+<picture
+   loading="eager" class="image"
+>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/375x211/public/hero/twitter_takedown_oct_2020.png?h=85fac719&amp;itok=JMkq7FCy 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/375x211_x2/public/hero/twitter_takedown_oct_2020.png?h=85fac719&amp;itok=CA2yl4-D 2x" media="all and (min-width: 768px)" type="image/png" width="375" height="211"/>
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/727x409/public/hero/twitter_takedown_oct_2020.png?h=85fac719&amp;itok=9FH-Alng 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/727x409_x2/public/hero/twitter_takedown_oct_2020.png?h=85fac719&amp;itok=E-O0W1rk 2x" media="all and (max-width: 767px)" type="image/png" width="727" height="409"/>
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/440x245/public/hero/twitter_takedown_oct_2020.png?h=85fac719&amp;itok=erZmerYi 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/440x245_x2/public/hero/twitter_takedown_oct_2020.png?h=85fac719&amp;itok=uuWfWzQ0 2x" media="all and (max-width: 480px)" type="image/png" width="440" height="245"/>
+        <!--[if IE 9]></video><![endif]-->
+      
+<img
+   class="image"
+      src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/727x409/public/hero/twitter_takedown_oct_2020.png?h=85fac719&amp;itok=9FH-Alng"
+      alt="Twitter takedown"
+    />
+</picture>
+
+
+      
+</div>
+      
+    </div>
+        <div  class="news-teaser__type mb-6 text-20 text-red" >
+      Blogs
+    </div>
+        
+
+<h2
+   class="h h--small h2"
+>Analysis of Twitter Takedowns Linked to Cuba, the Internet Research Agency, Saudi Arabia, and Thailand </h2>
+        <div  class="news-teaser__description mb-4 480m:text-16" >
+      In this post and in the attached reports we investigate operations linked to youth organizations with ties to the Cuban government, the Internet Research Agency, the Kingdom of Saudi Arabia, and the Royal Thai Military.
+    </div>
+                  
+<a
+   class="link link--cover"
+    href="/io/news/twitter-takedown-october-2020"
+>
+  cover link
+      Analysis of Twitter Takedowns Linked to Cuba, the Internet Research Agency, Saudi Arabia, and Thailand 
+  </a>
+  </div>
+
+                                        
+
+<div  about="/io/news/june-2020-twitter-takedown" class="news-teaser news-teaser--card px-7.5 pb-4.5 relative bg-white" >
+      <div  class="news-teaser__img news-teaser__img--card -mx-7.5 mb-5" >
+        
+            <div class="node news field-teaser-image entity-reference label-hidden">
+  
+              
+
+  
+<picture
+   loading="eager" class="image"
+>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/375x211/public/hero/general_-_stanford_satelite_copy.png?h=0b7db141&amp;itok=jOQVdVOI 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/375x211_x2/public/hero/general_-_stanford_satelite_copy.png?h=0b7db141&amp;itok=Q_3pQafN 2x" media="all and (min-width: 768px)" type="image/png" width="375" height="211"/>
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/727x409/public/hero/general_-_stanford_satelite_copy.png?h=0b7db141&amp;itok=eHPKEGyz 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/727x409_x2/public/hero/general_-_stanford_satelite_copy.png?h=0b7db141&amp;itok=7ngXSu-p 2x" media="all and (max-width: 767px)" type="image/png" width="727" height="409"/>
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/440x245/public/hero/general_-_stanford_satelite_copy.png?h=0b7db141&amp;itok=c4jIwhng 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/440x245_x2/public/hero/general_-_stanford_satelite_copy.png?h=0b7db141&amp;itok=JrOSQ_d5 2x" media="all and (max-width: 480px)" type="image/png" width="440" height="245"/>
+        <!--[if IE 9]></video><![endif]-->
+      
+<img
+   class="image"
+      src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/727x409/public/hero/general_-_stanford_satelite_copy.png?h=0b7db141&amp;itok=eHPKEGyz"
+      alt="twitter takedown june 2020"
+    />
+</picture>
+
+
+      
+</div>
+      
+    </div>
+        <div  class="news-teaser__type mb-6 text-20 text-red" >
+      Blogs
+    </div>
+        
+
+<h2
+   class="h h--small h2"
+>Analysis of June 2020 Twitter takedowns linked to China, Russia and Turkey</h2>
+        <div  class="news-teaser__description mb-4 480m:text-16" >
+      On June 3, 2020 Twitter shared with the Stanford Internet Observatory three distinct takedown datasets from China, Turkey and Russia. In this post and in the attached white papers on the China and Turkey operations, we look at the topics and tactics of these operations.
+    </div>
+                  
+<a
+   class="link link--cover"
+    href="/io/news/june-2020-twitter-takedown"
+>
+  cover link
+      Analysis of June 2020 Twitter takedowns linked to China, Russia and Turkey
+  </a>
+  </div>
+
+                                        
+
+<div  about="/io/news/april-2020-twitter-takedown" class="news-teaser news-teaser--card px-7.5 pb-4.5 relative bg-white" >
+      <div  class="news-teaser__img news-teaser__img--card -mx-7.5 mb-5" >
+        
+            <div class="node news field-teaser-image entity-reference label-hidden">
+  
+              
+
+  
+<picture
+   loading="eager" class="image"
+>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/375x211/public/presentation1.jpg?h=8f9cfe54&amp;itok=-JLjgDo- 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/375x211_x2/public/presentation1.jpg?h=8f9cfe54&amp;itok=hky6uqt7 2x" media="all and (min-width: 768px)" type="image/jpeg" width="375" height="211"/>
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/727x409/public/presentation1.jpg?h=8f9cfe54&amp;itok=Q7Vo9WYv 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/727x409_x2/public/presentation1.jpg?h=8f9cfe54&amp;itok=9v5FbWLb 2x" media="all and (max-width: 767px)" type="image/jpeg" width="727" height="409"/>
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/440x245/public/presentation1.jpg?h=8f9cfe54&amp;itok=4YzVywFq 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/440x245_x2/public/presentation1.jpg?h=8f9cfe54&amp;itok=Mdjy0qJg 2x" media="all and (max-width: 480px)" type="image/jpeg" width="440" height="245"/>
+        <!--[if IE 9]></video><![endif]-->
+      
+<img
+   class="image"
+      src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/727x409/public/presentation1.jpg?h=8f9cfe54&amp;itok=Q7Vo9WYv"
+      alt="twittertakedownapril2"
+    />
+</picture>
+
+
+      
+</div>
+      
+    </div>
+        <div  class="news-teaser__type mb-6 text-20 text-red" >
+      Blogs
+    </div>
+        
+
+<h2
+   class="h h--small h2"
+>Analysis of April 2020 Twitter takedowns linked to Saudia Arabia, the UAE, Egypt, Honduras, Serbia, and Indonesia</h2>
+                    
+<a
+   class="link link--cover"
+    href="/io/news/april-2020-twitter-takedown"
+>
+  cover link
+      Analysis of April 2020 Twitter takedowns linked to Saudia Arabia, the UAE, Egypt, Honduras, Serbia, and Indonesia
+  </a>
+  </div>
+
+                            </div>
+  </div>
+</div>
+</div>
+</div>
+          </div>
+  
+
+          <div class="container text-center py-4 1024:py-5">
+    
+<a
+   class="link link--btn"
+    href="http://cyber.fsi.stanford.edu/io/news"
+>
+  
+      All Internet Observatory News
+  </a>
+</div>
+      </div>
+</article>
+
+  </div>
+
+  </div>
+
+    </main>
+  </div>
+      <footer>
+              <div  class="footer__social region region-footer-social">
+  <div class="container flex items-center justify-center 768:justify-between py-4">
+          <div  id="block-fsi-center-logo" class="block fsi-center-logo">
+  
+    
+        <a href="/io" rel="home">
+      <img src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/2022-09/internet-observatory-web_-_tara_c_wright.jpg" alt="IO Logo"/>
+    </a>
+  </div>
+
+      </div>
+</div>
+
+      
+              
+<section  class="footer__center region region-footer-center">
+  <div class="
+    container
+    flex flex-wrap 768:flex-nowrap
+    pt-9 pb-7.5
+  ">
+          <div  id="block-footer-contact-us" class="block block-content _0723fba-76bd-4764-8856-dabdde04e703">
+  
+    
+      
+
+            <div class="block-content basic body text-with-summary label-hidden text-long"><h3 class="footer-panel__title">Our Address</h3>
+
+<div class="logo-footer"><a href="https://fsi.stanford.edu"><img alt="Stanford University" height="52" src="/themes/custom/stanford_fsi/images/logo-white.png" width="517" loading="lazy"> </a></div>
+
+<div class="footer-panel__body">Encina Hall<br>
+616 Jane Stanford Way<br>
+Stanford University<br>
+Stanford, CA 94305-6055</div>
+</div>
+      
+  </div>
+<div  id="block-footer-menu" class="menu-block footer block block-menu navigation menu--footer">
+      
+  <h2 id="menu-blockfooter-menu">Navigate</h2>
+  
+
+        
+
+
+    
+                          
+    
+<ul  class="menu">
+            
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/research" class="menu__link">Research</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/education" class="menu__link">Education</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/policy" class="menu__link">Policy</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/people/institute-faculty" class="menu__link">People</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/centers" class="menu__link">Centers</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/news" class="menu__link">News</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/events" class="menu__link">Events</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/about" class="menu__link">About</a>
+          </li>
+      </ul>
+  
+
+  </div>
+<div  id="block-footer-follow-us" class="block block-content _c2785de-22f2-473e-bc20-d8b2d9c45b38">
+  
+    
+      
+
+            <div class="block-content basic body text-with-summary label-hidden text-long"><h3 class="footer-panel__title">Follow Us</h3><p><strong>General inquiries</strong><br>650-723-4581</p><ul class="social-menu"><li class="social-menu__item"><a class="social-menu__link social-menu__link--mail" href="https://fsi.stanford.edu/content/get-connected" target="_blank">Mail</a></li><li class="social-menu__item"><a class="social-menu__link social-menu__link--twitter" href="https://twitter.com/FSIStanford" target="_blank">Twitter</a></li><li class="social-menu__item"><a class="social-menu__link social-menu__link--facebook" href="https://www.facebook.com/StanfordFSI" target="_blank">Facebook</a></li><li class="social-menu__item"><a class="social-menu__link social-menu__link--youtube" href="https://www.youtube.com/channel/UCB2X9yR4GZLfrCe4jChIEwg" target="_blank">Youtube</a></li><li class="social-menu__item"><a class="social-menu__link social-menu__link--instagram" href="https://www.instagram.com/fsi_stanford" target="_blank">Instagram</a></li><li class="social-menu__item"><a class="social-menu__link social-menu__link--linkedin" href="https://www.linkedin.com/company/freeman-spogli-institute-for-international-studies" target="_blank">LinkedIn</a></li><li class="social-menu__item"><a class="social-menu__link social-menu__link--threads" href="https://www.threads.net/@fsi_stanford" target="_blank">Threads</a></li></ul></div>
+      
+  </div>
+<div  id="block-footer-support-us" class="block block-content f442c8ab-1101-42e7-960d-79b4d0701c1c">
+  
+    
+      
+
+            <div class="block-content basic body text-with-summary label-hidden text-long"><h3 class="footer-panel__title">Support Us</h3>
+
+<div class="support-us">
+<p>Learn more about how your support makes a difference or make a gift now</p>
+<a class="link link--btn link--yellow" href="https://fsi.stanford.edu/supporting-fsi">Make a gift</a></div>
+</div>
+      
+  </div>
+
+      </div>
+</section>
+
+      
+      
+              <div class="back-top 768:hidden text-center py-5">
+  <span class="back-top__icon"></span>
+  <a href="#main-content" class="back-top__link">Top</a>
+</div>
+
+<div
+   class="footer__copyright region region-footer-copyrights"
+  role="contentinfo"
+>
+  <div class="container flex flex-wrap py-5 justify-center relative 768:pt-7 768:pb-8.5">
+    <div  class="footer__copyright-logo mb-4.5 w-full">
+      <img src="/themes/custom/stanford_fsi/images/footer-stanford-logo.png" class="w-[112px] m-auto 768:w-[120px]" alt="Footer logo">
+    </div>
+          <div  id="block-footer-stanford-menu" class="menu-block footer-stanford block block-menu navigation menu--footer-stanford">
+            
+  <h2 class="visually-hidden" id="menu-blockfooter-stanford-menu">Footer Stanford Menu</h2>
+  
+
+        
+
+
+    
+                          
+    
+<ul  class="menu">
+            
+<li  class="menu__item">
+                <a href="https://www.stanford.edu/" class="menu__link">Stanford Home</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://visit.stanford.edu/plan/" class="menu__link">Maps &amp; Directions</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://www.stanford.edu/search/" class="menu__link">Search Stanford</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://emergency.stanford.edu/" class="menu__link">Emergency Info</a>
+          </li>
+      </ul>
+  
+
+  </div>
+<div  id="block-footer-terms-menu" class="menu-block footer-terms block block-menu navigation menu--footer-terms">
+            
+  <h2 class="visually-hidden" id="menu-blockfooter-terms-menu">Footer Terms Menu</h2>
+  
+
+        
+
+
+    
+                          
+    
+<ul  class="menu">
+            
+<li  class="menu__item">
+                <a href="https://www.stanford.edu/site/terms/" class="menu__link">Terms of Use</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://www.stanford.edu/site/privacy/" class="menu__link">Privacy</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://uit.stanford.edu/security/copyright-infringement" class="menu__link">Copyright</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://adminguide.stanford.edu/chapter-1/subchapter-5/policy-1-5-4" class="menu__link">Trademarks</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="http://exploredegrees.stanford.edu/nonacademicregulations/nondiscrimination/" class="menu__link">Non-Discrimination</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://www.stanford.edu/site/accessibility/" class="menu__link">Accessibility</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://uit.stanford.edu/security/copyright-infringement" class="menu__link">Copyright Complaints</a>
+          </li>
+      </ul>
+  
+
+  </div>
+<div  id="block-copyright-content" class="block block-content e1315f88-6342-4fdd-98de-4aed8bcf8e4b">
+  
+    
+      
+
+            <div class="block-content basic body text-with-summary label-hidden text-long"><div class="footer-global__copyright">
+<p class="vcard">© <span class="fn org">Stanford University</span>, <span class="adr"><span class="locality">Stanford</span>, <span class="region">California</span> <span class="postal-code">94305</span></span>.</p>
+</div>
+</div>
+      
+  </div>
+
+      </div>
+</div>
+
+          </footer>
+  </div>
+
+  </div>
+
+
+<script src="/sites/default/files/js/js_Tk2om-1g0i9LtNb7ff-ZXSNkKcfj5i3zeiSGnXEFt7o.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxdjksOg0AMQy8EneN0iQyETMp8UBKqHr-oiErDJnq2pdjmKEvVeRhhMoXf7ewyF5PAqY5IHdfKiQYHB_bcSvBdP_DCp7MIJY9i4U_tb-weq1qfxLxNbFNxar1ImEl7r3xUtVGmsvcZUq4hk1E48aAnnDRD11vHKlvB-ws1DGU2"></script>
+<script src="https://ws.sharethis.com/button/buttons.js"></script>
+<script src="/sites/default/files/js/js_iR7qCnmX0DSAr6C2-WN2xC5Ax94qPs5ASdO_r1BxFUw.js?scope=footer&amp;delta=2&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxdjksOg0AMQy8EneN0iQyETMp8UBKqHr-oiErDJnq2pdjmKEvVeRhhMoXf7ewyF5PAqY5IHdfKiQYHB_bcSvBdP_DCp7MIJY9i4U_tb-weq1qfxLxNbFNxar1ImEl7r3xUtVGmsvcZUq4hk1E48aAnnDRD11vHKlvB-ws1DGU2"></script>
+<script src="/themes/custom/stanford_fsi/components/01-atoms/images/icons/svgxuse.min.js?sqgpes" defer></script>
+<script src="/sites/default/files/js/js_q8nFoQqm43AOfB7jwMRCgI0_PSjymbsH1ldDt87PVW0.js?scope=footer&amp;delta=4&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxdjksOg0AMQy8EneN0iQyETMp8UBKqHr-oiErDJnq2pdjmKEvVeRhhMoXf7ewyF5PAqY5IHdfKiQYHB_bcSvBdP_DCp7MIJY9i4U_tb-weq1qfxLxNbFNxar1ImEl7r3xUtVGmsvcZUq4hk1E48aAnnDRD11vHKlvB-ws1DGU2"></script>
+
+</body>
+</html>

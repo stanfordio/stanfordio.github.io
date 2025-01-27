@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://cyber.fsi.stanford.edu/">
+  <channel>
+    <title>Iran</title>
+    <link>https://cyber.fsi.stanford.edu/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>New Report: "Scaling Trust on the Web"</title>
+  <link>https://cyber.fsi.stanford.edu/news/new-report-scaling-trust-web</link>
+  <description/>
+  <pubDate>Wed, 21 Jun 2023 17:26:25 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">34851 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>76 Platforms v. Supreme Court with Daphne Keller (part 1)</title>
+  <link>https://cyber.fsi.stanford.edu/news/76-platforms-v-supreme-court-daphne-keller-part-1</link>
+  <description/>
+  <pubDate>Fri, 21 Apr 2023 19:10:56 +0000</pubDate>
+    <dc:creator>Tara C Wright</dc:creator>
+    <guid isPermaLink="false">34669 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Policy Impact Spotlight: Marietje Schaake on Taming Underregulated Tech</title>
+  <link>https://cyber.fsi.stanford.edu/news/policy-impact-spotlight-marietje-schaake-taming-underregulated-tech</link>
+  <description/>
+  <pubDate>Wed, 12 Apr 2023 20:32:12 +0000</pubDate>
+    <dc:creator>Melissa Morgan</dc:creator>
+    <guid isPermaLink="false">34613 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Unheard Voice: Evaluating five years of pro-Western covert influence operations</title>
+  <link>https://cyber.fsi.stanford.edu/publication/unheard-voice-evaluating-five-years-pro-western-covert-influence-operations-takedown</link>
+  <description/>
+  <pubDate>Wed, 24 Aug 2022 04:24:16 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">22446 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Unheard Voice</title>
+  <link>https://cyber.fsi.stanford.edu/news/sio-aug-22-takedowns</link>
+  <description/>
+  <pubDate>Tue, 23 Aug 2022 02:05:20 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">22009 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Viva la #Resistance? Now-Suspended Twitter Accounts from Iran Claim #Resistance Personas in US Politics and Middle Eastern Affairs</title>
+  <link>https://cyber.fsi.stanford.edu/publication/viva-la-resistance-now-suspended-twitter-accounts-iran-claim-resistance-personas-us</link>
+  <description/>
+  <pubDate>Thu, 06 May 2021 05:11:59 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">29178 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>An Investigation into a Female-Focused Online Campaign in Iran and Afghanistan targeting Afghans</title>
+  <link>https://cyber.fsi.stanford.edu/publication/investigation-female-focused-online-campaign-iran-and-afghanistan-targeting-afghans</link>
+  <description/>
+  <pubDate>Tue, 17 Nov 2020 03:28:32 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">29109 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Blame it on Iran, Qatar, and Turkey: An analysis of a Twitter and Facebook operation linked to Egypt, the UAE, and Saudi Arabia</title>
+  <link>https://cyber.fsi.stanford.edu/publication/twitter-facebook-egypt-uae-saudi</link>
+  <description/>
+  <pubDate>Thu, 02 Apr 2020 05:40:46 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">28853 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Larry Diamond</title>
+  <link>https://cyber.fsi.stanford.edu/people/larry_diamond</link>
+  <description/>
+  <pubDate>Wed, 15 Jan 2003 08:00:00 +0000</pubDate>
+    <dc:creator>fsid9admin</dc:creator>
+    <guid isPermaLink="false">1797 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+
+  </channel>
+</rss>

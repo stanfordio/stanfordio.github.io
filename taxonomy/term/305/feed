@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://cyber.fsi.stanford.edu/">
+  <channel>
+    <title>Serbia</title>
+    <link>https://cyber.fsi.stanford.edu/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>A Front for Influence: An Analysis of a Pro-Kremlin Network Promoting Narratives on COVID-19 and Ukraine</title>
+  <link>https://cyber.fsi.stanford.edu/publication/twitter_ua_202208</link>
+  <description/>
+  <pubDate>Wed, 24 Aug 2022 04:35:14 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">22447 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>“Fighting Like a Lion for Serbia”: An Analysis of Government-Linked Influence Operations in Serbia</title>
+  <link>https://cyber.fsi.stanford.edu/publication/april-2020-serbia-takedown</link>
+  <description/>
+  <pubDate>Thu, 02 Apr 2020 05:07:28 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">28852 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Analysis of April 2020 Twitter takedowns linked to Saudia Arabia, the UAE, Egypt, Honduras, Serbia, and Indonesia</title>
+  <link>https://cyber.fsi.stanford.edu/news/april-2020-twitter-takedown</link>
+  <description/>
+  <pubDate>Thu, 02 Apr 2020 01:19:24 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">20713 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+
+  </channel>
+</rss>

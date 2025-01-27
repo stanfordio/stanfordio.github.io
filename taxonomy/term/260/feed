@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://cyber.fsi.stanford.edu/">
+  <channel>
+    <title>Taiwan</title>
+    <link>https://cyber.fsi.stanford.edu/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>Taiwan Election: Disinformation as a Partisan Issue</title>
+  <link>https://cyber.fsi.stanford.edu/news/taiwan-disinformation-partisan-issue</link>
+  <description/>
+  <pubDate>Tue, 21 Jan 2020 17:03:07 +0000</pubDate>
+    <dc:creator>Carly Maya Miller</dc:creator>
+    <guid isPermaLink="false">20620 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Taiwan Election: One Day Out</title>
+  <link>https://cyber.fsi.stanford.edu/news/taiwan-election-blackout-2020</link>
+  <description/>
+  <pubDate>Wed, 08 Jan 2020 00:16:59 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">20609 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Taiwan Election: Three Weeks Out</title>
+  <link>https://cyber.fsi.stanford.edu/news/taiwan-election-three-weeks-out</link>
+  <description/>
+  <pubDate>Fri, 20 Dec 2019 00:31:04 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">20606 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Taiwan Election: The Final Countdown</title>
+  <link>https://cyber.fsi.stanford.edu/news/taiwan-election-final-countdown</link>
+  <description/>
+  <pubDate>Thu, 12 Dec 2019 22:10:11 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">20589 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Larry Diamond</title>
+  <link>https://cyber.fsi.stanford.edu/people/larry_diamond</link>
+  <description/>
+  <pubDate>Wed, 15 Jan 2003 08:00:00 +0000</pubDate>
+    <dc:creator>fsid9admin</dc:creator>
+    <guid isPermaLink="false">1797 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+
+  </channel>
+</rss>

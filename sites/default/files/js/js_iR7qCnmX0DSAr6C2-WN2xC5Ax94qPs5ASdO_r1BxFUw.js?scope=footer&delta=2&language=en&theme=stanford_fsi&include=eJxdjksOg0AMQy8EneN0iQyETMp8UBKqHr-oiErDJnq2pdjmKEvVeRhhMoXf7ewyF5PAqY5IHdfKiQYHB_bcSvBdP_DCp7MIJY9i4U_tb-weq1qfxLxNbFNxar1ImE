@@ -1,0 +1,3 @@
+/* @license GPL-2.0-or-later https://www.drupal.org/licensing/faq */
+(function($,drupalSettings){'use strict';Drupal.behaviors.shareThis={attach:function(context){if(typeof stLight!=='undefined')stLight.options(drupalSettings.sharethis);stButtons.locateElements();}};})(jQuery,drupalSettings);;
+(function authorsList($){Drupal.behaviors.authorsList={attach(context){const $jsShowAuthor=$('.js-show-author',context);const hiddenFlag='hidden';$jsShowAuthor.on('click',(e)=>{this.showAuthor(e,hiddenFlag);});},showAuthor(el,hiddenFlag){const $this=$(el.target);$this.prev('ul').find('li').removeClass(hiddenFlag);$this.remove();}};})(jQuery);;

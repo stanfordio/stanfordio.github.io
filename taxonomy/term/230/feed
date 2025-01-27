@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://cyber.fsi.stanford.edu/">
+  <channel>
+    <title>Northeast Asia</title>
+    <link>https://cyber.fsi.stanford.edu/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>Seizing the Moment: America's Alliances and the Technology Race</title>
+  <link>https://cyber.fsi.stanford.edu/events/seizing-moment-americas-alliances-and-technology-race</link>
+  <description/>
+  <pubDate>Fri, 15 May 2020 19:46:07 +0000</pubDate>
+    <dc:creator>fsid9admin</dc:creator>
+    <guid isPermaLink="false">13879 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Virality Project (China): Coronavirus Conspiracy Claims</title>
+  <link>https://cyber.fsi.stanford.edu/news/china-covid19-origin-narrative</link>
+  <description/>
+  <pubDate>Tue, 31 Mar 2020 19:06:24 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">20708 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Virality Project (China): Pandemics &amp; Propaganda</title>
+  <link>https://cyber.fsi.stanford.edu/news/chinese-state-media-shapes-coronavirus-convo</link>
+  <description/>
+  <pubDate>Thu, 19 Mar 2020 16:32:10 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">20685 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Yong Suk Lee</title>
+  <link>http://aparc.fsi.stanford.edu/people/yong-suk-lee</link>
+  <description/>
+  <pubDate>Fri, 22 Aug 2014 20:13:31 +0000</pubDate>
+    <dc:creator>Noa Ronkin</dc:creator>
+    <guid isPermaLink="false">3774 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Francis Fukuyama</title>
+  <link>https://cyber.fsi.stanford.edu/people/fukuyama</link>
+  <description/>
+  <pubDate>Thu, 15 Jul 2010 21:09:19 +0000</pubDate>
+    <dc:creator>fsid9admin</dc:creator>
+    <guid isPermaLink="false">2845 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Larry Diamond</title>
+  <link>https://cyber.fsi.stanford.edu/people/larry_diamond</link>
+  <description/>
+  <pubDate>Wed, 15 Jan 2003 08:00:00 +0000</pubDate>
+    <dc:creator>fsid9admin</dc:creator>
+    <guid isPermaLink="false">1797 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+
+  </channel>
+</rss>

@@ -1,0 +1,2 @@
+/* @license GPL-2.0-or-later https://www.drupal.org/licensing/faq */
+(function($,drupalSettings){'use strict';Drupal.behaviors.shareThis={attach:function(context){if(typeof stLight!=='undefined')stLight.options(drupalSettings.sharethis);stButtons.locateElements();}};})(jQuery,drupalSettings);;

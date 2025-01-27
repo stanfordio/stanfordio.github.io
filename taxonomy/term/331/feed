@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://cyber.fsi.stanford.edu/">
+  <channel>
+    <title>North America</title>
+    <link>https://cyber.fsi.stanford.edu/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>Coca-Cola Curses: Hate Speech in a Post-Colonial Context </title>
+  <link>https://cyber.fsi.stanford.edu/publication/coca-cola-curses-hate-speech-post-colonial-context</link>
+  <description/>
+  <pubDate>Wed, 03 May 2023 18:39:16 +0000</pubDate>
+    <dc:creator>Tara C Wright</dc:creator>
+    <guid isPermaLink="false">34709 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Shooting the Messenger: Remediation of Disclosed Vulnerabilities as CFAA “Loss”</title>
+  <link>https://cyber.fsi.stanford.edu/publication/shooting-messenger-remediation-disclosed-vulnerabilities-cfaa-%E2%80%9Closs%E2%80%9D</link>
+  <description/>
+  <pubDate>Tue, 29 Nov 2022 22:38:54 +0000</pubDate>
+    <dc:creator>Daniel Bateyko</dc:creator>
+    <guid isPermaLink="false">33878 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Maduro’s Menagerie: Twitter Client Usage in a Venezuelan Twitter Operation</title>
+  <link>https://cyber.fsi.stanford.edu/publication/twiter_vz_202112</link>
+  <description/>
+  <pubDate>Tue, 01 Mar 2022 21:16:51 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">22328 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Viva la #Resistance? Now-Suspended Twitter Accounts from Iran Claim #Resistance Personas in US Politics and Middle Eastern Affairs</title>
+  <link>https://cyber.fsi.stanford.edu/publication/viva-la-resistance-now-suspended-twitter-accounts-iran-claim-resistance-personas-us</link>
+  <description/>
+  <pubDate>Thu, 06 May 2021 05:11:59 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">29178 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Michael McFaul Testifies Before House Intelligence Committee</title>
+  <link>https://cyber.fsi.stanford.edu/news/michael-mcfaul-testifies-house-intelligence-committee</link>
+  <description/>
+  <pubDate>Wed, 27 Mar 2019 18:51:12 +0000</pubDate>
+    <dc:creator>Ari Chasnoff</dc:creator>
+    <guid isPermaLink="false">20292 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Francis Fukuyama</title>
+  <link>https://cyber.fsi.stanford.edu/people/fukuyama</link>
+  <description/>
+  <pubDate>Thu, 15 Jul 2010 21:09:19 +0000</pubDate>
+    <dc:creator>fsid9admin</dc:creator>
+    <guid isPermaLink="false">2845 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://cyber.fsi.stanford.edu/">
+  <channel>
+    <title>United Kingdom</title>
+    <link>https://cyber.fsi.stanford.edu/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>New Report: "Scaling Trust on the Web"</title>
+  <link>https://cyber.fsi.stanford.edu/news/new-report-scaling-trust-web</link>
+  <description/>
+  <pubDate>Wed, 21 Jun 2023 17:26:25 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">34851 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Unheard Voice</title>
+  <link>https://cyber.fsi.stanford.edu/news/sio-aug-22-takedowns</link>
+  <description/>
+  <pubDate>Tue, 23 Aug 2022 02:05:20 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">22009 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+
+  </channel>
+</rss>

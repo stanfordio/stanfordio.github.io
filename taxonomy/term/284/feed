@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://cyber.fsi.stanford.edu/">
+  <channel>
+    <title>France</title>
+    <link>https://cyber.fsi.stanford.edu/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>Qui sont les trolls Facebook du président guinéen ? Campagne électorale moderne ou actions inauthentiques concertées, une frontière floue</title>
+  <link>https://cyber.fsi.stanford.edu/news/qui-sont-les-trolls-facebook-du-pr%C3%A9sident-guin%C3%A9en</link>
+  <description/>
+  <pubDate>Mon, 31 Aug 2020 11:32:46 +0000</pubDate>
+    <dc:creator>fsid9admin</dc:creator>
+    <guid isPermaLink="false">20974 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+
+  </channel>
+</rss>

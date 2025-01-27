@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://cyber.fsi.stanford.edu/">
+  <channel>
+    <title>Saudi Arabia</title>
+    <link>https://cyber.fsi.stanford.edu/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>Royal Sockpuppets and Handle Switching: How a Saudi Arabia-Linked Twitter Network Stoked Rumors of a Coup in Qatar</title>
+  <link>https://cyber.fsi.stanford.edu/publication/royal-sockpuppets-and-handle-switching-how-saudi-arabia-linked-twitter-network-stoked</link>
+  <description/>
+  <pubDate>Tue, 17 Nov 2020 02:29:03 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">29105 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Virality Project: Saudi Arabia State Media and COVID-19</title>
+  <link>https://cyber.fsi.stanford.edu/news/saudi-arabia-state-media-and-covid-19</link>
+  <description/>
+  <pubDate>Tue, 23 Jun 2020 16:53:23 +0000</pubDate>
+    <dc:creator>Shelby Grossman</dc:creator>
+    <guid isPermaLink="false">20740 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Blame it on Iran, Qatar, and Turkey: An analysis of a Twitter and Facebook operation linked to Egypt, the UAE, and Saudi Arabia</title>
+  <link>https://cyber.fsi.stanford.edu/publication/twitter-facebook-egypt-uae-saudi</link>
+  <description/>
+  <pubDate>Thu, 02 Apr 2020 05:40:46 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">28853 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Analysis of April 2020 Twitter takedowns linked to Saudia Arabia, the UAE, Egypt, Honduras, Serbia, and Indonesia</title>
+  <link>https://cyber.fsi.stanford.edu/news/april-2020-twitter-takedown</link>
+  <description/>
+  <pubDate>Thu, 02 Apr 2020 01:19:24 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">20713 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Analysis of Twitter Takedown of State-Backed Operation Attributed to Saudi Arabian Digital Marketing Firm Smaat</title>
+  <link>https://cyber.fsi.stanford.edu/publication/twitter-takedown-saudi-smaat</link>
+  <description/>
+  <pubDate>Sun, 22 Dec 2019 18:04:21 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">28782 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Analyzing a Twitter Takedown Originating in Saudi Arabia</title>
+  <link>https://cyber.fsi.stanford.edu/news/smaat-twitter-takedown</link>
+  <description/>
+  <pubDate>Sat, 21 Dec 2019 00:07:43 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">20607 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+
+  </channel>
+</rss>

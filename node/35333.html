@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+<head>
+  <meta charset="utf-8" />
+<link rel="shortlink" href="https://cyber.fsi.stanford.edu/node/35333" />
+<link rel="canonical" href="https://cyber.fsi.stanford.edu/news/common-abuses-mastodon-primer" />
+<meta property="og:type" content="news" />
+<meta property="og:url" content="https://cyber.fsi.stanford.edu/news/common-abuses-mastodon-primer" />
+<meta property="og:title" content="Common Abuses on Mastodon: A Primer" />
+<meta property="og:image" content="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/1200x630/public/2023-10/social_media_abstract_people.jpg?itok=GvqY0Cvw" />
+<meta property="og:image:url" content="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/1200x630/public/2023-10/social_media_abstract_people.jpg?itok=GvqY0Cvw" />
+<meta property="og:image:secure_url" content="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/1200x630/public/2023-10/social_media_abstract_people.jpg?itok=GvqY0Cvw" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Common Abuses on Mastodon: A Primer" />
+<meta name="twitter:description" content="Decentralized social networks may be the new model for social media, but their lack of a central moderation function make it more difficult to combat online abuse." />
+<meta name="twitter:creator" content="@FSIStanford" />
+<meta name="twitter:image" content="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/1200x630/public/2023-10/social_media_abstract_people.jpg?itok=GvqY0Cvw" />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/themes/custom/stanford_fsi/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="en" href="https://cyber.fsi.stanford.edu/news/common-abuses-mastodon-primer" />
+<link rel="apple-touch-icon" href="/themes/custom/stanford_fsi/apple-touch-icon.png" sizes="180x180" />
+<link rel="icon" href="/themes/custom/stanford_fsi/favicon-32x32.png" type="image/png" sizes="32x32" />
+<link rel="icon" href="/themes/custom/stanford_fsi/favicon-16x16.png" type="image/png" sizes="16x16" />
+
+    <title>Common Abuses on Mastodon: A Primer | FSI</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_r5tCShwysLqDwgb6c8eJfUVgwMzR0tk8MpGRvuA2PyI.css?delta=0&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxNyFsOwyAMRNENoXg5_YwMOOCGYGRDH7tvlKhNf0ZnblgpcheduUaq3RcJK_zZ2ds6beDRyFnHuojGeX8c4NgrLsaQingsLogSRB0Ny4R3fLmGikmxZfvmq0yjtuELW6boLKNSz2zwk3swPQ2OnTaJo5BLIqnQHIzg5K4bdtINdf0AowlTTA" />
+<link rel="stylesheet" media="all" href="//use.fontawesome.com/releases/v5.15.4/css/all.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_t4NLaHgNMYjDpnVUx0TC0ND4Ps914U85VZWqdnKZYGM.css?delta=2&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxNyFsOwyAMRNENoXg5_YwMOOCGYGRDH7tvlKhNf0ZnblgpcheduUaq3RcJK_zZ2ds6beDRyFnHuojGeX8c4NgrLsaQingsLogSRB0Ny4R3fLmGikmxZfvmq0yjtuELW6boLKNSz2zwk3swPQ2OnTaJo5BLIqnQHIzg5K4bdtINdf0AowlTTA" />
+<link rel="stylesheet" media="print" href="/sites/default/files/css/css_ipHMTqOd8MXWqrdkR7q2zw0hNkDpwEl3Km7uwx8BlwY.css?delta=3&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxNyFsOwyAMRNENoXg5_YwMOOCGYGRDH7tvlKhNf0ZnblgpcheduUaq3RcJK_zZ2ds6beDRyFnHuojGeX8c4NgrLsaQingsLogSRB0Ny4R3fLmGikmxZfvmq0yjtuELW6boLKNSz2zwk3swPQ2OnTaJo5BLIqnQHIzg5K4bdtINdf0AowlTTA" />
+<link rel="stylesheet" media="all" href="/themes/custom/stanford_fsi/fonts/fonts-drupal.css?sqgpes" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_bcFdiuS3gduCe2D3ssVjb8Y-swJeW0X65YmoDTOZuq0.css?delta=5&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxNyFsOwyAMRNENoXg5_YwMOOCGYGRDH7tvlKhNf0ZnblgpcheduUaq3RcJK_zZ2ds6beDRyFnHuojGeX8c4NgrLsaQingsLogSRB0Ny4R3fLmGikmxZfvmq0yjtuELW6boLKNSz2zwk3swPQ2OnTaJo5BLIqnQHIzg5K4bdtINdf0AowlTTA" />
+<link rel="stylesheet" media="all" href="/themes/custom/stanford_fsi/no-aggregation/no-aggregation.css?sqgpes" />
+
+      <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/35333","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"","blocklist_classes":"","include_environment":false,"environment_id":"","environment_token":""},"tagIds":["GTM-5PWBZTH"]},"gtag":{"tagId":"G-S82RDPFHSE","consentMode":false,"otherIds":["G-XNZW311XMN",""],"events":[],"additionalConfigInfo":[]},"ajaxPageState":{"libraries":"eJxdjtFuwyAMRX-IhM_ZY-QEF7wARrZpu78f7aR29OXq-FzZ8nFiIGPZqAastmc-Tv-PXWSOGbdD0f_hoC8wlALyag2ijyM-5xW-4T7L4hoIRIGW1AfpDfL6Nmuvre-ZNGFwmkDQEql_kVODemEJ2w5Kh3_mW16UPHRLLLqMIzY3MfMOeXYJIaAsxnG8OFcFa18KUJ21ntQqXD9kE7Kx_6OG5fEVuivhTf0z18KhZ_wFwPiOmQ","theme":"stanford_fsi","theme_token":null},"ajaxTrustedUrl":{"\/search\/google":true},"stanford_basic":{"nav_dropdown_enabled":false},"sharethis":{"publisher":"dr-d1ddf05c-9188-6ea9-62e5-3d0928aed407","version":"5x","doNotCopy":true,"hashAddressBar":false,"doNotHash":true},"googlePSE":{"language":"en","displayWatermark":false},"user":{"uid":0,"permissionsHash":"16f9c77489b88ad14c88c5ea4772986419600c068c4f05b78d0914545a48cc0e"}}</script>
+<script src="/core/assets/vendor/modernizr/modernizr.min.js?v=3.11.7"></script>
+<script src="/sites/default/files/js/js_gHKIUnKFJH5AVa-Frjm64i7Y6OXPfu4rEdEqpw0ByzE.js?scope=header&amp;delta=1&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxdjksOg0AMQy8EneN0iQyETMp8UBKqHr-oiErDJnq2pdjmKEvVeRhhMoXf7ewyF5PAqY5IHdfKiQYHB_bcSvBdP_DCp7MIJY9i4U_tb-weq1qfxLxNbFNxar1ImEl7r3xUtVGmsvcZUq4hk1E48aAnnDRD11vHKlvB-ws1DGU2"></script>
+<script src="/modules/contrib/google_tag/js/gtm.js?sqgpes"></script>
+<script src="/modules/contrib/google_tag/js/gtag.js?sqgpes"></script>
+<script src="/sites/default/files/js/js_uVtraW--ht-FY2xwXMRi2vx8JhZAfbd34kzTZ8lamq8.js?scope=header&amp;delta=4&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxdjksOg0AMQy8EneN0iQyETMp8UBKqHr-oiErDJnq2pdjmKEvVeRhhMoXf7ewyF5PAqY5IHdfKiQYHB_bcSvBdP_DCp7MIJY9i4U_tb-weq1qfxLxNbFNxar1ImEl7r3xUtVGmsvcZUq4hk1E48aAnnDRD11vHKlvB-ws1DGU2"></script>
+
+        </head>
+<body class="page-news-common-abuses-mastodon-primer section-news path-node page-node-type-news subdomain domain--cyber page-body">
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5PWBZTH"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+
+<nav id="skipnav" class="skipnav">
+  <div class="container">
+    <ul>
+              <li><a href="#main-content" class="visually-hidden focusable skip-link">Skip to main content</a></li>
+              <li><a href="#main-nav" class="visually-hidden focusable skip-link">Skip to main navigation</a></li>
+          </ul>
+  </div>
+</nav>
+  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+
+
+
+
+
+<div  class="layout-container">
+  <header  class="header">
+                  <div  class="header-top header-top--cyber region region-top-header-left bg-red z-[10]">
+    <div class="container">
+              <div  id="block-header-top" class="block block-content ced1bdcf-a613-4da6-ae1e-cd14a7af31d2">
+  
+    
+      
+
+            <div class="block-content basic body text-with-summary label-hidden text-long"><p><span><a href="http://www.stanford.edu/">Stanford University</a></span></p></div>
+      
+  </div>
+
+          </div>
+  </div>
+
+    
+                      <div  class="header-main header-main--cyber region region-header relative z-[11] bg-white">
+    <div class="container relative flex z-1">
+      <div class="
+        flex flex-col w-full
+        1024:flex-row 1024:items-center
+      ">
+                  <div  id="block-fsi-domain-logo" class="block fsi-domain-logo">
+  
+    
+      <div class="subdomain-logo__left py-5">
+      
+              <a href="/" title="Home" rel="home" class="hidden 1024:block">
+          <img src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/2025-01/stanford-line2-822_crop.png" alt="Logo for the Cyber Policy Center"/>
+        </a>
+      
+              <a href="/" title="Home" rel="home" class="1024:hidden">
+          <img src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/2025-01/stanford-line2-822_crop.png" alt="Logo for the Cyber Policy Center"/>
+        </a>
+          </div>
+</div>
+<div  id="block-fsi-subdomain-logo" class="block fsi-subdomain-logo">
+  
+    
+        <div class="subdomain-logo__right">
+      <p>The Cyber Policy Center is part of the of the&nbsp;<a href="http://fsi.stanford.edu/">Freeman Spogli Institute for International Studies</a>.</p>
+    </div>
+  </div>
+
+              </div>
+    </div>
+  </div>
+
+          
+            
+<button class="toggle-expand" arial-live="polite">
+  <span class="toggle-expand__open">
+    
+
+
+<svg  class="toggle-expand__icon"
+
+  
+  
+  >
+      <use xlink:href="/themes/custom/stanford_fsi/dist/icons.svg#menu"></use>
+</svg>
+    <span
+      class="toggle-expand__text"
+      aria-label="Open menu"
+    >Menu</span>
+  </span>
+  <span class="toggle-expand__close">
+    <span
+      class="toggle-expand__text"
+      aria-label="Close menu"
+    >Close</span>
+  </span>
+</button>
+    <div  class="header-navigation region region-navigation bg-red nav-collapsible">
+    <div class="container relative">
+              
+<div class="search-block-form google-cse search-form-block block block-search container-inline" data-drupal-selector="search-block-form" id="block-stanford-fsi-search-header" role="search">
+  
+      <span class="visually-hidden">Search</span>
+    
+      <form action="/search/google" method="get" id="search-block-form" accept-charset="UTF-8">
+  
+    
+<div class="js-form-item form-item form-item-edit-keys">
+              <input title="Enter the terms you wish to search for." placeholder="Search Cyber" data-drupal-selector="edit-keys" type="search" id="edit-keys" name="keys" value="" size="40" maxlength="128" class="form-search form-item__textfield" />
+        </div>
+<div id="edit-actions-search-block-form" data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper"><input data-drupal-selector="edit-submit" type="submit" id="edit-submit" value="Search" class="button js-form-submit form-submit form-item__textfield" />
+</div>
+
+</form>
+
+  </div>
+<div  id="block-fsi-main-menu" class="block fsi-main-menu main-menu-12404442">
+  
+    
+      
+<nav id="main-nav" class="main-nav bg-red">
+  
+
+
+    
+                          
+    
+<ul  class="main-menu hidden">
+            
+<li  class="main-menu__item main-menu__item--with-sub">
+                <a href="/sciabout" class="main-menu__link main-menu__link--with-sub" data-drupal-link-system-path="node/29485">About</a>
+              <button class="expand-sub">
+        <span class="expand-sub--opened">close menu</span>
+        <span class="expand-sub--closed">open menu</span>
+      </button>
+          
+                                    
+    
+<ul  class="main-menu main-menu--sub main-menu--sub-1 hidden">
+            
+<li  class="main-menu__item main-menu__item--sub main-menu__item--sub-1">
+                <a href="/research/project-on-democracy-and-the-internet" class="main-menu__link main-menu__link--sub main-menu__link--sub-1">Program on Democracy and the Internet</a>
+          </li>
+          
+<li  class="main-menu__item main-menu__item--sub main-menu__item--sub-1">
+                <a href="/io" class="main-menu__link main-menu__link--sub main-menu__link--sub-1">Internet Observatory</a>
+          </li>
+          
+<li  class="main-menu__item main-menu__item--sub main-menu__item--sub-1">
+                <a href="/social-media-lab" class="main-menu__link main-menu__link--sub main-menu__link--sub-1" data-drupal-link-system-path="node/30478">Social Media Lab</a>
+          </li>
+          
+<li  class="main-menu__item main-menu__item--sub main-menu__item--sub-1">
+                <a href="/gdpi" class="main-menu__link main-menu__link--sub main-menu__link--sub-1">Global Digital Policy Incubator</a>
+          </li>
+          
+<li  class="main-menu__item main-menu__item--sub main-menu__item--sub-1">
+                <a href="/content/program-platform-regulation" class="main-menu__link main-menu__link--sub main-menu__link--sub-1" data-drupal-link-system-path="node/30136">Program on Platform Regulation</a>
+          </li>
+          
+<li  class="main-menu__item main-menu__item--sub main-menu__item--sub-1">
+                <a href="/content/program-governance-emerging-technologies" class="main-menu__link main-menu__link--sub main-menu__link--sub-1" data-drupal-link-system-path="node/35102">Governance of Emerging Technologies</a>
+          </li>
+          
+<li  class="main-menu__item main-menu__item--sub main-menu__item--sub-1">
+                <a href="https://www.pascl.stanford.edu/" class="main-menu__link main-menu__link--sub main-menu__link--sub-1">Polarization and Social Change Lab</a>
+          </li>
+      </ul>
+  
+      </li>
+          
+<li  class="main-menu__item">
+                <a href="/scieducation" class="main-menu__link" data-drupal-link-system-path="node/29469">Courses</a>
+          </li>
+          
+<li  class="main-menu__item">
+                <a href="/sciprojects" class="main-menu__link" data-drupal-link-system-path="node/29465">Research</a>
+          </li>
+          
+<li  class="main-menu__item">
+                <a href="/people" class="main-menu__link" data-drupal-link-system-path="node/30631">People</a>
+          </li>
+          
+<li  class="main-menu__item">
+                <a href="/news" class="main-menu__link" data-drupal-link-system-path="node/29733">News</a>
+          </li>
+          
+<li  class="main-menu__item">
+                <a href="/cyber-events" class="main-menu__link" data-drupal-link-system-path="node/30150">Events</a>
+          </li>
+          
+<li  class="main-menu__item">
+                <a href="/publications" class="main-menu__link" data-drupal-link-system-path="node/29761">Publications</a>
+          </li>
+          
+<li  class="main-menu__item">
+                <a href="/content/opportunities-cpc" class="main-menu__link" data-drupal-link-system-path="node/30537">Opportunities</a>
+          </li>
+      </ul>
+  
+</nav>
+
+  </div>
+
+          </div>
+  </div>
+
+    
+          <div  id="block-views-block-alert-block-alert" class="block views-element-container views-block alert-block-alert">
+  
+    
+      <div><div class="view alert block-alert js-view-dom-id-bc3e12fd74d27813036411bbcda4c384eafc669eb7e3b8f872a325651b4195fc">
+  
+  
+  
+
+  
+  
+  
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+  </div>
+
+
+    
+        </header>
+      
+    
+    
+    
+    <div  class="main">
+    <a id="main-content" tabindex="-1"></a>        
+      <main role="main"  class="main-content">
+        
+
+  <div class="region region--content grid-full layout--pass--content-medium ie11-autorow" id="content">
+    <div data-drupal-messages-fallback class="hidden"></div>
+<div  id="block-stanford-fsi-content" class="block system-main-block">
+  
+    
+      
+<article about="/news/common-abuses-mastodon-primer" class="node node--type-news node--view-mode-full">
+  <div class="node__content">
+    
+
+<h1
+   about="/news/common-abuses-mastodon-primer" class="h visually-hidden h1 node node--type-news node--view-mode-full"
+><div class="node news title string label-hidden">Common Abuses on Mastodon: A Primer</div>
+</h1>
+
+          
+
+<div  class="header-news pt-5 pb-10 768:pt-[70px] 768:pb-7.5">
+  <div  class="header-news__container container container--smaller border-t-1 border-t-gray-e3 border-b-5 border-b-red py-5 768:pt-7 768:pb-8" >
+          
+  <nav  class="breadcrumb mb-[11px]" role='navigation' aria-labelledby='system-breadcrumb'>
+    <h2  class="visually-hidden" id='system-breadcrumb'>Breadcrumb</h2>
+    <ol  class="breadcrumb__list mb-[11px]">
+                                          <li  class="breadcrumb__item font-bold">
+                  <a  class="breadcrumb__link" href="http://cyber.fsi.stanford.edu/news">All Cyber News</a>
+              </li>
+                                          <li  class="breadcrumb__item text-red">
+                  Blogs
+              </li>
+                            <li  class="breadcrumb__item">
+                  <time datetime="2023-10-17T12:00:00Z">October 17, 2023</time>
+
+              </li>
+        </ol>
+  </nav>
+    
+                      <div  class="header-news__excerpt mb-7 link--in-article" >
+              <h1 class="mb-3.5">
+          <div class="node news title string label-hidden">Common Abuses on Mastodon: A Primer</div>
+
+                  </h1>
+                              Decentralized social networks may be the new model for social media, but their lack of a central moderation function make it more difficult to combat online abuse.
+                        </div>
+    <div  class="header-news__annotation flex flex-wrap items-center" >
+              
+<div  class="bar-author-date bar-author-date--has-authors flex flex-wrap 480m:justify-center 480m:w-full">
+      
+
+
+
+<div  class="authors-list flex flex-wrap">
+  <ul  class="authors-list__list flex flex-wrap 480m:justify-center mb-2.5">
+          
+      
+      <li  class="authors-list__item inline-flex">
+                              <a  class="authors-list__link" href="/people/alex-stamos">
+              Alex Stamos</a><span class="mr-1">,</span>      </li>
+          
+      
+      <li  class="authors-list__item inline-flex">
+                              <a  class="authors-list__link" href="/people/sara-shah">
+              Sara Shah</a><span class="mr-1">,</span>      </li>
+          
+      
+      <li  class="authors-list__item inline-flex">
+                              Stanford Internet Observatory      </li>
+      </ul>
+  </div>
+  
+  </div>
+                  <div  class="header-news__social flex flex-wrap 480:ml-auto 480m:justify-center 480m:w-full" >
+                          <div class="sharethis-wrapper">
+      <span st_url="https://cyber.fsi.stanford.edu/news/common-abuses-mastodon-primer" st_title="Common Abuses on Mastodon: A Primer" class="st_facebook_custom" displayText="facebook"></span>
+
+      <span st_url="https://cyber.fsi.stanford.edu/news/common-abuses-mastodon-primer" st_title="Common Abuses on Mastodon: A Primer" class="st_twitter_custom" displayText="twitter"></span>
+
+      <span st_url="https://cyber.fsi.stanford.edu/news/common-abuses-mastodon-primer" st_title="Common Abuses on Mastodon: A Primer" class="st_linkedin_custom" displayText="linkedin"></span>
+
+      <span st_url="https://cyber.fsi.stanford.edu/news/common-abuses-mastodon-primer" st_title="Common Abuses on Mastodon: A Primer" class="st_email_custom" displayText="email"></span>
+
+  </div>
+
+              </div>
+    </div>
+  </div>
+</div>
+    
+    
+    
+            <div class="node news field-hero-image entity-reference label-hidden">
+
+
+<div  class="image-caption max-w-[935px] container-side-styles">
+      
+<figure
+   class="figure"
+  >
+      
+
+  
+<picture
+   loading="eager" class="image"
+>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/895x498/public/2023-10/social_media_abstract_people.jpg?h=7d2691f1&amp;itok=6CawKvC3 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/895x498_x2/public/2023-10/social_media_abstract_people.jpg?h=7d2691f1&amp;itok=FWUlU_ap 2x" media="all and (min-width: 768px)" type="image/jpeg" width="895" height="498"/>
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/727x409/public/2023-10/social_media_abstract_people.jpg?h=7d2691f1&amp;itok=cOikRBBQ 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/727x409_x2/public/2023-10/social_media_abstract_people.jpg?h=7d2691f1&amp;itok=64bWF-ON 2x" media="all and (max-width: 767px)" type="image/jpeg" width="727" height="409"/>
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/440x245/public/2023-10/social_media_abstract_people.jpg?h=7d2691f1&amp;itok=lgsT_NE8 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/440x245_x2/public/2023-10/social_media_abstract_people.jpg?h=7d2691f1&amp;itok=WFaTlLgk 2x" media="all and (max-width: 480px)" type="image/jpeg" width="440" height="245"/>
+        <!--[if IE 9]></video><![endif]-->
+      
+<img
+   class="image"
+      src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/895x498/public/2023-10/social_media_abstract_people.jpg?h=7d2691f1&amp;itok=6CawKvC3"
+      alt="abstract illustration of people holding phones"
+    />
+</picture>
+
+
+      
+          <strong></strong>
+      </figure>
+
+  </div>
+</div>
+      
+    
+      <div class="node news field-paragraphs entity-reference-revisions label-hidden">
+              <div class="paragraph-item ptype-full-html">
+
+<div class="full-html">
+  <div  class="pgph_text container container--small text-20 leading-7.5 py-4 1024:py-5 full-html" >
+  
+
+            <div class="paragraph full-html field-formatted-text text-long label-hidden"><div style="background-color:#d1e6ed;font-family:Arial, sans-serif;font-size:16px;font-weight:normal;overflow:hidden;padding:15px 15px;word-break:normal;"><ul class="ul1"><li class="li1">Mastodon has gained popularity as a decentralized alternative to X (formerly Twitter). But as its user base grows, so do opportunities for abuse, including the proliferation of child sexual abuse material (CSAM), terrorist and extremist activity, spam and harassment, and data privacy concerns.</li><li class="li1">The lack of maturity and resources of decentralized social media sites makes them susceptible to abuses more easily dealt with by centralized platforms.&nbsp;</li><li class="li1">The fediverse operates as a constellation of interconnected but individual servers, and tools to deal with these issues are currently limited. Users have the power to choose what kind of server (and community) they want to join, but are left with little protection against abuse beyond basic user tools and the prerogatives of their server’s admins and moderators.&nbsp;</li><li class="li1">For a deeper look at abuses on Mastodon and how to address them, read SIO’s <a href="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/2023-10/tips_for_running_a_mastodon_instance.pdf">tips for running a Mastodon instance.</a></li></ul></div></div>
+      
+</div>
+</div>
+</div>
+              <div class="paragraph-item ptype-additional-content-document">
+
+<div class="additional-content-document">
+  
+<div  class="container container--additional-content py-4 1024:py-5 additional-content-document" >
+  <div  class="additional-content additional-content--document pt-5 px-8 pb-4.5" >
+              <div class="mb-6">Tips for Running a Mastadon Instance</div>
+                    
+<a
+   class="link text-15 uppercase font-ss_semibold"
+      target="_blank"
+    href="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/2023-10/tips_for_running_a_mastodon_instance.pdf"
+>
+  
+      Download pdf
+  </a>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+              <div class="paragraph-item ptype-full-html">
+
+<div class="full-html">
+    <div  class="pgph_text pgph_text--big-character container container--small text-20 leading-7.5 py-4 1024:py-5 full-html" >
+  
+
+            <div class="paragraph full-html field-formatted-text text-long label-hidden"><p class="p1">Mastodon, an open-source social media software released in 2016 and made popular in the wake of Elon Musk’s acquisition of Twitter (now X),&nbsp;<a href="https://www.reddit.com/r/Mastodon/comments/11vyrfv/mastodon_has_reached_10_million_accounts/"><span class="s1">reached</span></a> 10 million accounts earlier this year. Unlike X or Facebook, Mastodon is a&nbsp;<em>decentralized</em> social media platform, where individual servers or “instances” established around common themes communicate. Users create an account on one specific instance, but aren't stuck if they don't like it – they can&nbsp;<a href="https://docs.joinmastodon.org/user/moving/"><span class="s1">migrate</span></a> to a new instance with followers intact. Mastodon is part of the ever-evolving “fediverse,” an&nbsp;<a href="https://www.lawfareblog.com/what-earth-fediverse"><span class="s1">ecosystem</span></a> powered by the decentralized networking protocol ActivityPub in which servers on different sites interact with each other. It joins other decentralized social media sites like&nbsp;<a href="https://techcrunch.com/2023/07/24/what-is-bluesky-everything-to-know-about-the-app-trying-to-replace-twitter/"><span class="s1">Bluesky</span></a> (powered by a&nbsp;<a href="https://techcrunch.com/2023/07/06/mastodon-bluesky-protocol-twitter-elon-musk/"><span class="s1">rival</span></a> to ActivityPub and as such, not part of the fediverse) as well as Meta-owned&nbsp;<a href="https://help.instagram.com/169559812696339"><span class="s1">Threads</span></a>, the latter of which has been announced for fediverse integration.&nbsp;</p><p class="p1">Decentralized social networks have a lot of benefits. They’ve been heralded as a healthier alternative to centralized systems for&nbsp;<a href="https://www.eff.org/deeplinks/2022/11/fediverse-could-be-awesome-if-we-dont-screw-it"><span class="s1">several</span></a> good reasons (including the inability to be bought by any individual). Because each instance has its own terms of service and content moderation rules, users can pick and choose instances under which to open an account, giving them more autonomy and control. And unlike in centralized systems, where moderation functions are controlled by the company, each instance administrator can publicly moderate as they see fit. In the fediverse, users have the power to choose what kind of community they want to be part of.&nbsp;</p><p class="p1">But the lack of a central moderation function and dependence on individual action make it more difficult to combat online abuse, including child sexual exploitation material, terrorist and extremist content, and data and privacy breaches. Decentralized networks are, by design, takedown-resistant. The founder of Mastodon has&nbsp;<a href="https://www.theverge.com/2019/7/12/20691957/mastodon-decentralized-social-network-gab-migration-fediverse-app-blocking"><span class="s1">stated</span></a> he has no control over anything platform-wide; the fediverse doesn't work that way. Instance administrators can create rules holding users to a higher standard than centralized companies, or the opposite – and when the opposite occurs, there's no central authority users can ask to take down the material.&nbsp;</p><p class="p1"><em>Why Am I Seeing Harmful Content on My Instance?</em></p><p class="p1">The fediverse is set up in a way that mostly allows users to see content only from other instances already known to their instance. As a user, your Mastodon feeds and search bar will show content from your instance and the instances with which your server federates (save for hashtags and account usernames, which are fully searchable). According to Mastodon’s founder, being unable to search the whole fediverse via text on Mastodon is a&nbsp;<a href="https://mastodon.social/@Gargron/4947733"><span class="s1">feature</span></a>, not a bug; it’s meant to insulate you to your Mastodon community, preventing the search and targeted abuse of users posting about specific content.&nbsp;</p><p class="p1">Mastodon users see several different feeds. Content from all accounts followed by other users on your instance will show up in your “Federated” timeline. This means that if a fellow user on your instance follows an account (on any instance) disseminating illegal or disturbing content, that content will also show up in your feed and in relevant search results. This can cause unwanted content on your feed. Worse, if you’re an instance administrator, that “bad” federated content is cached on your server for whatever period of time your storage service dictates.&nbsp;</p><p class="p1"><em>Child Sexual Abuse Material (CSAM)</em></p><p class="p1">Most social media sites would develop a major CSAM problem if left unmoderated. But Mastodon’s federated&nbsp;<a href="https://deliverypdf.ssrn.com/delivery.php?ID=326006000126028085125108094127116014039076072008061049103069114120000001127109098031049041097106046029027007069095005095099117033000038039014086082118027017023076092041046079029109075112106024105123115088109072011127030005070088066101116064024030069084&amp;EXT=pdf&amp;INDEX=TRUE"><span class="s1">architecture</span></a> makes finding and moderating CSAM more difficult, fueling the fediverse’s current CSAM&nbsp;<a href="https://www.secjuice.com/osint-mastodon-paedophile-csam-child-porn-problem/"><span class="s1">problem</span></a>.&nbsp;</p><p class="p1">While we don’t currently know the full prevalence of CSAM on Mastodon, precedent gives us good reason to worry.&nbsp;Japan-based servers, for example, have historically been major&nbsp;<a href="https://medium.com/@EthanZ/mastodon-is-big-in-japan-the-reason-why-is-uncomfortable-684c036498e5"><span class="s1">originators</span></a> of CSAM on Mastodon. Japan&nbsp;<a href="https://www.loc.gov/item/global-legal-monitor/2014-08-04/japan-possession-of-child-pornography-finally-punishable/"><span class="s1">changed</span></a> its historically lax CSAM laws in 2014 after major international pressure. CSAM is now illegal to possess and distribute in Japan; artificially created images or illustrations of it called “lolicon,” socially accepted in Japan, are not. Though the United States has similar laws – child sexual abuse material is&nbsp;<a href="https://www.law.cornell.edu/uscode/text/18/2252"><span class="s1">illegal</span></a> – past cases&nbsp;<a href="https://www.oyez.org/cases/2001/00-795"><span class="s1">suggest</span></a> that artificially created images or illustrations of CSAM (i.e. not involving an actual minor) are First Amendment-protected speech, unless considered “<a href="https://www.law.cornell.edu/uscode/text/18/1466A"><span class="s1">obscene</span></a>.” CSAM is illegal across Europe, but EU member states differ on the legality of visual depictions. The ability to create insular communities with bespoke moderation drove Japanese users to Mastodon, where instances&nbsp;<a href="https://ansuz.sooke.bc.ca/entry/335"><span class="s1">flourished</span></a> that were organized around material that, while not necessarily illegal in Japan, might either be illegal or against instance terms of service (TOS) in the United States or Europe.&nbsp;</p><p class="p1">Mastodon offers a few tools to deal with harmful content like CSAM. On a broader scale, Mastodon takes policy into account when determining what instances to promote on its webpage. According to Mastodon’s 2019&nbsp;<a href="https://blog.joinmastodon.org/2019/05/introducing-the-mastodon-server-covenant/"><span class="s1">Server Covenant</span></a>, only instances actively moderating content in healthy ways will be featured on&nbsp;<a href="https://joinmastodon.org/servers"><span class="s1">join.mastodon</span></a>, the main webpage for those looking to create an account. But like in any decentralized system, most tools are only available at the individual instance level. Server administrators can “defederate” with another instance by blocking them entirely. Some instances, like Mastodon.social, publish their blocklists; others keep them hidden so nefarious actors&nbsp;<em>looking</em> for “bad” instances and content can’t find them.&nbsp;In light of stricter laws around CSAM in&nbsp;Europe and the United States, for example,&nbsp;European and U.S.-based instances often defederate with Japanese instances entirely to ensure media that is legal in Japan but possibly illegal elsewhere doesn't find its way onto such servers. While large platforms with robust trust &amp; safety teams are able to be more discerning in their moderation, the incentive to over-block in the fediverse is more compelling than the risk of being held liable for CSAM on your server. Two of the biggest instances on Mastodon, both Japan-based, are&nbsp;<a href="https://www.techdirt.com/2023/01/03/serious-investors-and-a-web3-takeover-have-come-to-the-mastodon-world-is-that-good-or-bad/"><span class="s1">blocked</span></a> by mastodon.social and other “Western”-based instances for inappropriate content. Instance administrators can also use the “reject media” tool to ensure that media from a problematic instance is not cached locally on their server if they don’t want to block text content from the other server entirely.&nbsp;</p><p class="p1">Mastodon users probably aren’t aware of CSAM on the platform unless it leaks into their federated timelines. This can happen when a fellow user on their instance follows an account posting CSAM. Ways to handle this problem are few. Though users who follow CSAM-disseminating accounts can be suspended from an instance by administrators, they can easily set up a new account on another; the fediverse by design makes them hard to find. As EFF&nbsp;<a href="https://www.eff.org/deeplinks/2022/11/mastodon-private-and-secure-lets-take-look"><span class="s1">points out</span></a>, unlike in a centralized system, it will take a great degree of coordination to meaningfully mitigate this phenomenon on Mastodon.</p><p class="p1">Any CSAM encountered on Mastodon should be reported by instance administrators in the United States to NCMEC’s&nbsp;<a href="https://www.missingkids.org/gethelpnow/cybertipline"><span class="s1">CyberTipline</span></a> as outlined in 18 U.S. Code §&nbsp;<a href="https://www.law.cornell.edu/uscode/text/18/2258A"><span class="s1">2258A</span></a>. Our <a href="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/2023-10/tips_for_running_a_mastodon_instance.pdf">starter guide </a>for instance administrators has further details on this requirement, and what to do if the instance is UK or EU-based. Tools like Microsoft’s&nbsp;<a href="https://www.microsoft.com/en-us/PhotoDNA"><span class="s1">PhotoDNA</span></a> or Thorn’s&nbsp;<a href="https://safer.io/how-it-works/"><span class="s1">Safer</span></a> that employ perceptual hashing are often voluntarily used by other platforms to proactively scan for and identify CSAM and report it to NCMEC, but currently no default integration between such services and the fediverse&nbsp;<a href="https://purl.stanford.edu/vb515nd6874.%20https://doi.org/10.25740/vb515nd6874"><span class="s1">exists</span></a>.</p><p class="p1"><em>Terrorism and Extremist Content</em></p><p class="p1">Mastodon once earned a&nbsp;<a href="https://www.vice.com/en/article/783akg/mastodon-is-like-twitter-without-nazis-so-why-are-we-not-using-it"><span class="s1">reputation</span></a> as a “Twitter without Nazis.” But that reputation was the Nazis’ choice, not Mastodon’s. In 2019, Gab, a social networking site&nbsp;<a href="https://www.npr.org/2021/01/17/957512634/social-media-site-gab-is-surging-even-as-critics-blame-it-for-capitol-violence"><span class="s1">known</span></a> for hosting&nbsp;<a href="https://cyber.fsi.stanford.edu/io/news/sio-new-gab-report"><span class="s1">extremist content</span></a> and users – particularly neo-Nazi material –&nbsp;<a href="https://blog.joinmastodon.org/2019/07/statement-on-gabs-fork-of-mastodon/"><span class="s1">adopted</span></a> a version (or “fork”) of Mastodon’s open-source code using the ActivityPub protocol. Gab’s introduction to the fediverse meant Mastodon users could see Gab’s content, and vice versa. It became Mastodon’s largest instance at the time of migration.&nbsp;</p><p class="p1">Reaction to Gab’s adoption of Mastodon source code was swift but largely&nbsp;<a href="https://www.theverge.com/2019/7/12/20691957/mastodon-decentralized-social-network-gab-migration-fediverse-app-blocking"><span class="s1">uncoordinated</span></a>. Mastodon’s founder released a&nbsp;<a href="https://blog.joinmastodon.org/2019/07/statement-on-gabs-fork-of-mastodon/"><span class="s1">statement</span></a> opposing Gab’s “philosophy.” Individual instances blocked Gab, along with third party Mastodon apps. (The Gab app had previously been banned from the Apple App Store and Google Play Store.) But these actions alone could not&nbsp;<a href="https://www.techagainstterrorism.org/2019/09/02/analysis-the-use-of-open-source-software-by-terrorists-and-violent-extremists/"><span class="s1">protect</span></a> the wider Mastodon community, only those whose instance administrators felt compelled to protect. Months later, Gab&nbsp;<a href="https://todon.nl/system/media_attachments/files/105/362/596/471/665/810/original/c5dd5d93e9188899.png"><span class="s1">defederated</span></a> from Mastodon as the majority of its users weren’t taking advantage of federation anyway, according to Gab’s CTO at the time. Nevertheless, the ordeal underscored that Mastodon’s open-source nature (much like its decentralized architecture) cut both ways.</p><p class="p1">ISIS, historically&nbsp;<a href="https://www.vanityfair.com/news/2016/06/how-isis-became-the-worlds-deadliest-tech-start-up"><span class="s1">very good</span></a> at adopting new technologies and using social media, has also been&nbsp;<a href="https://www.voxpol.eu/analysis-the-use-of-open-source-software-by-terrorists-and-violent-extremists/"><span class="s1">experimenting</span></a> with the fediverse. The terrorist group&nbsp;<a href="https://www.memri.org/cjlab/pro-isis-tech-outlet-publishes-guide-twitter-alternative-mastodon"><span class="s1">published</span></a> a guide to Mastodon in November 2022. Calling it “better than Twitter,” ISIS&nbsp;<a href="https://twitter.com/JihadoScope/status/1143566875340812290"><span class="s1">lauded</span></a> Mastodon for its ability to host varying degrees of moderation and allow terrorist content to evade detection.&nbsp;</p><p class="p1"><em>Data Privacy and Security&nbsp;</em></p><p class="p1">Private messages on Mastodon are not only not end-to-end encrypted (E2EE), but instance administrators – who are not bound by strict privacy, unlike employees at companies – have access to all users’ private messages. This&nbsp;<a href="https://www.eff.org/deeplinks/2022/11/mastodon-private-and-secure-lets-take-look"><span class="s1">includes</span></a> the instance administrator of whoever someone is privately chatting with.&nbsp;</p><p class="p1">Of course, while select employees of centralized social media companies can do the same, they are&nbsp;<a href="https://techcrunch.com/2018/01/15/twitter-hits-back-again-at-claims-that-its-employees-monitor-direct-messages/?guccounter=1&amp;guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&amp;guce_referrer_sig=AQAAADN5-0KYk2dBiheH-UQZrhKlrbygjbJD8UAUSaGLxHYM_L9P8bz1T-vmlVHz9HW8XIuxreI2ltWm9YvDRuI6ULv1y2QSGM8WcpcbQVaW15aUKibX5yLx1Rcfc2Icxm4UKOHMtjLWONUfe3ZL539ocHrvytwAeEQSZ9kFhzzz3rMy"><span class="s1">bound</span></a> by strict access protocols that Mastodon administrators are not. Some are giving up that access entirely; in 2022, Meta began testing default E2EE for Facebook&nbsp;<a href="https://www.theverge.com/2022/8/11/23301275/facebook-messenger-end-to-end-encryption-default-test-e2ee-privacy-security-plans"><span class="s1">Messenger</span></a> and Instagram&nbsp;<a href="https://nerdtechy.com/instagram-messages-encrypted-secure"><span class="s1">direct messages</span></a> in certain markets.&nbsp; But functionally, Mastodon’s DMs are less like private messages and&nbsp;<a href="https://gizmodo.com/mastodon-how-to-dm-send-messages-twitter-1849759852"><span class="s1">more</span></a> like tweeting at someone, if the tweet’s visibility was set to only you and the recipient. Integrating E2EE into this design feature has proven to be extremely difficult. A new effort to provide E2EE for Mastodon’s direct messages is&nbsp;<a href="https://github.com/soatok/mastodon-e2ee-specification"><span class="s1">underway</span></a> after several failed attempts.&nbsp;</p><p class="p1">In theory, decentralized systems may also be less&nbsp;<a href="https://sopa.tulane.edu/blog/decentralized-social-networks"><span class="s1">susceptible</span></a> to the data breaches that centralized companies – where user data is housed by one entity – are vulnerable to. But the lack of a central data repository does not necessarily protect against data breaches. Several vulnerabilities have already been&nbsp;<a href="https://www.forbes.com/sites/petersuciu/2022/11/22/twitter-alternative-mastodon-has-security-issues/?sh=d1013a53462d"><span class="s1">discovered</span></a> in Mastodon’s code. Mastodon.social, one of Mastodon’s biggest instances, suffered its first major&nbsp;<a href="https://hachyderm.io/@tedivm/110035436100991357"><span class="s1">data breach</span></a> in March 2023. An update was rolled out immediately after to patch the vulnerability, but an incident of similar scope could easily happen again.&nbsp;</p><p class="p1">Mastodon is a volunteer-built platform. It is just much harder for a volunteer-run, distributed system to roll out protections like E2EE than a centralized company. And the blowback of a data breach or incentives to increase cyber hygiene fall on no one but the goodwill of individual instance administrators and the good Samaritans who pitch in to keep Mastodon’s code current.&nbsp;</p><p class="p1"><em>Looking ahead&nbsp;</em></p><p class="p1">These abuses are neither comprehensive nor fediverse-specific, but they manifest differently in decentralized spaces. Users and instance administrators are also likely to run into problems&nbsp;such as copyright infringement that implicate administrators' potential legal liability for hosting certain content. A brief guide to understanding and addressing these abuses, aimed at instance administrators, can be found <a href="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/2023-10/tips_for_running_a_mastodon_instance.pdf">here</a>.&nbsp;</p></div>
+      
+</div>
+</div>
+</div>
+              <div class="paragraph-item ptype-read-more">
+
+<div class="read-more">
+  
+<div  class="read-more pt-10 pb-2.5 768:pt-12.5 768:pb-5 1024:pt-[90px] 1024:pb-[70px] bg-[#ffffff]" >
+  <div class="container">
+          
+
+<h3
+   class="h h--gleam text-center h3"
+>Read More</h3>
+    
+    <div  class="read-more__items read-more__items--3-items 768:flex 768:justify-center" >
+                                    
+
+<div  about="/news/fake-profiles-real-children" class="news-teaser news-teaser--card px-7.5 pb-4.5 relative bg-white" >
+      <div  class="news-teaser__img news-teaser__img--card -mx-7.5 mb-5" >
+        
+            <div class="node news field-teaser-image entity-reference label-hidden">
+  
+              
+
+  
+<picture
+   loading="eager" class="image"
+>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/375x211/public/hero/instagram_-_rpg.png?h=85fac719&amp;itok=WiRNxQaL 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/375x211_x2/public/hero/instagram_-_rpg.png?h=85fac719&amp;itok=iIQIqjM2 2x" media="all and (min-width: 768px)" type="image/png" width="375" height="211"/>
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/727x409/public/hero/instagram_-_rpg.png?h=85fac719&amp;itok=FOBw7zP_ 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/727x409_x2/public/hero/instagram_-_rpg.png?h=85fac719&amp;itok=0Yrb6Z92 2x" media="all and (max-width: 767px)" type="image/png" width="727" height="409"/>
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/440x245/public/hero/instagram_-_rpg.png?h=85fac719&amp;itok=I7h5pG5u 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/440x245_x2/public/hero/instagram_-_rpg.png?h=85fac719&amp;itok=msMzDcbS 2x" media="all and (max-width: 480px)" type="image/png" width="440" height="245"/>
+        <!--[if IE 9]></video><![endif]-->
+      
+<img
+   class="image"
+      src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/727x409/public/hero/instagram_-_rpg.png?h=85fac719&amp;itok=FOBw7zP_"
+      alt="Fake profiles real children internet observatory"
+    />
+</picture>
+
+
+      
+</div>
+      
+    </div>
+        <div  class="news-teaser__type mb-6 text-20 text-red" >
+      Blogs
+    </div>
+        
+
+<h2
+   class="h h--small h2"
+>Fake Profiles, Real Children</h2>
+        <div  class="news-teaser__description mb-4 480m:text-16" >
+      A Look at the Use of Stolen Child Imagery in Social Media Role-Playing Games
+    </div>
+                  
+<a
+   class="link link--cover"
+    href="/news/fake-profiles-real-children"
+>
+  cover link
+      Fake Profiles, Real Children
+  </a>
+  </div>
+
+                                        
+
+<div  about="/news/new-report-scaling-trust-web" class="news-teaser news-teaser--card px-7.5 pb-4.5 relative bg-white" >
+      <div  class="news-teaser__img news-teaser__img--card -mx-7.5 mb-5" >
+        
+            <div class="node news field-teaser-image entity-reference label-hidden">
+  
+              
+
+  
+<picture
+   loading="eager" class="image"
+>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/375x211/public/2023-06/studio-h-scalingtrust_v2.png?h=d1cb525d&amp;itok=7lg2JsQd 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/375x211_x2/public/2023-06/studio-h-scalingtrust_v2.png?h=d1cb525d&amp;itok=vsBqq4we 2x" media="all and (min-width: 768px)" type="image/png" width="375" height="211"/>
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/727x409/public/2023-06/studio-h-scalingtrust_v2.png?h=d1cb525d&amp;itok=9aqLXTKt 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/727x409_x2/public/2023-06/studio-h-scalingtrust_v2.png?h=d1cb525d&amp;itok=Y8pWTGQk 2x" media="all and (max-width: 767px)" type="image/png" width="727" height="409"/>
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/440x245/public/2023-06/studio-h-scalingtrust_v2.png?h=d1cb525d&amp;itok=2N1fP7fP 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/440x245_x2/public/2023-06/studio-h-scalingtrust_v2.png?h=d1cb525d&amp;itok=VYXPJu4Y 2x" media="all and (max-width: 480px)" type="image/png" width="440" height="245"/>
+        <!--[if IE 9]></video><![endif]-->
+      
+<img
+   class="image"
+      src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/727x409/public/2023-06/studio-h-scalingtrust_v2.png?h=d1cb525d&amp;itok=9aqLXTKt"
+      alt="text on a dark background shows the Atlantic Council logo, and reads &quot;Report Launch: Sacaling trust on the web&quot;, task force for a trustworthy future web, #scalingtrust"
+    />
+</picture>
+
+
+      
+</div>
+      
+    </div>
+        <div  class="news-teaser__type mb-6 text-20 text-red" >
+      Blogs
+    </div>
+        
+
+<h2
+   class="h h--small h2"
+>New Report: "Scaling Trust on the Web"</h2>
+        <div  class="news-teaser__description mb-4 480m:text-16" >
+      The report from the Task Force for a Trustworthy Web maps systems-level dynamics and gaps that impact the trustworthiness and usefulness of online spaces
+    </div>
+                  
+<a
+   class="link link--cover"
+    href="https://www.atlanticcouncil.org/in-depth-research-reports/report/scaling-trust/"
+>
+  cover link
+      New Report: &quot;Scaling Trust on the Web&quot;
+  </a>
+  </div>
+
+                                        
+
+<div  about="/news/addressing-child-exploitation-federated-social-media" class="news-teaser news-teaser--card px-7.5 pb-4.5 relative bg-white" >
+      <div  class="news-teaser__img news-teaser__img--card -mx-7.5 mb-5" >
+        
+            <div class="node news field-teaser-image entity-reference label-hidden">
+  
+              
+
+  
+<picture
+   loading="eager" class="image"
+>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/375x211/public/2023-07/decentralized_social_media_watercolor.png?h=4c9c1c26&amp;itok=jp6Auoar 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/375x211_x2/public/2023-07/decentralized_social_media_watercolor.png?h=4c9c1c26&amp;itok=KGq02Ppb 2x" media="all and (min-width: 768px)" type="image/png" width="375" height="211"/>
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/727x409/public/2023-07/decentralized_social_media_watercolor.png?h=4c9c1c26&amp;itok=_kyRfszY 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/727x409_x2/public/2023-07/decentralized_social_media_watercolor.png?h=4c9c1c26&amp;itok=mPXY2rdJ 2x" media="all and (max-width: 767px)" type="image/png" width="727" height="409"/>
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/440x245/public/2023-07/decentralized_social_media_watercolor.png?h=4c9c1c26&amp;itok=MjhEWg-B 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/440x245_x2/public/2023-07/decentralized_social_media_watercolor.png?h=4c9c1c26&amp;itok=1DHRqdpJ 2x" media="all and (max-width: 480px)" type="image/png" width="440" height="245"/>
+        <!--[if IE 9]></video><![endif]-->
+      
+<img
+   class="image"
+      src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/727x409/public/2023-07/decentralized_social_media_watercolor.png?h=4c9c1c26&amp;itok=_kyRfszY"
+      alt="watercolor style image showing a nexus of social media platform icons"
+    />
+</picture>
+
+
+      
+</div>
+      
+    </div>
+        <div  class="news-teaser__type mb-6 text-20 text-red" >
+      Blogs
+    </div>
+        
+
+<h2
+   class="h h--small h2"
+>Addressing Child Exploitation on Federated Social Media</h2>
+        <div  class="news-teaser__description mb-4 480m:text-16" >
+      New report finds an increasingly decentralized social media landscape offers users more choice, but poses technical challenges for addressing child exploitation and other online abuse.
+    </div>
+                  
+<a
+   class="link link--cover"
+    href="/news/addressing-child-exploitation-federated-social-media"
+>
+  cover link
+      Addressing Child Exploitation on Federated Social Media
+  </a>
+  </div>
+
+                            </div>
+  </div>
+</div>
+</div>
+</div>
+          </div>
+  
+
+          <div class="container text-center py-4 1024:py-5">
+    
+<a
+   class="link link--btn"
+    href="http://cyber.fsi.stanford.edu/news"
+>
+  
+      All Cyber News
+  </a>
+</div>
+      </div>
+</article>
+
+  </div>
+
+  </div>
+
+    </main>
+  </div>
+      <footer>
+              <div  class="footer__social region region-footer-social">
+  <div class="container flex items-center justify-center 768:justify-between py-4">
+          <div  id="block-fsi-center-logo" class="block fsi-center-logo">
+  
+    
+        <a href="/" rel="home">
+      <img src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/2025-01/stanford-line2-822_crop.png" alt="Logo for the Cyber Policy Center"/>
+    </a>
+  </div>
+
+      </div>
+</div>
+
+      
+              
+<section  class="footer__center region region-footer-center">
+  <div class="
+    container
+    flex flex-wrap 768:flex-nowrap
+    pt-9 pb-7.5
+  ">
+          <div  id="block-footer-contact-us" class="block block-content _0723fba-76bd-4764-8856-dabdde04e703">
+  
+    
+      
+
+            <div class="block-content basic body text-with-summary label-hidden text-long"><h3 class="footer-panel__title">Our Address</h3>
+
+<div class="logo-footer"><a href="https://fsi.stanford.edu"><img alt="Stanford University" height="52" src="/themes/custom/stanford_fsi/images/logo-white.png" width="517" loading="lazy"> </a></div>
+
+<div class="footer-panel__body">Encina Hall<br>
+616 Jane Stanford Way<br>
+Stanford University<br>
+Stanford, CA 94305-6055</div>
+</div>
+      
+  </div>
+<div  id="block-footer-menu" class="menu-block footer block block-menu navigation menu--footer">
+      
+  <h2 id="menu-blockfooter-menu">Navigate</h2>
+  
+
+        
+
+
+    
+                          
+    
+<ul  class="menu">
+            
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/research" class="menu__link">Research</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/education" class="menu__link">Education</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/policy" class="menu__link">Policy</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/people/institute-faculty" class="menu__link">People</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/centers" class="menu__link">Centers</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/news" class="menu__link">News</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/events" class="menu__link">Events</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/about" class="menu__link">About</a>
+          </li>
+      </ul>
+  
+
+  </div>
+<div  id="block-footer-follow-us" class="block block-content _c2785de-22f2-473e-bc20-d8b2d9c45b38">
+  
+    
+      
+
+            <div class="block-content basic body text-with-summary label-hidden text-long"><h3 class="footer-panel__title">Follow Us</h3><p><strong>General inquiries</strong><br>650-723-4581</p><ul class="social-menu"><li class="social-menu__item"><a class="social-menu__link social-menu__link--mail" href="https://fsi.stanford.edu/content/get-connected" target="_blank">Mail</a></li><li class="social-menu__item"><a class="social-menu__link social-menu__link--twitter" href="https://twitter.com/FSIStanford" target="_blank">Twitter</a></li><li class="social-menu__item"><a class="social-menu__link social-menu__link--facebook" href="https://www.facebook.com/StanfordFSI" target="_blank">Facebook</a></li><li class="social-menu__item"><a class="social-menu__link social-menu__link--youtube" href="https://www.youtube.com/channel/UCB2X9yR4GZLfrCe4jChIEwg" target="_blank">Youtube</a></li><li class="social-menu__item"><a class="social-menu__link social-menu__link--instagram" href="https://www.instagram.com/fsi_stanford" target="_blank">Instagram</a></li><li class="social-menu__item"><a class="social-menu__link social-menu__link--linkedin" href="https://www.linkedin.com/company/freeman-spogli-institute-for-international-studies" target="_blank">LinkedIn</a></li><li class="social-menu__item"><a class="social-menu__link social-menu__link--threads" href="https://www.threads.net/@fsi_stanford" target="_blank">Threads</a></li></ul></div>
+      
+  </div>
+<div  id="block-footer-support-us" class="block block-content f442c8ab-1101-42e7-960d-79b4d0701c1c">
+  
+    
+      
+
+            <div class="block-content basic body text-with-summary label-hidden text-long"><h3 class="footer-panel__title">Support Us</h3>
+
+<div class="support-us">
+<p>Learn more about how your support makes a difference or make a gift now</p>
+<a class="link link--btn link--yellow" href="https://fsi.stanford.edu/supporting-fsi">Make a gift</a></div>
+</div>
+      
+  </div>
+
+      </div>
+</section>
+
+      
+      
+              <div class="back-top 768:hidden text-center py-5">
+  <span class="back-top__icon"></span>
+  <a href="#main-content" class="back-top__link">Top</a>
+</div>
+
+<div
+   class="footer__copyright region region-footer-copyrights"
+  role="contentinfo"
+>
+  <div class="container flex flex-wrap py-5 justify-center relative 768:pt-7 768:pb-8.5">
+    <div  class="footer__copyright-logo mb-4.5 w-full">
+      <img src="/themes/custom/stanford_fsi/images/footer-stanford-logo.png" class="w-[112px] m-auto 768:w-[120px]" alt="Footer logo">
+    </div>
+          <div  id="block-footer-stanford-menu" class="menu-block footer-stanford block block-menu navigation menu--footer-stanford">
+            
+  <h2 class="visually-hidden" id="menu-blockfooter-stanford-menu">Footer Stanford Menu</h2>
+  
+
+        
+
+
+    
+                          
+    
+<ul  class="menu">
+            
+<li  class="menu__item">
+                <a href="https://www.stanford.edu/" class="menu__link">Stanford Home</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://visit.stanford.edu/plan/" class="menu__link">Maps &amp; Directions</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://www.stanford.edu/search/" class="menu__link">Search Stanford</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://emergency.stanford.edu/" class="menu__link">Emergency Info</a>
+          </li>
+      </ul>
+  
+
+  </div>
+<div  id="block-footer-terms-menu" class="menu-block footer-terms block block-menu navigation menu--footer-terms">
+            
+  <h2 class="visually-hidden" id="menu-blockfooter-terms-menu">Footer Terms Menu</h2>
+  
+
+        
+
+
+    
+                          
+    
+<ul  class="menu">
+            
+<li  class="menu__item">
+                <a href="https://www.stanford.edu/site/terms/" class="menu__link">Terms of Use</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://www.stanford.edu/site/privacy/" class="menu__link">Privacy</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://uit.stanford.edu/security/copyright-infringement" class="menu__link">Copyright</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://adminguide.stanford.edu/chapter-1/subchapter-5/policy-1-5-4" class="menu__link">Trademarks</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="http://exploredegrees.stanford.edu/nonacademicregulations/nondiscrimination/" class="menu__link">Non-Discrimination</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://www.stanford.edu/site/accessibility/" class="menu__link">Accessibility</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://uit.stanford.edu/security/copyright-infringement" class="menu__link">Copyright Complaints</a>
+          </li>
+      </ul>
+  
+
+  </div>
+<div  id="block-copyright-content" class="block block-content e1315f88-6342-4fdd-98de-4aed8bcf8e4b">
+  
+    
+      
+
+            <div class="block-content basic body text-with-summary label-hidden text-long"><div class="footer-global__copyright">
+<p class="vcard">© <span class="fn org">Stanford University</span>, <span class="adr"><span class="locality">Stanford</span>, <span class="region">California</span> <span class="postal-code">94305</span></span>.</p>
+</div>
+</div>
+      
+  </div>
+
+      </div>
+</div>
+
+          </footer>
+  </div>
+
+  </div>
+
+
+<script src="/sites/default/files/js/js_Tk2om-1g0i9LtNb7ff-ZXSNkKcfj5i3zeiSGnXEFt7o.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxdjksOg0AMQy8EneN0iQyETMp8UBKqHr-oiErDJnq2pdjmKEvVeRhhMoXf7ewyF5PAqY5IHdfKiQYHB_bcSvBdP_DCp7MIJY9i4U_tb-weq1qfxLxNbFNxar1ImEl7r3xUtVGmsvcZUq4hk1E48aAnnDRD11vHKlvB-ws1DGU2"></script>
+<script src="https://ws.sharethis.com/button/buttons.js"></script>
+<script src="/sites/default/files/js/js_iR7qCnmX0DSAr6C2-WN2xC5Ax94qPs5ASdO_r1BxFUw.js?scope=footer&amp;delta=2&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxdjksOg0AMQy8EneN0iQyETMp8UBKqHr-oiErDJnq2pdjmKEvVeRhhMoXf7ewyF5PAqY5IHdfKiQYHB_bcSvBdP_DCp7MIJY9i4U_tb-weq1qfxLxNbFNxar1ImEl7r3xUtVGmsvcZUq4hk1E48aAnnDRD11vHKlvB-ws1DGU2"></script>
+<script src="/themes/custom/stanford_fsi/components/01-atoms/images/icons/svgxuse.min.js?sqgpes" defer></script>
+<script src="/sites/default/files/js/js_q8nFoQqm43AOfB7jwMRCgI0_PSjymbsH1ldDt87PVW0.js?scope=footer&amp;delta=4&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxdjksOg0AMQy8EneN0iQyETMp8UBKqHr-oiErDJnq2pdjmKEvVeRhhMoXf7ewyF5PAqY5IHdfKiQYHB_bcSvBdP_DCp7MIJY9i4U_tb-weq1qfxLxNbFNxar1ImEl7r3xUtVGmsvcZUq4hk1E48aAnnDRD11vHKlvB-ws1DGU2"></script>
+
+</body>
+</html>

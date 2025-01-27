@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://cyber.fsi.stanford.edu/">
+  <channel>
+    <title>Institutions and Organizations</title>
+    <link>https://cyber.fsi.stanford.edu/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>Barack Obama Addresses the Intersection of Online Disinformation, Regulation and Democracy at Stanford Event</title>
+  <link>https://cyber.fsi.stanford.edu/news/barack-obama-addresses-intersection-online-disinformation-regulation-and-democracy-stanford</link>
+  <description/>
+  <pubDate>Mon, 02 May 2022 21:15:55 +0000</pubDate>
+    <dc:creator>Melissa Morgan</dc:creator>
+    <guid isPermaLink="false">21867 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Tongtong Zhang</title>
+  <link>https://cyber.fsi.stanford.edu/people/tongtong</link>
+  <description/>
+  <pubDate>Wed, 06 Oct 2021 21:52:56 +0000</pubDate>
+    <dc:creator>Kristen Lee</dc:creator>
+    <guid isPermaLink="false">4925 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>POMEPS Studies 43: Digital Activism and Authoritarian Adaptation in the Middle East</title>
+  <link>https://cyber.fsi.stanford.edu/publication/pomeps-studies-43-digital-activism-and-authoritarian-adaptation-middle-east</link>
+  <description/>
+  <pubDate>Thu, 05 Aug 2021 20:38:02 +0000</pubDate>
+    <dc:creator>Nora Smith</dc:creator>
+    <guid isPermaLink="false">22182 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Michael McFaul Testifies Before House Intelligence Committee</title>
+  <link>https://cyber.fsi.stanford.edu/news/michael-mcfaul-testifies-house-intelligence-committee</link>
+  <description/>
+  <pubDate>Wed, 27 Mar 2019 18:51:12 +0000</pubDate>
+    <dc:creator>Ari Chasnoff</dc:creator>
+    <guid isPermaLink="false">20292 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Eloise Duvillier</title>
+  <link>https://cyber.fsi.stanford.edu/people/eloise-duvillier</link>
+  <description/>
+  <pubDate>Tue, 13 Nov 2018 23:31:34 +0000</pubDate>
+    <dc:creator>Kristin Chandler</dc:creator>
+    <guid isPermaLink="false">4533 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Daphne Keller</title>
+  <link>https://cyber.fsi.stanford.edu/people/daphne-keller</link>
+  <description/>
+  <pubDate>Tue, 28 Nov 2017 20:51:26 +0000</pubDate>
+    <dc:creator>fsid9admin</dc:creator>
+    <guid isPermaLink="false">4358 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Francis Fukuyama</title>
+  <link>https://cyber.fsi.stanford.edu/people/fukuyama</link>
+  <description/>
+  <pubDate>Thu, 15 Jul 2010 21:09:19 +0000</pubDate>
+    <dc:creator>fsid9admin</dc:creator>
+    <guid isPermaLink="false">2845 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Larry Diamond</title>
+  <link>https://cyber.fsi.stanford.edu/people/larry_diamond</link>
+  <description/>
+  <pubDate>Wed, 15 Jan 2003 08:00:00 +0000</pubDate>
+    <dc:creator>fsid9admin</dc:creator>
+    <guid isPermaLink="false">1797 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Michael A. McFaul</title>
+  <link>https://cyber.fsi.stanford.edu/people/michael_a_mcfaul</link>
+  <description/>
+  <pubDate>Tue, 08 Feb 2000 08:00:00 +0000</pubDate>
+    <dc:creator>fsid9admin</dc:creator>
+    <guid isPermaLink="false">1921 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+
+  </channel>
+</rss>

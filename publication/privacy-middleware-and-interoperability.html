@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+<head>
+  <meta charset="utf-8" />
+<link rel="shortlink" href="https://cyber.fsi.stanford.edu/node/22196" />
+<link rel="canonical" href="https://cyber.fsi.stanford.edu/publication/privacy-middleware-and-interoperability" />
+<meta name="citation_title" content="Privacy, Middleware, and Interoperability" />
+<meta name="citation_author" content="Daphne Keller" />
+<meta name="citation_publication_date" content="Tue, 08/24/2021 - 12:00" />
+<meta property="og:type" content="publication" />
+<meta property="og:url" content="https://cyber.fsi.stanford.edu/publication/privacy-middleware-and-interoperability" />
+<meta property="og:title" content="Privacy, Middleware, and Interoperability" />
+<meta property="og:image" content="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/1200x630/public/img_6931_0.jpg?itok=pbxpoFUD" />
+<meta property="og:image:url" content="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/1200x630/public/img_6931_0.jpg?itok=pbxpoFUD" />
+<meta property="og:image:secure_url" content="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/1200x630/public/img_6931_0.jpg?itok=pbxpoFUD" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@FSIStanford" />
+<meta name="twitter:title" content="Privacy, Middleware, and Interoperability" />
+<meta name="twitter:description" content="Can Technical Solutions, Including Blockchain, Help Us Avoid Hard Tradeoffs?" />
+<meta name="twitter:creator" content="@FSIStanford" />
+<meta name="twitter:image" content="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/1200x630/public/img_6931_0.jpg?itok=pbxpoFUD" />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/themes/custom/stanford_fsi/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="en" href="https://cyber.fsi.stanford.edu/publication/privacy-middleware-and-interoperability" />
+<link rel="apple-touch-icon" href="/themes/custom/stanford_fsi/apple-touch-icon.png" sizes="180x180" />
+<link rel="icon" href="/themes/custom/stanford_fsi/favicon-32x32.png" type="image/png" sizes="32x32" />
+<link rel="icon" href="/themes/custom/stanford_fsi/favicon-16x16.png" type="image/png" sizes="16x16" />
+
+    <title>Privacy, Middleware, and Interoperability | FSI</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_r5tCShwysLqDwgb6c8eJfUVgwMzR0tk8MpGRvuA2PyI.css?delta=0&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxNyFsOwyAMRNENoXg5_YwMOOCGYGRDH7tvlKhNf0ZnblgpcheduUaq3RcJK_zZ2ds6beDRyFnHuojGeX8c4NgrLsaQingsLogSRB0Ny4R3fLmGikmxZfvmq0yjtuELW6boLKNSz2zwk3swPQ2OnTaJo5BLIqnQHIzg5K4bdtINdf0AowlTTA" />
+<link rel="stylesheet" media="all" href="//use.fontawesome.com/releases/v5.15.4/css/all.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_t4NLaHgNMYjDpnVUx0TC0ND4Ps914U85VZWqdnKZYGM.css?delta=2&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxNyFsOwyAMRNENoXg5_YwMOOCGYGRDH7tvlKhNf0ZnblgpcheduUaq3RcJK_zZ2ds6beDRyFnHuojGeX8c4NgrLsaQingsLogSRB0Ny4R3fLmGikmxZfvmq0yjtuELW6boLKNSz2zwk3swPQ2OnTaJo5BLIqnQHIzg5K4bdtINdf0AowlTTA" />
+<link rel="stylesheet" media="print" href="/sites/default/files/css/css_ipHMTqOd8MXWqrdkR7q2zw0hNkDpwEl3Km7uwx8BlwY.css?delta=3&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxNyFsOwyAMRNENoXg5_YwMOOCGYGRDH7tvlKhNf0ZnblgpcheduUaq3RcJK_zZ2ds6beDRyFnHuojGeX8c4NgrLsaQingsLogSRB0Ny4R3fLmGikmxZfvmq0yjtuELW6boLKNSz2zwk3swPQ2OnTaJo5BLIqnQHIzg5K4bdtINdf0AowlTTA" />
+<link rel="stylesheet" media="all" href="/themes/custom/stanford_fsi/fonts/fonts-drupal.css?sqgpes" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_bcFdiuS3gduCe2D3ssVjb8Y-swJeW0X65YmoDTOZuq0.css?delta=5&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxNyFsOwyAMRNENoXg5_YwMOOCGYGRDH7tvlKhNf0ZnblgpcheduUaq3RcJK_zZ2ds6beDRyFnHuojGeX8c4NgrLsaQingsLogSRB0Ny4R3fLmGikmxZfvmq0yjtuELW6boLKNSz2zwk3swPQ2OnTaJo5BLIqnQHIzg5K4bdtINdf0AowlTTA" />
+<link rel="stylesheet" media="all" href="/themes/custom/stanford_fsi/no-aggregation/no-aggregation.css?sqgpes" />
+
+      <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/22196","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"","blocklist_classes":"","include_environment":false,"environment_id":"","environment_token":""},"tagIds":["GTM-5PWBZTH"]},"gtag":{"tagId":"G-S82RDPFHSE","consentMode":false,"otherIds":["G-XNZW311XMN",""],"events":[],"additionalConfigInfo":[]},"ajaxPageState":{"libraries":"eJxdjtFuwyAMRX-IhM_ZY-QEF7wARrZpu78f7aR29OXq-FzZ8nFiIGPZqAastmc-Tv-PXWSOGbdD0f_hoC8wlALyag2ijyM-5xW-4T7L4hoIRIGW1AfpDfL6Nmuvre-ZNGFwmkDQEql_kVODemEJ2w5Kh3_mW16UPHRLLLqMIzY3MfMOeXYJIaAsxnG8OFcFa18KUJ21ntQqXD9kE7Kx_6OG5fEVuivhTf0z18KhZ_wFwPiOmQ","theme":"stanford_fsi","theme_token":null},"ajaxTrustedUrl":{"\/search\/google":true},"stanford_basic":{"nav_dropdown_enabled":false},"sharethis":{"publisher":"dr-d1ddf05c-9188-6ea9-62e5-3d0928aed407","version":"5x","doNotCopy":true,"hashAddressBar":false,"doNotHash":true},"googlePSE":{"language":"en","displayWatermark":false},"user":{"uid":0,"permissionsHash":"16f9c77489b88ad14c88c5ea4772986419600c068c4f05b78d0914545a48cc0e"}}</script>
+<script src="/core/assets/vendor/modernizr/modernizr.min.js?v=3.11.7"></script>
+<script src="/sites/default/files/js/js_gHKIUnKFJH5AVa-Frjm64i7Y6OXPfu4rEdEqpw0ByzE.js?scope=header&amp;delta=1&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxdjksOg0AMQy8EneN0iQyETMp8UBKqHr-oiErDJnq2pdjmKEvVeRhhMoXf7ewyF5PAqY5IHdfKiQYHB_bcSvBdP_DCp7MIJY9i4U_tb-weq1qfxLxNbFNxar1ImEl7r3xUtVGmsvcZUq4hk1E48aAnnDRD11vHKlvB-ws1DGU2"></script>
+<script src="/modules/contrib/google_tag/js/gtm.js?sqgpes"></script>
+<script src="/modules/contrib/google_tag/js/gtag.js?sqgpes"></script>
+<script src="/sites/default/files/js/js_uVtraW--ht-FY2xwXMRi2vx8JhZAfbd34kzTZ8lamq8.js?scope=header&amp;delta=4&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxdjksOg0AMQy8EneN0iQyETMp8UBKqHr-oiErDJnq2pdjmKEvVeRhhMoXf7ewyF5PAqY5IHdfKiQYHB_bcSvBdP_DCp7MIJY9i4U_tb-weq1qfxLxNbFNxar1ImEl7r3xUtVGmsvcZUq4hk1E48aAnnDRD11vHKlvB-ws1DGU2"></script>
+
+        </head>
+<body class="page-publication-privacy-middleware-and-interoperability section-publication path-node page-node-type-publication subdomain domain--cyber page-body">
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5PWBZTH"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+
+<nav id="skipnav" class="skipnav">
+  <div class="container">
+    <ul>
+              <li><a href="#main-content" class="visually-hidden focusable skip-link">Skip to main content</a></li>
+              <li><a href="#main-nav" class="visually-hidden focusable skip-link">Skip to main navigation</a></li>
+          </ul>
+  </div>
+</nav>
+  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+
+
+
+
+
+<div  class="layout-container">
+  <header  class="header">
+                  <div  class="header-top header-top--cyber region region-top-header-left bg-red z-[10]">
+    <div class="container">
+              <div  id="block-header-top" class="block block-content ced1bdcf-a613-4da6-ae1e-cd14a7af31d2">
+  
+    
+      
+
+            <div class="block-content basic body text-with-summary label-hidden text-long"><p><span><a href="http://www.stanford.edu/">Stanford University</a></span></p></div>
+      
+  </div>
+
+          </div>
+  </div>
+
+    
+                      <div  class="header-main header-main--cyber region region-header relative z-[11] bg-white">
+    <div class="container relative flex z-1">
+      <div class="
+        flex flex-col w-full
+        1024:flex-row 1024:items-center
+      ">
+                  <div  id="block-fsi-domain-logo" class="block fsi-domain-logo">
+  
+    
+      <div class="subdomain-logo__left py-5">
+      
+              <a href="/" title="Home" rel="home" class="hidden 1024:block">
+          <img src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/2025-01/stanford-line2-822_crop.png" alt="Logo for the Cyber Policy Center"/>
+        </a>
+      
+              <a href="/" title="Home" rel="home" class="1024:hidden">
+          <img src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/2025-01/stanford-line2-822_crop.png" alt="Logo for the Cyber Policy Center"/>
+        </a>
+          </div>
+</div>
+<div  id="block-fsi-subdomain-logo" class="block fsi-subdomain-logo">
+  
+    
+        <div class="subdomain-logo__right">
+      <p>The Cyber Policy Center is part of the of the&nbsp;<a href="http://fsi.stanford.edu/">Freeman Spogli Institute for International Studies</a>.</p>
+    </div>
+  </div>
+
+              </div>
+    </div>
+  </div>
+
+          
+            
+<button class="toggle-expand" arial-live="polite">
+  <span class="toggle-expand__open">
+    
+
+
+<svg  class="toggle-expand__icon"
+
+  
+  
+  >
+      <use xlink:href="/themes/custom/stanford_fsi/dist/icons.svg#menu"></use>
+</svg>
+    <span
+      class="toggle-expand__text"
+      aria-label="Open menu"
+    >Menu</span>
+  </span>
+  <span class="toggle-expand__close">
+    <span
+      class="toggle-expand__text"
+      aria-label="Close menu"
+    >Close</span>
+  </span>
+</button>
+    <div  class="header-navigation region region-navigation bg-red nav-collapsible">
+    <div class="container relative">
+              
+<div class="search-block-form google-cse search-form-block block block-search container-inline" data-drupal-selector="search-block-form" id="block-stanford-fsi-search-header" role="search">
+  
+      <span class="visually-hidden">Search</span>
+    
+      <form action="/search/google" method="get" id="search-block-form" accept-charset="UTF-8">
+  
+    
+<div class="js-form-item form-item form-item-edit-keys">
+              <input title="Enter the terms you wish to search for." placeholder="Search Cyber" data-drupal-selector="edit-keys" type="search" id="edit-keys" name="keys" value="" size="40" maxlength="128" class="form-search form-item__textfield" />
+        </div>
+<div id="edit-actions-search-block-form" data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper"><input data-drupal-selector="edit-submit" type="submit" id="edit-submit" value="Search" class="button js-form-submit form-submit form-item__textfield" />
+</div>
+
+</form>
+
+  </div>
+<div  id="block-fsi-main-menu" class="block fsi-main-menu main-menu-12404442">
+  
+    
+      
+<nav id="main-nav" class="main-nav bg-red">
+  
+
+
+    
+                          
+    
+<ul  class="main-menu hidden">
+            
+<li  class="main-menu__item main-menu__item--with-sub">
+                <a href="/sciabout" class="main-menu__link main-menu__link--with-sub" data-drupal-link-system-path="node/29485">About</a>
+              <button class="expand-sub">
+        <span class="expand-sub--opened">close menu</span>
+        <span class="expand-sub--closed">open menu</span>
+      </button>
+          
+                                    
+    
+<ul  class="main-menu main-menu--sub main-menu--sub-1 hidden">
+            
+<li  class="main-menu__item main-menu__item--sub main-menu__item--sub-1">
+                <a href="/research/project-on-democracy-and-the-internet" class="main-menu__link main-menu__link--sub main-menu__link--sub-1">Program on Democracy and the Internet</a>
+          </li>
+          
+<li  class="main-menu__item main-menu__item--sub main-menu__item--sub-1">
+                <a href="/io" class="main-menu__link main-menu__link--sub main-menu__link--sub-1">Internet Observatory</a>
+          </li>
+          
+<li  class="main-menu__item main-menu__item--sub main-menu__item--sub-1">
+                <a href="/social-media-lab" class="main-menu__link main-menu__link--sub main-menu__link--sub-1" data-drupal-link-system-path="node/30478">Social Media Lab</a>
+          </li>
+          
+<li  class="main-menu__item main-menu__item--sub main-menu__item--sub-1">
+                <a href="/gdpi" class="main-menu__link main-menu__link--sub main-menu__link--sub-1">Global Digital Policy Incubator</a>
+          </li>
+          
+<li  class="main-menu__item main-menu__item--sub main-menu__item--sub-1">
+                <a href="/content/program-platform-regulation" class="main-menu__link main-menu__link--sub main-menu__link--sub-1" data-drupal-link-system-path="node/30136">Program on Platform Regulation</a>
+          </li>
+          
+<li  class="main-menu__item main-menu__item--sub main-menu__item--sub-1">
+                <a href="/content/program-governance-emerging-technologies" class="main-menu__link main-menu__link--sub main-menu__link--sub-1" data-drupal-link-system-path="node/35102">Governance of Emerging Technologies</a>
+          </li>
+          
+<li  class="main-menu__item main-menu__item--sub main-menu__item--sub-1">
+                <a href="https://www.pascl.stanford.edu/" class="main-menu__link main-menu__link--sub main-menu__link--sub-1">Polarization and Social Change Lab</a>
+          </li>
+      </ul>
+  
+      </li>
+          
+<li  class="main-menu__item">
+                <a href="/scieducation" class="main-menu__link" data-drupal-link-system-path="node/29469">Courses</a>
+          </li>
+          
+<li  class="main-menu__item">
+                <a href="/sciprojects" class="main-menu__link" data-drupal-link-system-path="node/29465">Research</a>
+          </li>
+          
+<li  class="main-menu__item">
+                <a href="/people" class="main-menu__link" data-drupal-link-system-path="node/30631">People</a>
+          </li>
+          
+<li  class="main-menu__item">
+                <a href="/news" class="main-menu__link" data-drupal-link-system-path="node/29733">News</a>
+          </li>
+          
+<li  class="main-menu__item">
+                <a href="/cyber-events" class="main-menu__link" data-drupal-link-system-path="node/30150">Events</a>
+          </li>
+          
+<li  class="main-menu__item">
+                <a href="/publications" class="main-menu__link" data-drupal-link-system-path="node/29761">Publications</a>
+          </li>
+          
+<li  class="main-menu__item">
+                <a href="/content/opportunities-cpc" class="main-menu__link" data-drupal-link-system-path="node/30537">Opportunities</a>
+          </li>
+      </ul>
+  
+</nav>
+
+  </div>
+
+          </div>
+  </div>
+
+    
+          <div  id="block-views-block-alert-block-alert" class="block views-element-container views-block alert-block-alert">
+  
+    
+      <div><div class="view alert block-alert js-view-dom-id-44b367c72a97e6b240767ef8f3465a5a8dea407112a1d3f65e709f9d22ce5ee7">
+  
+  
+  
+
+  
+  
+  
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+  </div>
+
+
+    
+        </header>
+      
+    
+    
+    
+    <div  class="main">
+    <a id="main-content" tabindex="-1"></a>        
+      <main role="main"  class="main-content">
+        
+
+  <div class="region region--content grid-full layout--pass--content-medium ie11-autorow" id="content">
+    <div data-drupal-messages-fallback class="hidden"></div>
+<div  id="block-stanford-fsi-content" class="block system-main-block">
+  
+    
+      
+<article about="/publication/privacy-middleware-and-interoperability" class="node node--type-publication node--view-mode-full">
+  <div class="node__content">
+    
+
+<h1
+   about="/publication/privacy-middleware-and-interoperability" class="h visually-hidden h1 node node--type-publication node--view-mode-full"
+><div class="node publication title string label-hidden">Privacy, Middleware, and Interoperability</div>
+</h1>
+
+          
+
+<div  class="header-news pt-5 pb-10 768:pt-[70px] 768:pb-7.5">
+  <div  class="header-news__container container container--smaller border-t-1 border-t-gray-e3 border-b-5 border-b-red py-5 768:pt-7 768:pb-8" >
+          
+  <nav  class="breadcrumb mb-[11px]" role='navigation' aria-labelledby='system-breadcrumb'>
+    <h2  class="visually-hidden" id='system-breadcrumb'>Breadcrumb</h2>
+    <ol  class="breadcrumb__list mb-[11px]">
+                                          <li  class="breadcrumb__item font-bold">
+                  <a  class="breadcrumb__link" href="http://cyber.fsi.stanford.edu/publications">All Cyber Publications</a>
+              </li>
+                                          <li  class="breadcrumb__item text-red">
+                  Blogs
+              </li>
+        </ol>
+  </nav>
+    
+                      <div  class="header-news__excerpt mb-7 link--in-article" >
+              <h1 class="mb-3.5">
+          <div class="node publication title string label-hidden">Privacy, Middleware, and Interoperability</div>
+
+                  </h1>
+                              Can Technical Solutions, Including Blockchain, Help Us Avoid Hard Tradeoffs?
+                        </div>
+    <div  class="header-news__annotation flex flex-wrap items-center" >
+              
+<div  class="bar-author-date bar-author-date--has-authors flex flex-wrap 480m:justify-center 480m:w-full">
+      
+
+
+
+<div  class="authors-list flex flex-wrap">
+  <ul  class="authors-list__list flex flex-wrap 480m:justify-center mb-2.5">
+          
+      
+      <li  class="authors-list__item inline-flex">
+                              <a  class="authors-list__link" href="/people/daphne-keller">
+              Daphne Keller</a>      </li>
+      </ul>
+  </div>
+  
+      <div  class="bar-author-date__date mb-2.5"><time datetime="2021-08-24T12:00:00Z">August 24, 2021</time>
+</div>
+  </div>
+                  <div  class="header-news__social flex flex-wrap 480:ml-auto 480m:justify-center 480m:w-full" >
+                          <div class="sharethis-wrapper">
+      <span st_url="https://cyber.fsi.stanford.edu/publication/privacy-middleware-and-interoperability" st_title="Privacy, Middleware, and Interoperability" class="st_facebook_custom" displayText="facebook"></span>
+
+      <span st_url="https://cyber.fsi.stanford.edu/publication/privacy-middleware-and-interoperability" st_title="Privacy, Middleware, and Interoperability" class="st_twitter_custom" displayText="twitter"></span>
+
+      <span st_url="https://cyber.fsi.stanford.edu/publication/privacy-middleware-and-interoperability" st_title="Privacy, Middleware, and Interoperability" class="st_linkedin_custom" displayText="linkedin"></span>
+
+      <span st_url="https://cyber.fsi.stanford.edu/publication/privacy-middleware-and-interoperability" st_title="Privacy, Middleware, and Interoperability" class="st_email_custom" displayText="email"></span>
+
+  </div>
+
+              </div>
+    </div>
+  </div>
+</div>
+    
+          
+      <div class="node publication field-paragraphs entity-reference-revisions label-hidden">
+              <div class="paragraph-item ptype-full-html">
+
+<div class="full-html">
+    <div  class="pgph_text pgph_text--big-character container container--small text-20 leading-7.5 py-4 1024:py-5 full-html" >
+  
+
+            <div class="paragraph full-html field-formatted-text text-long label-hidden"><p data-selectable-paragraph id="b8eb">Interoperability and distributed content moderation models have tremendous promise. They could temper major platforms’ power over public discourse, introducing both more economic competition and more diverse and pluralistic spaces for online speech. But these models — which I will reductively refer to as “middleware,” following Francis Fukuyama’s&nbsp;<a href="https://fsi-live.s3.us-west-1.amazonaws.com/s3fs-public/cpc-middleware_ff_v2.pdf" rel="noopener">coinage</a>&nbsp;— also raise a number of as-yet-unresolved problems. As I explained in&nbsp;<a href="https://www.journalofdemocracy.org/articles/the-future-of-platform-power-making-middleware-work/" rel="noopener">this</a>&nbsp;short piece, one of the hardest problems involves privacy: When a user opts in to a new service, can she give that service permission to process&nbsp;<em>other people’s&nbsp;</em>data and content?</p>
+
+<p data-selectable-paragraph id="c12e">This post examines some possible technical solutions to protect privacy while enabling interoperability or distributed content moderation. It focuses in part on blockchain technologies, and draws on recent conversations with a number of seriously smart people about possible technical designs. My takeaway is that there is no magic bullet. We can’t have perfect privacy&nbsp;<em>and</em>&nbsp;optimize for platform interoperability or middleware. But blockchain technologies, and some other technical design approaches, can whittle away at the problem. The rest of this post examines ways to do that.</p>
+
+<p data-selectable-paragraph id="9ec9"><em>Note</em>: This post starts from a pretty high level of wonkiness, and then gets wonkier. If you’re new to the “middleware” topic, my short take on why it matters and why it’s hard are&nbsp;<a href="https://muse.jhu.edu/article/797795" rel="noopener">here</a>; Cory Doctorow and I also had a great live discussion about it&nbsp;<a href="https://youtu.be/wlKDlBagkj0" rel="noopener">here</a>. If you’re a blockchain maven and spot any mistakes, they are definitely mine and not the fault of the experts I talked to.</p>
+
+<p data-selectable-paragraph id="f12f">This post doesn’t run down every possible permutation of the ideas it discusses, and it is un-wonkily reductive about at least three complicated things. (1) It uses the term “middleware” very loosely, as a way to lump together models including platform-to-platform interoperability,&nbsp;<a href="https://knightcolumbia.org/content/protocols-not-platforms-a-technological-approach-to-free-speech" rel="noopener">protocols not platforms</a>,&nbsp;<a href="https://www.techdirt.com/articles/20200901/13524045226/if-lawmakers-dont-like-platforms-speech-rules-heres-what-they-can-do-about-it-spoiler-options-arent-great.shtml" rel="noopener">Magic APIs</a>, and<a href="https://en.wikipedia.org/wiki/Distributed_social_network" rel="noopener">&nbsp;federated</a>&nbsp;systems like Mastodon. (2) It elides differences between real blockchain technologies, describing a hypothetical a version (perhaps most similar to&nbsp;<a href="https://www.projectliberty.io/" rel="noopener">Project Libert</a>y) optimized for Middleware. (3) It simplifies the kinds of user data and content used by social networks.</p>
+
+<p data-selectable-paragraph id="951d">OK, here we go.</p>
+
+<p data-selectable-paragraph id="f343"><strong>What Blockchain Can Do</strong></p>
+
+<p data-selectable-paragraph id="446f">As a social media user, blockchain technologies could provide me with the following:</p>
+
+<p data-selectable-paragraph id="d8ca">1. An authenticatable<a href="https://www.nytimes.com/2018/01/16/magazine/beyond-the-bitcoin-bubble.html" rel="noopener">&nbsp;identity</a>&nbsp;that I control and can use to log in or validate my identity across multiple services.</p>
+
+<p data-selectable-paragraph id="2efa">2. A&nbsp;<a href="https://www.projectliberty.io/2021/05/social-graph-as-a-key-to-change/" rel="noopener">social graph</a>&nbsp;linking my identity to other people’s similarly authenticated identities (meaning I control a “contact list” and decide when and how other people or services can access it).</p>
+
+<p data-selectable-paragraph id="3b8a">3. For purposes of Middleware, a copy of every piece of content I post. This doesn’t have to be blockchain-linked — it could just be stored on a physical device I control. But the content could be stored subject to my control as the blockchain-authenticated user, or in principle even stored on-chain (though then it couldn’t be deleted). To be useful for Middleware, this content would need to be kept in a format usable by any platform or Middleware provider. (This is quite hard to do, in practice). For each item of content, it could include a record of which service I shared it with and which contacts from my social graph could see it on that service.</p>
+
+<p data-selectable-paragraph id="4aa4"><strong>The Problem with Sharing Other People’s Data</strong></p>
+
+<p data-selectable-paragraph id="cd81">Suppose three friends — Ann, Balaji, and Carlos — all have the set-up described above. Each has a blockchain-linked identity, a blockchain-linked social graph listing one another as contacts, and a controlled copy of all their posted content. They are currently friends on Facebook.</p>
+
+<p data-selectable-paragraph id="b946">Ann and Balaji both opt in to see their Facebook feeds ranked and moderated by a new middleware provider called NewService. Once this happens, both can see — and, importantly, allow NewService to “see” and process — all of the past and future posts, comments, and other content they could have seen from each other on Facebook. They don’t need Facebook to transmit this content, since it is all stored under Ann’s and Balaji’s control in the first place. The blockchain setup described above creates an easy, low-cost way for these Facebook users to migrate to a competing service, use two interoperable services at once, or layer a competing provider of content moderation on top of Facebook.</p>
+
+<p data-selectable-paragraph id="4471">The situation is different for Carlos. He isn’t interested in NewService, or doesn’t trust its operators to protect his privacy, so he doesn’t sign up. NewService can’t see, assess, or moderate his posts. Ann and Balaji can still see Carlos’s posts on Facebook, but won’t see them using NewService. (Or perhaps Carlos’s posts could flow directly from Facebook to Ann and Balaji’s devices, appearing somewhere in their social media user interfaces without the benefit of any labeling, ranking or other content moderation services from NewService.)</p>
+
+<p data-selectable-paragraph id="a5ad">NewService can only perform the Middleware function if (1) it is limited to moderating content from friends who have also opted in to NewService (Ann can have NewService moderate Balaji’s content, but not Carlos’s); or (2) our social graph contacts are forced to share their data with the services we choose to trust (Ann’s consent allows NewService to see posts from Carlos). The first choice prioritizes privacy and avoids Cambridge Analytica-like scenarios. The second prioritizes interoperability, competition, and diversified content moderation. Adding these blockchain technologies greatly streamlines consensual data sharing, but doesn’t let us avoid this difficult trade-off.</p>
+
+<p data-selectable-paragraph id="502b"><strong>Some Partial Solutions</strong></p>
+
+<p data-selectable-paragraph id="bf1e">We could tweak this system in a few ways to allow more middleware moderation. These partial solutions make things somewhat better, and could be used in combination. But none solve more than a portion of the problems, and many involve privacy trade-offs of their own.</p>
+
+<p data-selectable-paragraph id="03c9"><strong>Pre-emptive permissions:&nbsp;</strong>A user could presumably set permissions on her controlled copy of her own posted content to say “This content (or a subset, such as the content already shared with specific contacts) may be shared with any service used by the following authenticated contacts from my social graph.” If Carlos sets his permissions to trust Ann’s new services, then when Ann opts in to NewService, she can let it “see” and moderate Carlos’s posts even though Carlos never signed up for NewService. This model becomes more feasible and secure with blockchain-based identity authentication. But it requires more fiddling with settings than most people are willing to do.</p>
+
+<p data-selectable-paragraph id="750c"><strong>Only moderating “less private” content:</strong>&nbsp;A Middleware service could be designed to only “see” and assess content that is on a public URL (like a New York Times story); or only content identical to that which has been shared more than x number of times (like Facebook’s practice of showing&nbsp;<a href="https://socialscience.one/blog/unprecedented-facebook-urls-dataset-now-available-research-through-social-science-one" rel="noopener">Social Science One</a>&nbsp;researchers content shared publicly over 100 times). This would make NewService useful to Ann when Carlos shares links to New York Times stories on Facebook, or when he shares a popular, viral cat picture. But NewService still couldn’t see Carlos’s unique private posts, like his original written observations or personal photographs. (FWIW, I don’t think using blockchain affects this option.)</p>
+
+<p data-selectable-paragraph id="edcf"><strong>Seeing content but not knowing who shared it:&nbsp;</strong>A Middleware service could<strong>&nbsp;</strong>see the content of all posts, but not the identity of the person who shared them. That provides some degree of privacy protection, but it still fails to protect Carlos’s privacy if he shares personally identifying content (a photo of himself, a birthday greeting to his spouse that discloses their name) or if his posts are personally identifying in aggregate (as is likely). And it improves NewService’s moderation by letting it “see” and assess all content. But it leaves NewService unable to use other important moderation techniques that depend on tracking metadata about users and their interactions. (I don’t think using blockchain affects this model, either.)</p>
+
+<p data-selectable-paragraph id="ebcf"><strong>Client-side content moderation:&nbsp;</strong>Carlos’s privacy can be protected if NewService’s ranking and moderation services take place entirely on Ann’s computer, phone, or other device — which never sends Carlos’s posts to NewService’s servers. A crude model for this could use locally stored hashes to detect duplicates of known prohibited images, similar to the system Apple recently&nbsp;<a href="https://www.theverge.com/2021/8/10/22613225/apple-csam-scanning-messages-child-safety-features-privacy-controversy-explained" rel="noopener">announced</a>&nbsp;to scan iPhones for child abuse images. Technology like this would have real limits, both in terms of local device processing capacity and in terms of the quality of moderation possible without NewService “seeing” and assessing novel content. A more sophisticated version of this approach might send partial information to NewService’s server, similar to Firefox<a href="https://support.mozilla.org/en-US/kb/how-does-phishing-and-malware-protection-work#w_what-information-is-sent-to-mozilla-or-its-partners-when-phishing-and-malware-protection-are-enabled" rel="noopener">&nbsp;sending</a>&nbsp;incomplete URL information to Mozilla’s servers for anti-phishing. (I don’t think using blockchain affects this, and I am certain that there are more technical opportunities and issues than I can spot. I expect they will have a fair amount of overlap with work from&nbsp;<a href="https://www.washingtonpost.com/opinions/2021/08/19/apple-csam-abuse-encryption-security-privacy-dangerous/" rel="noopener">Jonathan Mayer</a>,&nbsp;<a href="https://cdt.org/insights/outside-looking-in-approaches-to-content-moderation-in-end-to-end-encrypted-systems/" rel="noopener">CDT</a>, and others on moderation models for end-to-end encrypted communications.)</p>
+
+<p data-selectable-paragraph id="408a"><strong>Conclusion</strong></p>
+
+<p data-selectable-paragraph id="52f5">In a sense, the “privacy trade-off” framing is misleading. It&nbsp;<a href="https://www.eff.org/deeplinks/2021/04/fighting-floc-and-fighting-monopoly-are-fully-compatible" rel="noopener">presupposes</a>&nbsp;that Facebook and other existing platforms were somehow good stewards of our data in the first place, and that their continued control should be the building block for our privacy in the future. It disregards the ways in which, by sharing our letters and emails and posts and comments with friends, we already relinquished control and entrusted our content to those human beings. Giving Facebook control, and taking control away from our friends, seems like a perverse outcome.</p>
+
+<p data-selectable-paragraph id="3933">That said, no one would even have such massive and perfect troves of data about our behavior and communication if Internet platforms hadn’t collected and stored it all. Treating existing platforms as the locus of control and the site of privacy trade-offs may be unavoidable. It’s also how the law works. Under both US and European privacy law, platforms are charged with deciding when and how to share our data. Making the wrong decisions can get them in a lot of trouble, legally and reputationally. We need legal rules that will prompt them to make the best choices. As the middleware discussion highlights, our idea of what choices are “best” may turn on how we prioritize competing values and goals — including privacy, competition, and improved speech environments. I think we will see an evolving array of technical solutions that nibble away at the edges and make these trade-offs less stark. But we can’t avoid them altogether.</p>
+</div>
+      
+</div>
+</div>
+</div>
+          </div>
+  
+    
+          <div class="container text-center py-4 1024:py-5">
+    
+<a
+   class="link link--btn"
+    href="http://cyber.fsi.stanford.edu/publications"
+>
+  
+      All Cyber Publications
+  </a>
+</div>
+      </div>
+</article>
+
+  </div>
+
+  </div>
+
+    </main>
+  </div>
+      <footer>
+              <div  class="footer__social region region-footer-social">
+  <div class="container flex items-center justify-center 768:justify-between py-4">
+          <div  id="block-fsi-center-logo" class="block fsi-center-logo">
+  
+    
+        <a href="/" rel="home">
+      <img src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/2025-01/stanford-line2-822_crop.png" alt="Logo for the Cyber Policy Center"/>
+    </a>
+  </div>
+
+      </div>
+</div>
+
+      
+              
+<section  class="footer__center region region-footer-center">
+  <div class="
+    container
+    flex flex-wrap 768:flex-nowrap
+    pt-9 pb-7.5
+  ">
+          <div  id="block-footer-contact-us" class="block block-content _0723fba-76bd-4764-8856-dabdde04e703">
+  
+    
+      
+
+            <div class="block-content basic body text-with-summary label-hidden text-long"><h3 class="footer-panel__title">Our Address</h3>
+
+<div class="logo-footer"><a href="https://fsi.stanford.edu"><img alt="Stanford University" height="52" src="/themes/custom/stanford_fsi/images/logo-white.png" width="517" loading="lazy"> </a></div>
+
+<div class="footer-panel__body">Encina Hall<br>
+616 Jane Stanford Way<br>
+Stanford University<br>
+Stanford, CA 94305-6055</div>
+</div>
+      
+  </div>
+<div  id="block-footer-menu" class="menu-block footer block block-menu navigation menu--footer">
+      
+  <h2 id="menu-blockfooter-menu">Navigate</h2>
+  
+
+        
+
+
+    
+                          
+    
+<ul  class="menu">
+            
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/research" class="menu__link">Research</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/education" class="menu__link">Education</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/policy" class="menu__link">Policy</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/people/institute-faculty" class="menu__link">People</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/centers" class="menu__link">Centers</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/news" class="menu__link">News</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/events" class="menu__link">Events</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/about" class="menu__link">About</a>
+          </li>
+      </ul>
+  
+
+  </div>
+<div  id="block-footer-follow-us" class="block block-content _c2785de-22f2-473e-bc20-d8b2d9c45b38">
+  
+    
+      
+
+            <div class="block-content basic body text-with-summary label-hidden text-long"><h3 class="footer-panel__title">Follow Us</h3><p><strong>General inquiries</strong><br>650-723-4581</p><ul class="social-menu"><li class="social-menu__item"><a class="social-menu__link social-menu__link--mail" href="https://fsi.stanford.edu/content/get-connected" target="_blank">Mail</a></li><li class="social-menu__item"><a class="social-menu__link social-menu__link--twitter" href="https://twitter.com/FSIStanford" target="_blank">Twitter</a></li><li class="social-menu__item"><a class="social-menu__link social-menu__link--facebook" href="https://www.facebook.com/StanfordFSI" target="_blank">Facebook</a></li><li class="social-menu__item"><a class="social-menu__link social-menu__link--youtube" href="https://www.youtube.com/channel/UCB2X9yR4GZLfrCe4jChIEwg" target="_blank">Youtube</a></li><li class="social-menu__item"><a class="social-menu__link social-menu__link--instagram" href="https://www.instagram.com/fsi_stanford" target="_blank">Instagram</a></li><li class="social-menu__item"><a class="social-menu__link social-menu__link--linkedin" href="https://www.linkedin.com/company/freeman-spogli-institute-for-international-studies" target="_blank">LinkedIn</a></li><li class="social-menu__item"><a class="social-menu__link social-menu__link--threads" href="https://www.threads.net/@fsi_stanford" target="_blank">Threads</a></li></ul></div>
+      
+  </div>
+<div  id="block-footer-support-us" class="block block-content f442c8ab-1101-42e7-960d-79b4d0701c1c">
+  
+    
+      
+
+            <div class="block-content basic body text-with-summary label-hidden text-long"><h3 class="footer-panel__title">Support Us</h3>
+
+<div class="support-us">
+<p>Learn more about how your support makes a difference or make a gift now</p>
+<a class="link link--btn link--yellow" href="https://fsi.stanford.edu/supporting-fsi">Make a gift</a></div>
+</div>
+      
+  </div>
+
+      </div>
+</section>
+
+      
+      
+              <div class="back-top 768:hidden text-center py-5">
+  <span class="back-top__icon"></span>
+  <a href="#main-content" class="back-top__link">Top</a>
+</div>
+
+<div
+   class="footer__copyright region region-footer-copyrights"
+  role="contentinfo"
+>
+  <div class="container flex flex-wrap py-5 justify-center relative 768:pt-7 768:pb-8.5">
+    <div  class="footer__copyright-logo mb-4.5 w-full">
+      <img src="/themes/custom/stanford_fsi/images/footer-stanford-logo.png" class="w-[112px] m-auto 768:w-[120px]" alt="Footer logo">
+    </div>
+          <div  id="block-footer-stanford-menu" class="menu-block footer-stanford block block-menu navigation menu--footer-stanford">
+            
+  <h2 class="visually-hidden" id="menu-blockfooter-stanford-menu">Footer Stanford Menu</h2>
+  
+
+        
+
+
+    
+                          
+    
+<ul  class="menu">
+            
+<li  class="menu__item">
+                <a href="https://www.stanford.edu/" class="menu__link">Stanford Home</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://visit.stanford.edu/plan/" class="menu__link">Maps &amp; Directions</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://www.stanford.edu/search/" class="menu__link">Search Stanford</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://emergency.stanford.edu/" class="menu__link">Emergency Info</a>
+          </li>
+      </ul>
+  
+
+  </div>
+<div  id="block-footer-terms-menu" class="menu-block footer-terms block block-menu navigation menu--footer-terms">
+            
+  <h2 class="visually-hidden" id="menu-blockfooter-terms-menu">Footer Terms Menu</h2>
+  
+
+        
+
+
+    
+                          
+    
+<ul  class="menu">
+            
+<li  class="menu__item">
+                <a href="https://www.stanford.edu/site/terms/" class="menu__link">Terms of Use</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://www.stanford.edu/site/privacy/" class="menu__link">Privacy</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://uit.stanford.edu/security/copyright-infringement" class="menu__link">Copyright</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://adminguide.stanford.edu/chapter-1/subchapter-5/policy-1-5-4" class="menu__link">Trademarks</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="http://exploredegrees.stanford.edu/nonacademicregulations/nondiscrimination/" class="menu__link">Non-Discrimination</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://www.stanford.edu/site/accessibility/" class="menu__link">Accessibility</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://uit.stanford.edu/security/copyright-infringement" class="menu__link">Copyright Complaints</a>
+          </li>
+      </ul>
+  
+
+  </div>
+<div  id="block-copyright-content" class="block block-content e1315f88-6342-4fdd-98de-4aed8bcf8e4b">
+  
+    
+      
+
+            <div class="block-content basic body text-with-summary label-hidden text-long"><div class="footer-global__copyright">
+<p class="vcard">© <span class="fn org">Stanford University</span>, <span class="adr"><span class="locality">Stanford</span>, <span class="region">California</span> <span class="postal-code">94305</span></span>.</p>
+</div>
+</div>
+      
+  </div>
+
+      </div>
+</div>
+
+          </footer>
+  </div>
+
+  </div>
+
+
+<script src="/sites/default/files/js/js_Tk2om-1g0i9LtNb7ff-ZXSNkKcfj5i3zeiSGnXEFt7o.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxdjksOg0AMQy8EneN0iQyETMp8UBKqHr-oiErDJnq2pdjmKEvVeRhhMoXf7ewyF5PAqY5IHdfKiQYHB_bcSvBdP_DCp7MIJY9i4U_tb-weq1qfxLxNbFNxar1ImEl7r3xUtVGmsvcZUq4hk1E48aAnnDRD11vHKlvB-ws1DGU2"></script>
+<script src="https://ws.sharethis.com/button/buttons.js"></script>
+<script src="/sites/default/files/js/js_iR7qCnmX0DSAr6C2-WN2xC5Ax94qPs5ASdO_r1BxFUw.js?scope=footer&amp;delta=2&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxdjksOg0AMQy8EneN0iQyETMp8UBKqHr-oiErDJnq2pdjmKEvVeRhhMoXf7ewyF5PAqY5IHdfKiQYHB_bcSvBdP_DCp7MIJY9i4U_tb-weq1qfxLxNbFNxar1ImEl7r3xUtVGmsvcZUq4hk1E48aAnnDRD11vHKlvB-ws1DGU2"></script>
+<script src="/themes/custom/stanford_fsi/components/01-atoms/images/icons/svgxuse.min.js?sqgpes" defer></script>
+<script src="/sites/default/files/js/js_q8nFoQqm43AOfB7jwMRCgI0_PSjymbsH1ldDt87PVW0.js?scope=footer&amp;delta=4&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxdjksOg0AMQy8EneN0iQyETMp8UBKqHr-oiErDJnq2pdjmKEvVeRhhMoXf7ewyF5PAqY5IHdfKiQYHB_bcSvBdP_DCp7MIJY9i4U_tb-weq1qfxLxNbFNxar1ImEl7r3xUtVGmsvcZUq4hk1E48aAnnDRD11vHKlvB-ws1DGU2"></script>
+
+</body>
+</html>

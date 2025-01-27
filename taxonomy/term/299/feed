@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://cyber.fsi.stanford.edu/">
+  <channel>
+    <title>Netherlands</title>
+    <link>https://cyber.fsi.stanford.edu/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>76 Platforms v. Supreme Court with Daphne Keller (part 1)</title>
+  <link>https://cyber.fsi.stanford.edu/news/76-platforms-v-supreme-court-daphne-keller-part-1</link>
+  <description/>
+  <pubDate>Fri, 21 Apr 2023 19:10:56 +0000</pubDate>
+    <dc:creator>Tara C Wright</dc:creator>
+    <guid isPermaLink="false">34669 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Policy Impact Spotlight: Marietje Schaake on Taming Underregulated Tech</title>
+  <link>https://cyber.fsi.stanford.edu/news/policy-impact-spotlight-marietje-schaake-taming-underregulated-tech</link>
+  <description/>
+  <pubDate>Wed, 12 Apr 2023 20:32:12 +0000</pubDate>
+    <dc:creator>Melissa Morgan</dc:creator>
+    <guid isPermaLink="false">34613 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+
+  </channel>
+</rss>

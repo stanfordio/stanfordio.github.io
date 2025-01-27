@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://cyber.fsi.stanford.edu/">
+  <channel>
+    <title>Cybersecurity</title>
+    <link>https://cyber.fsi.stanford.edu/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>Strengthening Taiwan's  Critical Digital Lifeline</title>
+  <link>https://cyber.fsi.stanford.edu/news/strengthening-taiwans-critical-digital-lifeline</link>
+  <description/>
+  <pubDate>Fri, 02 Aug 2024 18:05:01 +0000</pubDate>
+    <dc:creator>Tara C Wright</dc:creator>
+    <guid isPermaLink="false">36595 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Agenda for the Trust &amp; Safety Research Conference is now Live!</title>
+  <link>https://cyber.fsi.stanford.edu/news/agenda-trust-safety-research-conference-now-live</link>
+  <description/>
+  <pubDate>Tue, 30 Jul 2024 20:43:31 +0000</pubDate>
+    <dc:creator>Tara C Wright</dc:creator>
+    <guid isPermaLink="false">36583 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Registration Open for the 2024 Trust &amp; Safety Research Conference</title>
+  <link>https://cyber.fsi.stanford.edu/news/registration-open-2024-trust-safety-research-conference</link>
+  <description/>
+  <pubDate>Fri, 07 Jun 2024 19:41:05 +0000</pubDate>
+    <dc:creator>Tara C Wright</dc:creator>
+    <guid isPermaLink="false">36389 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Weighing AI’s Impact on the Global Order and Security</title>
+  <link>https://cyber.fsi.stanford.edu/news/weighing-ais-impact-global-order-and-security</link>
+  <description/>
+  <pubDate>Fri, 31 May 2024 07:45:32 +0000</pubDate>
+    <dc:creator>Melissa Morgan</dc:creator>
+    <guid isPermaLink="false">36361 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>76 Platforms v. Supreme Court with Daphne Keller (part 1)</title>
+  <link>https://cyber.fsi.stanford.edu/news/76-platforms-v-supreme-court-daphne-keller-part-1</link>
+  <description/>
+  <pubDate>Fri, 21 Apr 2023 19:10:56 +0000</pubDate>
+    <dc:creator>Tara C Wright</dc:creator>
+    <guid isPermaLink="false">34669 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Policy Impact Spotlight: Marietje Schaake on Taming Underregulated Tech</title>
+  <link>https://cyber.fsi.stanford.edu/news/policy-impact-spotlight-marietje-schaake-taming-underregulated-tech</link>
+  <description/>
+  <pubDate>Wed, 12 Apr 2023 20:32:12 +0000</pubDate>
+    <dc:creator>Melissa Morgan</dc:creator>
+    <guid isPermaLink="false">34613 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Sara Shah</title>
+  <link>https://cyber.fsi.stanford.edu/people/sara-shah</link>
+  <description/>
+  <pubDate>Thu, 09 Feb 2023 05:37:08 +0000</pubDate>
+    <dc:creator>Mi Jin Ryu</dc:creator>
+    <guid isPermaLink="false">34305 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Uncommon Yet Consequential Online Harms: A discussion with authors from a special issue of the Journal of Online Trust &amp; Safety</title>
+  <link>https://cyber.fsi.stanford.edu/events/uncommon-yet-consequential-online-harms</link>
+  <description/>
+  <pubDate>Wed, 24 Aug 2022 18:08:21 +0000</pubDate>
+    <dc:creator>Tara C Wright</dc:creator>
+    <guid isPermaLink="false">6856 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Tara C. Wright</title>
+  <link>https://cyber.fsi.stanford.edu/people/tara-c-wright</link>
+  <description/>
+  <pubDate>Wed, 10 Aug 2022 19:59:12 +0000</pubDate>
+    <dc:creator>Tara C Wright</dc:creator>
+    <guid isPermaLink="false">5086 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Barack Obama Addresses the Intersection of Online Disinformation, Regulation and Democracy at Stanford Event</title>
+  <link>https://cyber.fsi.stanford.edu/news/barack-obama-addresses-intersection-online-disinformation-regulation-and-democracy-stanford</link>
+  <description/>
+  <pubDate>Mon, 02 May 2022 21:15:55 +0000</pubDate>
+    <dc:creator>Melissa Morgan</dc:creator>
+    <guid isPermaLink="false">21867 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+
+  </channel>
+</rss>

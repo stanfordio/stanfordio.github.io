@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+<head>
+  <meta charset="utf-8" />
+<link rel="shortlink" href="https://cyber.fsi.stanford.edu/node/34061" />
+<link rel="canonical" href="https://cyber.fsi.stanford.edu/news/content-moderation-survivor-bias" />
+<meta property="og:type" content="news" />
+<meta property="og:url" content="https://cyber.fsi.stanford.edu/news/content-moderation-survivor-bias" />
+<meta property="og:title" content="Content Moderation Survivor Bias" />
+<meta property="og:image" content="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/1200x630/public/2022-12/china_twitter_spam_blog_graphic_final.png?itok=3-eQ3N1S" />
+<meta property="og:image:url" content="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/1200x630/public/2022-12/china_twitter_spam_blog_graphic_final.png?itok=3-eQ3N1S" />
+<meta property="og:image:secure_url" content="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/1200x630/public/2022-12/china_twitter_spam_blog_graphic_final.png?itok=3-eQ3N1S" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Content Moderation Survivor Bias" />
+<meta name="twitter:description" content="The pitfalls of analyzing emerging events on Twitter." />
+<meta name="twitter:creator" content="@FSIStanford" />
+<meta name="twitter:image" content="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/1200x630/public/2022-12/china_twitter_spam_blog_graphic_final.png?itok=3-eQ3N1S" />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/themes/custom/stanford_fsi/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="en" href="https://cyber.fsi.stanford.edu/news/content-moderation-survivor-bias" />
+<link rel="apple-touch-icon" href="/themes/custom/stanford_fsi/apple-touch-icon.png" sizes="180x180" />
+<link rel="icon" href="/themes/custom/stanford_fsi/favicon-32x32.png" type="image/png" sizes="32x32" />
+<link rel="icon" href="/themes/custom/stanford_fsi/favicon-16x16.png" type="image/png" sizes="16x16" />
+
+    <title>Content Moderation Survivor Bias | FSI</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_HmkHXDf1Tr7rH3aFdPIJFVlx7DkG3IRJntR7mkUtXmM.css?delta=0&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxNjksOwyAMRC-E8HG6jBxwwA1gZEM_t2-Uqp_N6M1bjCbsFHmILtwitbEWCTv8sbOnDaqwopGzgW0TjcvROMCZP7kZQyqyYnFBlCDq7Fg8XvHhOiomxZ7to3_Gz9bnWtgyRVePOwgbl0HqA_bB0pxlVBqZDb7kbkx3gzN9lTgLuSSSCi3BCN540AWPoYq6vwC451tJ" />
+<link rel="stylesheet" media="all" href="//use.fontawesome.com/releases/v5.15.4/css/all.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_t4NLaHgNMYjDpnVUx0TC0ND4Ps914U85VZWqdnKZYGM.css?delta=2&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxNjksOwyAMRC-E8HG6jBxwwA1gZEM_t2-Uqp_N6M1bjCbsFHmILtwitbEWCTv8sbOnDaqwopGzgW0TjcvROMCZP7kZQyqyYnFBlCDq7Fg8XvHhOiomxZ7to3_Gz9bnWtgyRVePOwgbl0HqA_bB0pxlVBqZDb7kbkx3gzN9lTgLuSSSCi3BCN540AWPoYq6vwC451tJ" />
+<link rel="stylesheet" media="print" href="/sites/default/files/css/css_ipHMTqOd8MXWqrdkR7q2zw0hNkDpwEl3Km7uwx8BlwY.css?delta=3&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxNjksOwyAMRC-E8HG6jBxwwA1gZEM_t2-Uqp_N6M1bjCbsFHmILtwitbEWCTv8sbOnDaqwopGzgW0TjcvROMCZP7kZQyqyYnFBlCDq7Fg8XvHhOiomxZ7to3_Gz9bnWtgyRVePOwgbl0HqA_bB0pxlVBqZDb7kbkx3gzN9lTgLuSSSCi3BCN540AWPoYq6vwC451tJ" />
+<link rel="stylesheet" media="all" href="/themes/custom/stanford_fsi/fonts/fonts-drupal.css?sqgpes" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_bcFdiuS3gduCe2D3ssVjb8Y-swJeW0X65YmoDTOZuq0.css?delta=5&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxNjksOwyAMRC-E8HG6jBxwwA1gZEM_t2-Uqp_N6M1bjCbsFHmILtwitbEWCTv8sbOnDaqwopGzgW0TjcvROMCZP7kZQyqyYnFBlCDq7Fg8XvHhOiomxZ7to3_Gz9bnWtgyRVePOwgbl0HqA_bB0pxlVBqZDb7kbkx3gzN9lTgLuSSSCi3BCN540AWPoYq6vwC451tJ" />
+<link rel="stylesheet" media="all" href="/themes/custom/stanford_fsi/no-aggregation/no-aggregation.css?sqgpes" />
+
+      <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/34061","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"","blocklist_classes":"","include_environment":false,"environment_id":"","environment_token":""},"tagIds":["GTM-5PWBZTH"]},"gtag":{"tagId":"G-S82RDPFHSE","consentMode":false,"otherIds":["G-XNZW311XMN",""],"events":[],"additionalConfigInfo":[]},"ajaxPageState":{"libraries":"eJxdjl1uAyEMhC_EwnH6uPKCF9zlT7ZJ29uXpFJS8jIafyPb4y8MpI13qgGrHrn5y_3zJrYWM-5e0P3Z6T5AkQvwM1WILk55ny18wvcKiynzI7iT8jxiPXSlVk0HhsjQk7jAo0O2L2JH7ePIJAmDkQSMmkjc0xlRqGfjsB8g5N1DX_AUcjA0NZZtHtE1ibkdkFeWEALypi3O3mtUsI6tANUVy0W9wu0Ndiad-z-iWO6t0NwIv8Q91JYWRsZfisWWlg","theme":"stanford_fsi","theme_token":null},"ajaxTrustedUrl":{"\/search\/google":true},"stanford_basic":{"nav_dropdown_enabled":false},"sharethis":{"publisher":"dr-d1ddf05c-9188-6ea9-62e5-3d0928aed407","version":"5x","doNotCopy":true,"hashAddressBar":false,"doNotHash":true},"googlePSE":{"language":"en","displayWatermark":false},"user":{"uid":0,"permissionsHash":"16f9c77489b88ad14c88c5ea4772986419600c068c4f05b78d0914545a48cc0e"}}</script>
+<script src="/core/assets/vendor/modernizr/modernizr.min.js?v=3.11.7"></script>
+<script src="/sites/default/files/js/js_gHKIUnKFJH5AVa-Frjm64i7Y6OXPfu4rEdEqpw0ByzE.js?scope=header&amp;delta=1&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxdjl0Og0AIhC-k3eP00YyKLHV_DGDT49fU2GR9Id8MhBlzlKXqPIwwmcJvdnaZi0ngVEekjmvlRIODA3tuJfiuH3jh0_7B7rGq9UnMO4tQ8igW_tRe26bi1HqRMJP2XvmIaleZyt5nSLmKTEbhxIOecNIMXW8Zq2wF7y80gmU2"></script>
+<script src="/modules/contrib/google_tag/js/gtm.js?sqgpes"></script>
+<script src="/modules/contrib/google_tag/js/gtag.js?sqgpes"></script>
+<script src="/sites/default/files/js/js_uVtraW--ht-FY2xwXMRi2vx8JhZAfbd34kzTZ8lamq8.js?scope=header&amp;delta=4&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxdjl0Og0AIhC-k3eP00YyKLHV_DGDT49fU2GR9Id8MhBlzlKXqPIwwmcJvdnaZi0ngVEekjmvlRIODA3tuJfiuH3jh0_7B7rGq9UnMO4tQ8igW_tRe26bi1HqRMJP2XvmIaleZyt5nSLmKTEbhxIOecNIMXW8Zq2wF7y80gmU2"></script>
+
+        </head>
+<body class="page-news-content-moderation-survivor-bias section-news path-node page-node-type-news subdomain domain--cyber page-body">
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5PWBZTH"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+
+<nav id="skipnav" class="skipnav">
+  <div class="container">
+    <ul>
+              <li><a href="#main-content" class="visually-hidden focusable skip-link">Skip to main content</a></li>
+              <li><a href="#main-nav" class="visually-hidden focusable skip-link">Skip to main navigation</a></li>
+          </ul>
+  </div>
+</nav>
+  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+
+
+
+
+
+<div  class="layout-container">
+  <header  class="header">
+                  <div  class="header-top header-top--cyber region region-top-header-left bg-red z-[10]">
+    <div class="container">
+              <div  id="block-header-top" class="block block-content ced1bdcf-a613-4da6-ae1e-cd14a7af31d2">
+  
+    
+      
+
+            <div class="block-content basic body text-with-summary label-hidden text-long"><p><span><a href="http://www.stanford.edu/">Stanford University</a></span></p></div>
+      
+  </div>
+
+          </div>
+  </div>
+
+    
+                      <div  class="header-main header-main--cyber region region-header relative z-[11] bg-white">
+    <div class="container relative flex z-1">
+      <div class="
+        flex flex-col w-full
+        1024:flex-row 1024:items-center
+      ">
+                  <div  id="block-fsi-domain-logo" class="block fsi-domain-logo">
+  
+    
+      <div class="subdomain-logo__left py-5">
+      
+              <a href="/" title="Home" rel="home" class="hidden 1024:block">
+          <img src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/2025-01/stanford-line2-822_crop.png" alt="Logo for the Cyber Policy Center"/>
+        </a>
+      
+              <a href="/" title="Home" rel="home" class="1024:hidden">
+          <img src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/2025-01/stanford-line2-822_crop.png" alt="Logo for the Cyber Policy Center"/>
+        </a>
+          </div>
+</div>
+<div  id="block-fsi-subdomain-logo" class="block fsi-subdomain-logo">
+  
+    
+        <div class="subdomain-logo__right">
+      <p>The Cyber Policy Center is part of the of the&nbsp;<a href="http://fsi.stanford.edu/">Freeman Spogli Institute for International Studies</a>.</p>
+    </div>
+  </div>
+
+              </div>
+    </div>
+  </div>
+
+          
+            
+<button class="toggle-expand" arial-live="polite">
+  <span class="toggle-expand__open">
+    
+
+
+<svg  class="toggle-expand__icon"
+
+  
+  
+  >
+      <use xlink:href="/themes/custom/stanford_fsi/dist/icons.svg#menu"></use>
+</svg>
+    <span
+      class="toggle-expand__text"
+      aria-label="Open menu"
+    >Menu</span>
+  </span>
+  <span class="toggle-expand__close">
+    <span
+      class="toggle-expand__text"
+      aria-label="Close menu"
+    >Close</span>
+  </span>
+</button>
+    <div  class="header-navigation region region-navigation bg-red nav-collapsible">
+    <div class="container relative">
+              
+<div class="search-block-form google-cse search-form-block block block-search container-inline" data-drupal-selector="search-block-form" id="block-stanford-fsi-search-header" role="search">
+  
+      <span class="visually-hidden">Search</span>
+    
+      <form action="/search/google" method="get" id="search-block-form" accept-charset="UTF-8">
+  
+    
+<div class="js-form-item form-item form-item-edit-keys">
+              <input title="Enter the terms you wish to search for." placeholder="Search Cyber" data-drupal-selector="edit-keys" type="search" id="edit-keys" name="keys" value="" size="40" maxlength="128" class="form-search form-item__textfield" />
+        </div>
+<div id="edit-actions-search-block-form" data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper"><input data-drupal-selector="edit-submit" type="submit" id="edit-submit" value="Search" class="button js-form-submit form-submit form-item__textfield" />
+</div>
+
+</form>
+
+  </div>
+<div  id="block-fsi-main-menu" class="block fsi-main-menu main-menu-12404442">
+  
+    
+      
+<nav id="main-nav" class="main-nav bg-red">
+  
+
+
+    
+                          
+    
+<ul  class="main-menu hidden">
+            
+<li  class="main-menu__item main-menu__item--with-sub">
+                <a href="/sciabout" class="main-menu__link main-menu__link--with-sub" data-drupal-link-system-path="node/29485">About</a>
+              <button class="expand-sub">
+        <span class="expand-sub--opened">close menu</span>
+        <span class="expand-sub--closed">open menu</span>
+      </button>
+          
+                                    
+    
+<ul  class="main-menu main-menu--sub main-menu--sub-1 hidden">
+            
+<li  class="main-menu__item main-menu__item--sub main-menu__item--sub-1">
+                <a href="/research/project-on-democracy-and-the-internet" class="main-menu__link main-menu__link--sub main-menu__link--sub-1">Program on Democracy and the Internet</a>
+          </li>
+          
+<li  class="main-menu__item main-menu__item--sub main-menu__item--sub-1">
+                <a href="/io" class="main-menu__link main-menu__link--sub main-menu__link--sub-1">Internet Observatory</a>
+          </li>
+          
+<li  class="main-menu__item main-menu__item--sub main-menu__item--sub-1">
+                <a href="/social-media-lab" class="main-menu__link main-menu__link--sub main-menu__link--sub-1" data-drupal-link-system-path="node/30478">Social Media Lab</a>
+          </li>
+          
+<li  class="main-menu__item main-menu__item--sub main-menu__item--sub-1">
+                <a href="/gdpi" class="main-menu__link main-menu__link--sub main-menu__link--sub-1">Global Digital Policy Incubator</a>
+          </li>
+          
+<li  class="main-menu__item main-menu__item--sub main-menu__item--sub-1">
+                <a href="/content/program-platform-regulation" class="main-menu__link main-menu__link--sub main-menu__link--sub-1" data-drupal-link-system-path="node/30136">Program on Platform Regulation</a>
+          </li>
+          
+<li  class="main-menu__item main-menu__item--sub main-menu__item--sub-1">
+                <a href="/content/program-governance-emerging-technologies" class="main-menu__link main-menu__link--sub main-menu__link--sub-1" data-drupal-link-system-path="node/35102">Governance of Emerging Technologies</a>
+          </li>
+          
+<li  class="main-menu__item main-menu__item--sub main-menu__item--sub-1">
+                <a href="https://www.pascl.stanford.edu/" class="main-menu__link main-menu__link--sub main-menu__link--sub-1">Polarization and Social Change Lab</a>
+          </li>
+      </ul>
+  
+      </li>
+          
+<li  class="main-menu__item">
+                <a href="/scieducation" class="main-menu__link" data-drupal-link-system-path="node/29469">Courses</a>
+          </li>
+          
+<li  class="main-menu__item">
+                <a href="/sciprojects" class="main-menu__link" data-drupal-link-system-path="node/29465">Research</a>
+          </li>
+          
+<li  class="main-menu__item">
+                <a href="/people" class="main-menu__link" data-drupal-link-system-path="node/30631">People</a>
+          </li>
+          
+<li  class="main-menu__item">
+                <a href="/news" class="main-menu__link" data-drupal-link-system-path="node/29733">News</a>
+          </li>
+          
+<li  class="main-menu__item">
+                <a href="/cyber-events" class="main-menu__link" data-drupal-link-system-path="node/30150">Events</a>
+          </li>
+          
+<li  class="main-menu__item">
+                <a href="/publications" class="main-menu__link" data-drupal-link-system-path="node/29761">Publications</a>
+          </li>
+          
+<li  class="main-menu__item">
+                <a href="/content/opportunities-cpc" class="main-menu__link" data-drupal-link-system-path="node/30537">Opportunities</a>
+          </li>
+      </ul>
+  
+</nav>
+
+  </div>
+
+          </div>
+  </div>
+
+    
+          <div  id="block-views-block-alert-block-alert" class="block views-element-container views-block alert-block-alert">
+  
+    
+      <div><div class="view alert block-alert js-view-dom-id-a30df7e733dd261d8d0822fd826d39fb0d9b61d30514ba29f22b7d79894923ff">
+  
+  
+  
+
+  
+  
+  
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+  </div>
+
+
+    
+        </header>
+      
+    
+    
+    
+    <div  class="main">
+    <a id="main-content" tabindex="-1"></a>        
+      <main role="main"  class="main-content">
+        
+
+  <div class="region region--content grid-full layout--pass--content-medium ie11-autorow" id="content">
+    <div data-drupal-messages-fallback class="hidden"></div>
+<div  id="block-stanford-fsi-content" class="block system-main-block">
+  
+    
+      
+<article about="/news/content-moderation-survivor-bias" class="node node--type-news node--view-mode-full">
+  <div class="node__content">
+    
+
+<h1
+   about="/news/content-moderation-survivor-bias" class="h visually-hidden h1 node node--type-news node--view-mode-full"
+><div class="node news title string label-hidden">Content Moderation Survivor Bias</div>
+</h1>
+
+          
+
+<div  class="header-news pt-5 pb-10 768:pt-[70px] 768:pb-7.5">
+  <div  class="header-news__container container container--smaller border-t-1 border-t-gray-e3 border-b-5 border-b-red py-5 768:pt-7 768:pb-8" >
+          
+  <nav  class="breadcrumb mb-[11px]" role='navigation' aria-labelledby='system-breadcrumb'>
+    <h2  class="visually-hidden" id='system-breadcrumb'>Breadcrumb</h2>
+    <ol  class="breadcrumb__list mb-[11px]">
+                                          <li  class="breadcrumb__item font-bold">
+                  <a  class="breadcrumb__link" href="http://cyber.fsi.stanford.edu/news">All Cyber News</a>
+              </li>
+                                          <li  class="breadcrumb__item text-red">
+                  Blogs
+              </li>
+                            <li  class="breadcrumb__item">
+                  <time datetime="2022-12-19T12:00:00Z">December 19, 2022</time>
+
+              </li>
+        </ol>
+  </nav>
+    
+                      <div  class="header-news__excerpt mb-7 link--in-article" >
+              <h1 class="mb-3.5">
+          <div class="node news title string label-hidden">Content Moderation Survivor Bias</div>
+
+                  </h1>
+                              The pitfalls of analyzing emerging events on Twitter.
+                        </div>
+    <div  class="header-news__annotation flex flex-wrap items-center" >
+              
+<div  class="bar-author-date bar-author-date--has-authors flex flex-wrap 480m:justify-center 480m:w-full">
+      
+
+
+
+<div  class="authors-list flex flex-wrap">
+  <ul  class="authors-list__list flex flex-wrap 480m:justify-center mb-2.5">
+          
+      
+      <li  class="authors-list__item inline-flex">
+                              <a  class="authors-list__link" href="/people/david-thiel">
+              David Thiel</a>      </li>
+      </ul>
+  </div>
+  
+  </div>
+                  <div  class="header-news__social flex flex-wrap 480:ml-auto 480m:justify-center 480m:w-full" >
+                          <div class="sharethis-wrapper">
+      <span st_url="https://cyber.fsi.stanford.edu/news/content-moderation-survivor-bias" st_title="Content Moderation Survivor Bias" class="st_facebook_custom" displayText="facebook"></span>
+
+      <span st_url="https://cyber.fsi.stanford.edu/news/content-moderation-survivor-bias" st_title="Content Moderation Survivor Bias" class="st_twitter_custom" displayText="twitter"></span>
+
+      <span st_url="https://cyber.fsi.stanford.edu/news/content-moderation-survivor-bias" st_title="Content Moderation Survivor Bias" class="st_linkedin_custom" displayText="linkedin"></span>
+
+      <span st_url="https://cyber.fsi.stanford.edu/news/content-moderation-survivor-bias" st_title="Content Moderation Survivor Bias" class="st_email_custom" displayText="email"></span>
+
+  </div>
+
+              </div>
+    </div>
+  </div>
+</div>
+    
+    
+    
+            <div class="node news field-hero-image entity-reference label-hidden">
+
+
+<div  class="image-caption max-w-[935px] container-side-styles">
+      
+<figure
+   class="figure"
+  >
+      
+
+  
+<picture
+   loading="eager" class="image"
+>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/895x498/public/2022-12/china_twitter_spam_blog_graphic_final.png?h=a5173b64&amp;itok=MNTxVWvg 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/895x498_x2/public/2022-12/china_twitter_spam_blog_graphic_final.png?h=a5173b64&amp;itok=leek4C0u 2x" media="all and (min-width: 768px)" type="image/png" width="895" height="498"/>
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/727x409/public/2022-12/china_twitter_spam_blog_graphic_final.png?h=a5173b64&amp;itok=JBuxsGOE 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/727x409_x2/public/2022-12/china_twitter_spam_blog_graphic_final.png?h=a5173b64&amp;itok=WYUL3ahN 2x" media="all and (max-width: 767px)" type="image/png" width="727" height="409"/>
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/440x245/public/2022-12/china_twitter_spam_blog_graphic_final.png?h=a5173b64&amp;itok=Q4hAw5ss 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/440x245_x2/public/2022-12/china_twitter_spam_blog_graphic_final.png?h=a5173b64&amp;itok=GpkZPkME 2x" media="all and (max-width: 480px)" type="image/png" width="440" height="245"/>
+        <!--[if IE 9]></video><![endif]-->
+      
+<img
+   class="image"
+      src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/895x498/public/2022-12/china_twitter_spam_blog_graphic_final.png?h=a5173b64&amp;itok=MNTxVWvg"
+      alt="A blue bird looking confused at Chinese spam hashtags, with a splash of red paint and the stars of the Chinese flag as a backdrop."
+    />
+</picture>
+
+
+      
+          <strong></strong>
+      </figure>
+
+  </div>
+</div>
+      
+    
+      <div class="node news field-paragraphs entity-reference-revisions label-hidden">
+              <div class="paragraph-item ptype-full-html">
+
+<div class="full-html">
+    <div  class="pgph_text pgph_text--big-character container container--small text-20 leading-7.5 py-4 1024:py-5 full-html" >
+  
+
+            <div class="paragraph full-html field-formatted-text text-long label-hidden"><p><span>On November 24, 2022, a fatal residential apartment building fire broke out in Urumqi, China, killing several residents who had been locked into their apartments from outside as part of China’s zero-COVID effort. Protests against China's COVID-19 restrictions broke out in various cities in China, including Urumqi, Shanghai, Beijing, and Guangzhou. As is often the case, people turned to Twitter to find out more. However, when searching for the Chinese names of these cities, many people observed that news about the protests was difficult to find due to a deluge of spam and adult content using those city names as hashtags. Several analysts and news outlets suggested that this was a deliberate campaign — likely by the Chinese government — to drown out legitimate content with a flood of shady spam.</span></p><p><span>I argue that much of this "surge" in spam is illusory, due to both data bias and cognitive bias. I also argue that while the spam did drown out legitimate protest-related content, there is no evidence that it was designed to do so, nor that it was a deliberate effort by the Chinese government. To explain why, we must look at how historical social media data is biased.</span></p><p>&nbsp;</p><h2>Data Biases, Cognitive Biases</h2><p>&nbsp;</p><p><span>An underappreciated facet of social media analysis is that it is extremely dependent on </span><em><span>when the data was gathered</span></em><span>, because past data has often been removed or altered by users or the platform itself. When examining newly gathered data, spam and other platform policy-violating behavior will very often appear to have just recently increased, because content enforcement, particularly for low-risk content, is not immediate — it can take several days to detect, write enforcement rules or train models, and then remove content. Enforcement also does not occur linearly — content will be taken down in batches. Distortions can also occur due to the fact that gathering data via APIs can take multiple days — content may have changed or been removed by the time the data gathering mechanism even reaches it.</span></p><p><span>This same effect appears in various types of data (I discuss a similar effect with user creation dates </span><a href="https://twitter.com/elegant_wallaby/status/1519734720493494275"><span><u>here</u></span></a><span>), and becomes more pronounced the more likely the data is to contain inauthentic behavior. In a sense, historical queries are prone to a form of </span><a href="https://en.wikipedia.org/wiki/Survivorship_bias"><span><u>survivorship bias</u></span></a><span>: past data has potentially been moderated, while very recent data has not. Basing an analysis on the “surviving” content can distort what really happened.</span></p><p><span>This data bias is compounded by cognitive bias: the </span><a href="https://en.wikipedia.org/wiki/Recency_illusion"><span><u>recency illusion</u></span></a><span>, i.e. the perception that recently </span><em><span>noticed</span></em><span> things are more prevalent. For someone with no tendency to spend time searching hashtags of Chinese cities (or in Chinese-language Twitter in general), the volume of spam will seem sudden and anomalous, and quite possibly suspicious. And because gathering and analyzing data takes time, quickly drawn conclusions will often be based on small amounts of poor quality data.</span></p><p><span>As such, the only way to truly compare current with historical activity is to consume it over long timeframes in realtime before it has been acted upon, with the terms defined ahead of time — which was not the case in any of the analyses of Chinese spamming activity that we are aware of. In retrospective research, historical Twitter data generally becomes "cleaner" — some amount of spam and inauthentic behavior will have been removed — as you go further back, but this is necessarily a less accurate representation of what actually </span><em><span>occurred</span></em><span> on the platform. Put simply:</span></p><p><em><span>In a retrospective sample of moderated social media platform, ToS-violating or inauthentic content tends to appear most prevalent in the immediate past. We can call this Content Moderation Survivor Bias.</span></em></p><p><span>To illustrate this effect as best we can with data gathered after the fact, let's take a look at tweets containing the names of major Chinese cities.</span></p><p>&nbsp;</p><h2>Methods</h2><p>&nbsp;</p><p><span>Shortly after the deluge of spam was publicly noticed, we conducted a historical 1-week search for the following major Chinese cities in simplified Chinese. These 39 cities include the capital cities of all 31 provinces in China, Hong Kong, Macau, and 6 major prefectural-level cities across China such as Shenzhen and Qingdao.</span></p><p><span>"北京 OR 上海 OR 天津 OR 重庆 OR 哈尔滨 OR 长春 OR 沈阳 OR 呼和浩特 OR 石家庄 OR 乌鲁木齐 OR 兰州 OR 西宁 OR 西安 OR 银川 OR 郑州 OR 济南 OR 太原 OR 合肥 OR 长沙 OR 武汉 OR 南京 OR 成都 OR 贵阳 OR 昆明 OR 南宁 OR 拉萨 OR 杭州 OR 南昌 OR 广州 OR 福州 OR 海口 OR 香港 OR 澳门 OR 大连 OR 青岛 OR 苏州 OR 无锡 OR 厦门 OR 深圳"</span></p><p><span>Romanized translation:</span></p><p><span>“Beijing OR Shanghai OR Tianjin OR Chongqing OR Harbin OR Changchun OR Shenyang OR Hohhot OR Shijiazhuang OR Urumqi OR Lanzhou OR Xining OR Xi’an OR Yinchuan OR Zhengzhou OR Jinan OR Taiyuan OR Hefei OR Changsha OR Wuhan OR Nanjing OR Chengdu OR Guiyang OR Kunming OR Nanning OR Lhasa OR Hangzhou OR Nanchang OR Guangzhou OR Fuzhou OR Haikou OR Hong Kong OR Macau OR Dalian OR Qingdao OR Suzhou OR Wuxi OR Xiamen OR Shenzhen”</span></p><p><span>Our search, started on November 29th, extracted tweets that contain these cities’ Chinese names between 9pm on November 21st and 5am on November 29th.</span></p>  <div class="align-center">
+    
+    
+  <div class="field__label visually-hidden">Image</div>
+            <div class="field__item">  <img loading="lazy" src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/700xauto/public/2022-12/china_spam_wk1_1.png?itok=YUHI-EMR" width="700" height="446" alt="A one week time series showing spikes on November 27 and 28." typeof="foaf:Image">
+
+
+</div>
+        
+  </div>
+<p>&nbsp;</p><p><span>This showed a marked overall increase in use of the city names (usually as hashtags) on the 27th and 28th, the vast majority of which was spam. However, it also shows that this type of content was still somewhat prevalent before the fire in Urumqi (at around 12:00pm UTC on November 24th) and the subsequent protests. We also observed that the frequency curves varied significantly depending on city; for example, spam citing Suzhou appearing markedly different from Lanzhou:&nbsp;</span></p>  <div class="align-center">
+    
+    
+  <div class="field__label visually-hidden">Image</div>
+            <div class="field__item">  <img loading="lazy" src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/700xauto/public/2022-12/china_spam_suzhou_0.png?itok=ChYOR5AC" width="700" height="444" alt="A graph showing tweets about Suzhou, with spikes Nov 22 and Nov 28, and a lull during Nov 26." typeof="foaf:Image">
+
+
+</div>
+        
+  </div>
+<p>&nbsp;</p>  <div class="align-center">
+    
+    
+  <div class="field__label visually-hidden">Image</div>
+            <div class="field__item">  <img loading="lazy" src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/700xauto/public/2022-12/china_spam_lanzhou_0.png?itok=iU7jOTFd" width="700" height="443" alt="The curveof tweets mentioning Lanzhou, showing a spike Nov 26, 27 and 28, with a sharp drop afterward." typeof="foaf:Image">
+
+
+</div>
+        
+  </div>
+<p>&nbsp;</p><p><span>We also identified many distinct spam campaigns and strategies using </span><a href="https://github.com/stanfordio/ucluster"><span><u>fuzzy clustering</u></span></a><span> of tweet text. Tweets like those below that used a particular phrase but with slightly different hashtags or URLs would tend to cluster together, allowing us to see their use over time.</span></p><table><tbody><tr><td>  <div class="align-center">
+    
+    
+  <div class="field__label visually-hidden">Image</div>
+            <div class="field__item">  <img loading="lazy" src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/500x350/public/2022-12/china_spam_reflection_2.png?h=4b8c4c31&amp;itok=WmaCtpDV" width="500" height="350" alt="Chinese spam targeting Beijing, with the English phrase &quot;Reflection of the heart.&quot;" typeof="foaf:Image">
+
+
+</div>
+        
+  </div>
+</td><td>  <div class="align-center">
+    
+    
+  <div class="field__label visually-hidden">Image</div>
+            <div class="field__item">  <img loading="lazy" src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/500x350/public/2022-12/china_spam_reflection_1.png?h=a354c5cf&amp;itok=h8dfTiFm" width="500" height="350" alt="Chinese spam targeting Beijing, with the English phrase &quot;Reflection of the heart.&quot;" typeof="foaf:Image">
+
+
+</div>
+        
+  </div>
+</td></tr></tbody></table><p>&nbsp;</p></div>
+      
+</div>
+</div>
+</div>
+              <div class="paragraph-item ptype-full-html">
+
+<div class="full-html">
+  <div  class="pgph_text container container--small text-20 leading-7.5 py-4 1024:py-5 full-html" >
+  
+
+            <div class="paragraph full-html field-formatted-text text-long label-hidden"><p><span>Some of these campaigns appeared to have originated recently, while some appeared to be long-standing. The ten most active clusters are shown below — the labels are the numeric ID of the cluster. Note that we cannot share tweet text extracted from the API due to Twitter’s API access terms.</span></p>  <div class="align-center">
+    
+    
+  <div class="field__label visually-hidden">Image</div>
+            <div class="field__item">  <img loading="lazy" src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/700xauto/public/2022-12/china_spam_clusters_1.png?itok=3liy4Oaa" width="700" height="459" alt="A graph showing the patterns of semantically similar tweets. It's kind of all over the place." typeof="foaf:Image">
+
+
+</div>
+        
+  </div>
+<p>&nbsp;</p><p><span>User creation dates showed what we would expect for a dataset containing a significant level of inauthentic behavior: a strong bias toward the past month or so, as new accounts are created to replace those that get suspended.</span></p><table><tbody><tr><td>  <div class="align-center">
+    
+    
+  <div class="field__label visually-hidden">Image</div>
+            <div class="field__item">  <img loading="lazy" src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/700xauto/public/2022-12/china_spam_userscreated.png?itok=TNpg_y7h" width="700" height="295" alt="The user creation dates of users in the dataset, showing Nov 2022 itself is highly represented." typeof="foaf:Image">
+
+
+</div>
+        
+  </div>
+</td></tr></tbody></table></div>
+      
+</div>
+</div>
+</div>
+              <div class="paragraph-item ptype-full-html">
+
+<div class="full-html">
+  <div  class="pgph_text container container--small text-20 leading-7.5 py-4 1024:py-5 full-html" >
+  
+
+            <div class="paragraph full-html field-formatted-text text-long label-hidden"><p><span>We hypothesized that this spam was commercial in nature and unrelated to the fire and protests — in part based on the content itself, the links to apparently real commercial ventures, and those ventures’ presence on other platforms. We further hypothesized that the apparent recent surge was due to a combination of:</span></p><ul><li><span>Content enforcement lag</span></li><li><span>An organic increase in non-spam mentions</span></li><li><span>Hashtag bandwagoning</span></li></ul><p>&nbsp;</p><p><span>To test this, we performed 3 additional searches:</span></p><p>&nbsp;</p><ul><li><span>A 2-week search to compare prior activity (started Nov 30th)</span></li><li><span>A 1-week search into the past (started Dec 4), to see if the “surge” in the immediately preceding days appeared when looking at a more recent period</span></li><li><span>A search for the original 1-week timeframe conducted at a later date, to see if the “surge” had flattened (conducted Dec 8).</span></li></ul></div>
+      
+</div>
+</div>
+</div>
+              <div class="paragraph-item ptype-full-html">
+
+<div class="full-html">
+  <div  class="pgph_text container container--small text-20 leading-7.5 py-4 1024:py-5 full-html" >
+  
+
+            <div class="paragraph full-html field-formatted-text text-long label-hidden"><p>&nbsp;</p>
+
+<h2>Historical Trends</h2>
+
+<p>&nbsp;</p>
+
+<p><span><span><span><span><span><span>Our two-week full archive search from the 15th to the 30th showed that spam of this type (henceforth referred to as “city spam”) had actually been prevalent for quite a while before the fire in Urumqi and subsequent protests — if anything, it experienced a bit of a lull from the 21st to 26th. Also of note is that the previous peak on the 28th had been sharply attenuated since our original search.</span></span></span></span></span></span></p>
+
+  <div class="align-center">
+    
+    
+  <div class="field__label visually-hidden">Image</div>
+            <div class="field__item">  <img loading="lazy" src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/700xauto/public/2022-12/china_spam_2wkpull_0.png?itok=deP0-BK4" width="700" height="457" alt="A graph showing a mentions of the city names from Nov 15 to Nov 30. There are peaks and troughs throughout, with a bit of a lull from Nov 23 to Nov 27." typeof="foaf:Image">
+
+
+</div>
+        
+  </div>
+
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h2><span><span><span><span><span><span>Activity Post-Protest</span></span></span></span></span></span></h2>
+
+<p>&nbsp;</p>
+
+<p><span><span><span><span><span><span>To see if we could replicate the recency bias with the same query over a different, more recent time period, we conducted a one-week search on December 4 which scraped tweets posted between November 29 and December 4. This query shows the same bias in frequency for the prior two days — actually showing the volume far exceeding the peaks in November, well after the protests had largely dissipated. This could be due to a significant increase in activity, a failure of Twitter’s anti-spam systems, or very likely a combination. This runs counter to what we would expect to see if the Chinese government were sponsoring the spam.&nbsp;</span></span></span></span></span></span></p>
+
+  <div class="align-center">
+    
+    
+  <div class="field__label visually-hidden">Image</div>
+            <div class="field__item">  <img loading="lazy" src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/700xauto/public/2022-12/china_spam_1wk_dec4.png?itok=G7hhRq5K" width="700" height="468" alt="A one-week graph of the original search terms, conducted December 4. It shows increasingly large curves as it trends toward the present." typeof="foaf:Image">
+
+
+</div>
+        
+  </div>
+
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h2><span><span><span><span><span><span>Re-query of original week</span></span></span></span></span></span></h2>
+
+<p>&nbsp;</p>
+
+<p><span><span><span><span><span><span>To see how the curve changed once we had more temporal distance from the events we were examining, we performed another search for the original timeframe (between November 23 and November 28), with the original terms, but conducted on December 8th.</span></span></span></span></span></span></p>
+
+  <div class="align-center">
+    
+    
+  <div class="field__label visually-hidden">Image</div>
+            <div class="field__item">  <img loading="lazy" src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/700xauto/public/2022-12/china_spam_orig_wk_dec8.png?itok=byToR_MH" width="700" height="475" alt="A graph of the original week when the protests ocurred, but conducted on December 8. It shows that some of the peaks of content have since flattened." typeof="foaf:Image">
+
+
+</div>
+        
+  </div>
+
+
+<p><span><span><span><span><span><span>This shows the 70k peak formerly present on the 28th to be cut almost in half, with the peak on the 27th reduced modestly. This updated curve follows the curve of retweeted content (which we found to be mostly legitimate — city spam campaigns mentioned other accounts but did not retweet), indicating that there was a spike of legitimate content on the 27th (i.e. at the peak of mass protests across cities in China).</span></span></span></span></span></span></p>
+
+<p>&nbsp;</p>
+
+<h2>Protest-specific Hashtags</h2>
+
+<p>&nbsp;</p>
+
+<p>Finally, on December 16, we performed a search for commonly seen protest-related hashtags and slogans between November 22nd and December 1st:</p>
+
+<p>"白纸革命 OR 白纸行动 OR 白纸抗议 OR A4纸革命 OR OR #A4Revolution OR #WhitePaperRevolution OR #ChinaProtest2022 #ChinaUprising"</p>
+
+<p>The prevalence of content using these hashtags was modest, with 48,603 tweets, peaking November 29th. We posit that if the Chinese government were to attempt to drown out dissent with spam, it would target protest-related hashtags rather than those representing entire cities.</p></div>
+      
+</div>
+</div>
+</div>
+              <div class="paragraph-item ptype-full-html">
+
+<div class="full-html">
+  <div  class="pgph_text container container--small text-20 leading-7.5 py-4 1024:py-5 full-html" >
+  
+
+            <div class="paragraph full-html field-formatted-text text-long label-hidden"><h2>Findings</h2><p>&nbsp;</p><ul><li><span>Contrary to several reports, city spam was prevalent on the platform prior to the protests, and had peaked and waned before.</span></li><li><span>Our two separate 1-week queries showed a “surge” in the days immediately prior to the execution of the search query, illustrating the unmoderated content bias.</span></li><li><span>Subsequent queries of the original week preceding and following the protests showed a disappearance of the most recent spike, with a largely organic increase on the 27th remaining. This flattening of the “surge” is consistent with content moderation lag.</span></li><li><span>While such spam did drown out legitimate protest-related content, and curiously showed up on the Top tab as well as Latest, it is unlikely that this was an intended effect.</span></li><li><span>Twitter continues to have significant problems proactively suppressing this spamming activity, likely a result of staffing shortages in both moderation and automated systems training.</span></li><li><span>We did not see strong evidence of active hashtag bandwagoning, i.e. spam networks adopting the use of the most popular hashtags at the time.</span></li></ul><h2><span>Red herrings</span></h2><p>&nbsp;</p><ul><li><span>“Many accounts were just recently created” and “many accounts had long been dormant before tweeting” are both very common characteristics of spam and other forms of CIB, and do not indicate anything beyond that — certainly they are no smoking gun toward state involvement, because commercial spammers will continually create and use new accounts to replace accounts that are removed by the platform.</span></li></ul><p>&nbsp;</p><h2>Conclusion</h2><p>&nbsp;</p><p><span>Social media data is complex and often weird; looking at it closely, we often find patterns that seem to require deeper explanation. However, the field of social media analysis has focused so much on detecting potential coordinated, state-backed activity that it often jumps to this conclusion, particularly in media coverage,&nbsp; at the expense of rejecting more subtle (and boring) explanations. This is likely exaggerated by publication bias, as "this is pretty normal, actually" is not generally a compelling research finding or news article. Researchers and reporters need to be wary of making judgements of attribution and intent without having obtained the data necessary to do so, and should take bias into account when analyzing recent events.</span></p><p><br><span>That said — despite no indications of state backing, Twitter does appear to be doing quite poorly at controlling Chinese-language spam, which does make information on protests hard to find. The situation is likely compounded by the recent gutting of Twitter’s Trust &amp; Safety, Research, and Communications teams, leaving them with reduced capacity to perform internal research on inauthentic behavior and limiting the possibility of collaboration with researchers and journalists to improve curbs on violating content. As of this writing, the flood of Chinese city spam continues unabated.</span></p><p>&nbsp;</p><p><em><span>Thank you to </span></em><a href="https://cyber.fsi.stanford.edu/io/people/tongtong"><em><span>Tongtong Zhang</span></em></a><em><span> for investigation and translation support.</span></em></p></div>
+      
+</div>
+</div>
+</div>
+              <div class="paragraph-item ptype-additional-content-people">
+
+<div class="additional-content-people">
+  
+<div  class="container container--additional-content py-4 1024:py-5 additional-content-people" >
+  <div  class="additional-content additional-content--people flex flex-col 768:flex-row-reverse" >
+              <div class="
+        flex justify-center
+        768:block 768:w-[188px] 768:shrink-0
+      ">
+          
+            
+  
+              
+
+  
+<picture
+   loading="eager" class="image"
+>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/188x188/public/bio_images/david-thiel.png?h=10ac3d31&amp;itok=ZoERYcLg 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/188x188_x2/public/bio_images/david-thiel.png?h=10ac3d31&amp;itok=txpeFnPK 2x" media="all and (min-width: 768px)" type="image/png" width="188" height="188"/>
+          <source srcset="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/188x188/public/bio_images/david-thiel.png?h=10ac3d31&amp;itok=ZoERYcLg 1x, https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/188x188_x2/public/bio_images/david-thiel.png?h=10ac3d31&amp;itok=txpeFnPK 2x" media="all and (max-width: 767px)" type="image/png" width="188" height="188"/>
+        <!--[if IE 9]></video><![endif]-->
+      
+<img
+   class="image"
+      src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/188x188/public/bio_images/david-thiel.png?h=10ac3d31&amp;itok=ZoERYcLg"
+      alt="Drawing of David Thiel of the Internet Observatory at Stanford"
+    />
+</picture>
+
+
+      
+
+      
+      </div>
+    
+    <div class="
+      pt-5 px-8 pb-2.5 768:pt-8
+       mr-auto
+    ">
+              
+
+<h2
+   class="h h2"
+>David Thiel</h2>
+      
+              <div class="mb-3.5">Big Data Architect and Chief Technologist at the Stanford Internet Observatory</div>
+      
+      
+                      
+<a
+   class="link text-15 uppercase font-ss_semibold"
+    href="https://cyber.fsi.stanford.edu/io/people/david-thiel"
+>
+  
+      FULL BIO
+  </a>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+              <div class="paragraph-item ptype-related-publications">
+
+<div class="related-publications">
+  
+<div  class="read-more read-more--pub pt-10 pb-2.5 768:pt-12.5 768:pb-5 1024:pt-[90px] 1024:pb-[70px] related-publications" >
+  <div class="container">
+          
+
+<h3
+   class="h h--gleam h--text-center text-center h3"
+>Read More</h3>
+    
+    <div  class="read-more__items read-more__items--pub read-more__items--3-items 768:flex 768:justify-center" >
+                                    
+
+<div  about="/publication/unheard-voice-evaluating-five-years-pro-western-covert-influence-operations-takedown" class="pub-teaser px-7.5 pb-5.5 pt-5 relative bg-white" >
+  <div class="flex justify-between flex-wrap text-20 mb-6.5">
+          <div  class="pub-teaser__type text-red mb-3 mr-1" >
+        Case Studies
+      </div>
+              <div  class="pub-teaser__date" >
+        August 2022
+      </div>
+      </div>
+      
+
+<h3
+   class="h h3"
+>Unheard Voice: Evaluating five years of pro-Western covert influence operations</h3>
+        <div  class="pub-teaser__authors_label font-ss_semibold font-bold mb-1">Author(s)</div>
+    
+<div  class="bar-author-date bar-author-date--has-authors flex flex-wrap 480m:justify-center 480m:w-full">
+      
+
+
+
+<div  class="authors-list flex flex-wrap">
+  <ul  class="authors-list__list flex flex-wrap 480m:justify-center mb-2.5">
+          
+      
+      <li  class="authors-list__item inline-flex">
+                              Graphika<span class="mr-1">,</span>      </li>
+          
+      
+      <li  class="authors-list__item inline-flex">
+                              Stanford Internet Observatory      </li>
+      </ul>
+  </div>
+  
+  </div>
+            
+<a
+   class="link link--cover"
+    href="/publication/unheard-voice-evaluating-five-years-pro-western-covert-influence-operations-takedown"
+>
+  cover link
+      Unheard Voice: Evaluating five years of pro-Western covert influence operations
+  </a>
+  </div>
+
+                                        
+
+<div  about="/publication/reply-guys-go-hunting-investigation-us-astroturfing-operation-facebook-twitter-and" class="pub-teaser px-7.5 pb-5.5 pt-5 relative bg-white" >
+  <div class="flex justify-between flex-wrap text-20 mb-6.5">
+          <div  class="pub-teaser__type text-red mb-3 mr-1" >
+        Case Studies
+      </div>
+              <div  class="pub-teaser__date" >
+        October 2020
+      </div>
+      </div>
+      
+
+<h3
+   class="h h3"
+>Reply-Guys Go Hunting: An Investigation into a U.S. Astroturfing Operation on Facebook, Twitter, and Instagram</h3>
+        <div  class="pub-teaser__authors_label font-ss_semibold font-bold mb-1">Author(s)</div>
+    
+<div  class="bar-author-date bar-author-date--has-authors flex flex-wrap 480m:justify-center 480m:w-full">
+      
+
+
+
+<div  class="authors-list flex flex-wrap">
+  <ul  class="authors-list__list flex flex-wrap 480m:justify-center mb-2.5">
+          
+      
+      <li  class="authors-list__item inline-flex">
+                              Stanford Internet Observatory      </li>
+      </ul>
+  </div>
+  
+  </div>
+            
+<a
+   class="link link--cover"
+    href="/publication/reply-guys-go-hunting-investigation-us-astroturfing-operation-facebook-twitter-and"
+>
+  cover link
+      Reply-Guys Go Hunting: An Investigation into a U.S. Astroturfing Operation on Facebook, Twitter, and Instagram
+  </a>
+  </div>
+
+                                        
+
+<div  about="/publication/20210708-jordan-fb-takedown" class="pub-teaser px-7.5 pb-5.5 pt-5 relative bg-white" >
+  <div class="flex justify-between flex-wrap text-20 mb-6.5">
+          <div  class="pub-teaser__type text-red mb-3 mr-1" >
+        Case Studies
+      </div>
+              <div  class="pub-teaser__date" >
+        July 2021
+      </div>
+      </div>
+      
+
+<h3
+   class="h h3"
+>My Heart Loves the Army: An Investigation into a Jordanian Disinformation Campaign on Facebook, TikTok and Twitter</h3>
+        <div  class="pub-teaser__authors_label font-ss_semibold font-bold mb-1">Author(s)</div>
+    
+<div  class="bar-author-date bar-author-date--has-authors flex flex-wrap 480m:justify-center 480m:w-full">
+      
+
+
+
+<div  class="authors-list flex flex-wrap">
+  <ul  class="authors-list__list flex flex-wrap 480m:justify-center mb-2.5">
+          
+      
+      <li  class="authors-list__item inline-flex">
+                              <a  class="authors-list__link" href="/people/shelby-grossman">
+              Shelby Grossman</a><span class="mr-1">,</span>      </li>
+          
+      
+      <li  class="authors-list__item inline-flex">
+                              <a  class="authors-list__link" href="/people/elena-cryst">
+              Elena Cryst</a><span class="mr-1">,</span>      </li>
+          
+      
+      <li  class="authors-list__item inline-flex">
+                              <a  class="authors-list__link" href="/people/renee-diresta">
+              Renee DiResta</a><span class="mr-1">,</span>      </li>
+          
+      
+      <li  class="authors-list__item inline-flex">
+                              <a  class="authors-list__link" href="/people/carly-miller">
+              Carly Miller</a><span class="mr-1">,</span>      </li>
+          
+      
+      <li  class="authors-list__item inline-flex">
+                              K.H.<span class="mr-1">,</span>      </li>
+          
+      
+      <li  class="authors-list__item inline-flex">
+                              Rajeev Sharma<span class="mr-1">,</span>      </li>
+          
+      
+      <li  class="authors-list__item inline-flex">
+                              Chase Small<span class="mr-1">,</span>      </li>
+          
+      
+      <li  class="authors-list__item inline-flex">
+                              Julia Thompson      </li>
+      </ul>
+  </div>
+  
+  </div>
+            
+<a
+   class="link link--cover"
+    href="/publication/20210708-jordan-fb-takedown"
+>
+  cover link
+      My Heart Loves the Army: An Investigation into a Jordanian Disinformation Campaign on Facebook, TikTok and Twitter
+  </a>
+  </div>
+
+                            </div>
+  </div>
+</div>
+</div>
+</div>
+          </div>
+  
+
+          <div class="container text-center py-4 1024:py-5">
+    
+<a
+   class="link link--btn"
+    href="http://cyber.fsi.stanford.edu/news"
+>
+  
+      All Cyber News
+  </a>
+</div>
+      </div>
+</article>
+
+  </div>
+
+  </div>
+
+    </main>
+  </div>
+      <footer>
+              <div  class="footer__social region region-footer-social">
+  <div class="container flex items-center justify-center 768:justify-between py-4">
+          <div  id="block-fsi-center-logo" class="block fsi-center-logo">
+  
+    
+        <a href="/" rel="home">
+      <img src="https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/2025-01/stanford-line2-822_crop.png" alt="Logo for the Cyber Policy Center"/>
+    </a>
+  </div>
+
+      </div>
+</div>
+
+      
+              
+<section  class="footer__center region region-footer-center">
+  <div class="
+    container
+    flex flex-wrap 768:flex-nowrap
+    pt-9 pb-7.5
+  ">
+          <div  id="block-footer-contact-us" class="block block-content _0723fba-76bd-4764-8856-dabdde04e703">
+  
+    
+      
+
+            <div class="block-content basic body text-with-summary label-hidden text-long"><h3 class="footer-panel__title">Our Address</h3>
+
+<div class="logo-footer"><a href="https://fsi.stanford.edu"><img alt="Stanford University" height="52" src="/themes/custom/stanford_fsi/images/logo-white.png" width="517" loading="lazy"> </a></div>
+
+<div class="footer-panel__body">Encina Hall<br>
+616 Jane Stanford Way<br>
+Stanford University<br>
+Stanford, CA 94305-6055</div>
+</div>
+      
+  </div>
+<div  id="block-footer-menu" class="menu-block footer block block-menu navigation menu--footer">
+      
+  <h2 id="menu-blockfooter-menu">Navigate</h2>
+  
+
+        
+
+
+    
+                          
+    
+<ul  class="menu">
+            
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/research" class="menu__link">Research</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/education" class="menu__link">Education</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/policy" class="menu__link">Policy</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/people/institute-faculty" class="menu__link">People</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/centers" class="menu__link">Centers</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/news" class="menu__link">News</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/events" class="menu__link">Events</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://fsi.stanford.edu/about" class="menu__link">About</a>
+          </li>
+      </ul>
+  
+
+  </div>
+<div  id="block-footer-follow-us" class="block block-content _c2785de-22f2-473e-bc20-d8b2d9c45b38">
+  
+    
+      
+
+            <div class="block-content basic body text-with-summary label-hidden text-long"><h3 class="footer-panel__title">Follow Us</h3><p><strong>General inquiries</strong><br>650-723-4581</p><ul class="social-menu"><li class="social-menu__item"><a class="social-menu__link social-menu__link--mail" href="https://fsi.stanford.edu/content/get-connected" target="_blank">Mail</a></li><li class="social-menu__item"><a class="social-menu__link social-menu__link--twitter" href="https://twitter.com/FSIStanford" target="_blank">Twitter</a></li><li class="social-menu__item"><a class="social-menu__link social-menu__link--facebook" href="https://www.facebook.com/StanfordFSI" target="_blank">Facebook</a></li><li class="social-menu__item"><a class="social-menu__link social-menu__link--youtube" href="https://www.youtube.com/channel/UCB2X9yR4GZLfrCe4jChIEwg" target="_blank">Youtube</a></li><li class="social-menu__item"><a class="social-menu__link social-menu__link--instagram" href="https://www.instagram.com/fsi_stanford" target="_blank">Instagram</a></li><li class="social-menu__item"><a class="social-menu__link social-menu__link--linkedin" href="https://www.linkedin.com/company/freeman-spogli-institute-for-international-studies" target="_blank">LinkedIn</a></li><li class="social-menu__item"><a class="social-menu__link social-menu__link--threads" href="https://www.threads.net/@fsi_stanford" target="_blank">Threads</a></li></ul></div>
+      
+  </div>
+<div  id="block-footer-support-us" class="block block-content f442c8ab-1101-42e7-960d-79b4d0701c1c">
+  
+    
+      
+
+            <div class="block-content basic body text-with-summary label-hidden text-long"><h3 class="footer-panel__title">Support Us</h3>
+
+<div class="support-us">
+<p>Learn more about how your support makes a difference or make a gift now</p>
+<a class="link link--btn link--yellow" href="https://fsi.stanford.edu/supporting-fsi">Make a gift</a></div>
+</div>
+      
+  </div>
+
+      </div>
+</section>
+
+      
+      
+              <div class="back-top 768:hidden text-center py-5">
+  <span class="back-top__icon"></span>
+  <a href="#main-content" class="back-top__link">Top</a>
+</div>
+
+<div
+   class="footer__copyright region region-footer-copyrights"
+  role="contentinfo"
+>
+  <div class="container flex flex-wrap py-5 justify-center relative 768:pt-7 768:pb-8.5">
+    <div  class="footer__copyright-logo mb-4.5 w-full">
+      <img src="/themes/custom/stanford_fsi/images/footer-stanford-logo.png" class="w-[112px] m-auto 768:w-[120px]" alt="Footer logo">
+    </div>
+          <div  id="block-footer-stanford-menu" class="menu-block footer-stanford block block-menu navigation menu--footer-stanford">
+            
+  <h2 class="visually-hidden" id="menu-blockfooter-stanford-menu">Footer Stanford Menu</h2>
+  
+
+        
+
+
+    
+                          
+    
+<ul  class="menu">
+            
+<li  class="menu__item">
+                <a href="https://www.stanford.edu/" class="menu__link">Stanford Home</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://visit.stanford.edu/plan/" class="menu__link">Maps &amp; Directions</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://www.stanford.edu/search/" class="menu__link">Search Stanford</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://emergency.stanford.edu/" class="menu__link">Emergency Info</a>
+          </li>
+      </ul>
+  
+
+  </div>
+<div  id="block-footer-terms-menu" class="menu-block footer-terms block block-menu navigation menu--footer-terms">
+            
+  <h2 class="visually-hidden" id="menu-blockfooter-terms-menu">Footer Terms Menu</h2>
+  
+
+        
+
+
+    
+                          
+    
+<ul  class="menu">
+            
+<li  class="menu__item">
+                <a href="https://www.stanford.edu/site/terms/" class="menu__link">Terms of Use</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://www.stanford.edu/site/privacy/" class="menu__link">Privacy</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://uit.stanford.edu/security/copyright-infringement" class="menu__link">Copyright</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://adminguide.stanford.edu/chapter-1/subchapter-5/policy-1-5-4" class="menu__link">Trademarks</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="http://exploredegrees.stanford.edu/nonacademicregulations/nondiscrimination/" class="menu__link">Non-Discrimination</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://www.stanford.edu/site/accessibility/" class="menu__link">Accessibility</a>
+          </li>
+          
+<li  class="menu__item">
+                <a href="https://uit.stanford.edu/security/copyright-infringement" class="menu__link">Copyright Complaints</a>
+          </li>
+      </ul>
+  
+
+  </div>
+<div  id="block-copyright-content" class="block block-content e1315f88-6342-4fdd-98de-4aed8bcf8e4b">
+  
+    
+      
+
+            <div class="block-content basic body text-with-summary label-hidden text-long"><div class="footer-global__copyright">
+<p class="vcard">© <span class="fn org">Stanford University</span>, <span class="adr"><span class="locality">Stanford</span>, <span class="region">California</span> <span class="postal-code">94305</span></span>.</p>
+</div>
+</div>
+      
+  </div>
+
+      </div>
+</div>
+
+          </footer>
+  </div>
+
+  </div>
+
+
+<script src="/sites/default/files/js/js_oT8VswFsRBY9WAyFVj6bhl-gTuAMhlp7yAJyaSDQ5Xk.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxdjl0Og0AIhC-k3eP00YyKLHV_DGDT49fU2GR9Id8MhBlzlKXqPIwwmcJvdnaZi0ngVEekjmvlRIODA3tuJfiuH3jh0_7B7rGq9UnMO4tQ8igW_tRe26bi1HqRMJP2XvmIaleZyt5nSLmKTEbhxIOecNIMXW8Zq2wF7y80gmU2"></script>
+<script src="https://ws.sharethis.com/button/buttons.js"></script>
+<script src="/sites/default/files/js/js_idDPPa0yCI0NeZfpD5gYemo2XFc_J-aHqrstvVBCy2Y.js?scope=footer&amp;delta=2&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxdjl0Og0AIhC-k3eP00YyKLHV_DGDT49fU2GR9Id8MhBlzlKXqPIwwmcJvdnaZi0ngVEekjmvlRIODA3tuJfiuH3jh0_7B7rGq9UnMO4tQ8igW_tRe26bi1HqRMJP2XvmIaleZyt5nSLmKTEbhxIOecNIMXW8Zq2wF7y80gmU2"></script>
+<script src="/themes/custom/stanford_fsi/components/01-atoms/images/icons/svgxuse.min.js?sqgpes" defer></script>
+<script src="/sites/default/files/js/js_q8nFoQqm43AOfB7jwMRCgI0_PSjymbsH1ldDt87PVW0.js?scope=footer&amp;delta=4&amp;language=en&amp;theme=stanford_fsi&amp;include=eJxdjl0Og0AIhC-k3eP00YyKLHV_DGDT49fU2GR9Id8MhBlzlKXqPIwwmcJvdnaZi0ngVEekjmvlRIODA3tuJfiuH3jh0_7B7rGq9UnMO4tQ8igW_tRe26bi1HqRMJP2XvmIaleZyt5nSLmKTEbhxIOecNIMXW8Zq2wF7y80gmU2"></script>
+
+</body>
+</html>

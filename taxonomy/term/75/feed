@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://cyber.fsi.stanford.edu/">
+  <channel>
+    <title>Science and Technology</title>
+    <link>https://cyber.fsi.stanford.edu/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>New White Paper on GRU Online Operations Puts Spotlight on Pseudo-Think Tanks and Personas</title>
+  <link>https://cyber.fsi.stanford.edu/news/potemkin-pages-personas-blog</link>
+  <description/>
+  <pubDate>Tue, 12 Nov 2019 20:15:21 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">20549 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Rewiring the Pentagon: Charting a New Path on Innovation and Cybersecurity</title>
+  <link>http://cisac.fsi.stanford.edu/events/rewiring-pentagon-charting-new-path-innovation-and-cybersecurity</link>
+  <description/>
+  <pubDate>Sun, 12 Apr 2015 01:08:16 +0000</pubDate>
+    <dc:creator>fsid9admin</dc:creator>
+    <guid isPermaLink="false">12150 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Yong Suk Lee</title>
+  <link>http://aparc.fsi.stanford.edu/people/yong-suk-lee</link>
+  <description/>
+  <pubDate>Fri, 22 Aug 2014 20:13:31 +0000</pubDate>
+    <dc:creator>Noa Ronkin</dc:creator>
+    <guid isPermaLink="false">3774 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+
+  </channel>
+</rss>

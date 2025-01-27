@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://cyber.fsi.stanford.edu/">
+  <channel>
+    <title>International Law</title>
+    <link>https://cyber.fsi.stanford.edu/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>Renee DiResta</title>
+  <link>https://cyber.fsi.stanford.edu/people/renee-diresta</link>
+  <description/>
+  <pubDate>Wed, 05 Jun 2019 17:00:09 +0000</pubDate>
+    <dc:creator>Elena Cryst</dc:creator>
+    <guid isPermaLink="false">4577 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Michael McFaul Testifies Before House Intelligence Committee</title>
+  <link>https://cyber.fsi.stanford.edu/news/michael-mcfaul-testifies-house-intelligence-committee</link>
+  <description/>
+  <pubDate>Wed, 27 Mar 2019 18:51:12 +0000</pubDate>
+    <dc:creator>Ari Chasnoff</dc:creator>
+    <guid isPermaLink="false">20292 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Cyberspace, Information Strategy, and International Security - Marina Kaljurand and Elaine Korzak</title>
+  <link>https://cyber.fsi.stanford.edu/events/cyberspace-information-strategy-and-international-security-marina-kaljurand-and-elaine-korzak</link>
+  <description/>
+  <pubDate>Thu, 22 Feb 2018 18:52:55 +0000</pubDate>
+    <dc:creator>fsid9admin</dc:creator>
+    <guid isPermaLink="false">13121 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+<item>
+  <title>Daphne Keller</title>
+  <link>https://cyber.fsi.stanford.edu/people/daphne-keller</link>
+  <description/>
+  <pubDate>Tue, 28 Nov 2017 20:51:26 +0000</pubDate>
+    <dc:creator>fsid9admin</dc:creator>
+    <guid isPermaLink="false">4358 at https://cyber.fsi.stanford.edu</guid>
+    </item>
+
+  </channel>
+</rss>
